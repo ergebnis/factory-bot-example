@@ -21,6 +21,71 @@ parameters:
 			path: config/bootstrap.php
 
 		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Organization\\:\\:url\\(\\) has a nullable return type declaration\\.$#"
+			count: 1
+			path: src/Entity/Organization.php
+
+		-
+			message: "#^Constructor in Ergebnis\\\\Example\\\\Entity\\\\Repository has parameter \\$codeOfConduct with default value\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Constructor in Ergebnis\\\\Example\\\\Entity\\\\Repository has parameter \\$template with default value\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:__construct\\(\\) has parameter \\$codeOfConduct with a nullable type declaration\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:__construct\\(\\) has parameter \\$codeOfConduct with null as default value\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:__construct\\(\\) has parameter \\$template with a nullable type declaration\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:__construct\\(\\) has parameter \\$template with null as default value\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:template\\(\\) has a nullable return type declaration\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\Repository\\:\\:codeOfConduct\\(\\) has a nullable return type declaration\\.$#"
+			count: 1
+			path: src/Entity/Repository.php
+
+		-
+			message: "#^Constructor in Ergebnis\\\\Example\\\\Entity\\\\User has parameter \\$location with default value\\.$#"
+			count: 1
+			path: src/Entity/User.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\User\\:\\:__construct\\(\\) has parameter \\$location with a nullable type declaration\\.$#"
+			count: 1
+			path: src/Entity/User.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\User\\:\\:__construct\\(\\) has parameter \\$location with null as default value\\.$#"
+			count: 1
+			path: src/Entity/User.php
+
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Entity\\\\User\\:\\:location\\(\\) has a nullable return type declaration\\.$#"
+			count: 1
+			path: src/Entity/User.php
+
+		-
 			message: "#^Method Ergebnis\\\\Example\\\\Kernel\\:\\:configureContainer\\(\\) has a parameter \\$container with a type declaration of Symfony\\\\Component\\\\DependencyInjection\\\\ContainerBuilder, but containers should not be injected\\.$#"
 			count: 1
 			path: src/Kernel.php
@@ -34,4 +99,9 @@ parameters:
 			message: "#^Method Ergebnis\\\\Example\\\\Kernel\\:\\:configureRoutes\\(\\) is protected, but since the containing class is final, it can be private\\.$#"
 			count: 1
 			path: src/Kernel.php
+
+		-
+			message: "#^Parameter \\#1 \\$argument of class ReflectionClass constructor expects class\\-string\\<T of object\\>\\|T of object, string given\\.$#"
+			count: 1
+			path: test/AutoReview/FixtureTest.php
 

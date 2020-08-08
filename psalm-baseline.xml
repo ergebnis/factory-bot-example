@@ -46,4 +46,9 @@
       <code>require $this-&gt;getProjectDir() . '/config/bundles.php'</code>
     </UnresolvableInclude>
   </file>
+  <file src="test/AutoReview/FixtureTest.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$providerClassName</code>
+    </ArgumentTypeCoercion>
+  </file>
 </files>
