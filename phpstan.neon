@@ -5,6 +5,7 @@ parameters:
 	checkMissingIterableValueType: false
 	ergebnis:
 		classesAllowedToBeExtended:
+			- Ergebnis\Example\Test\Unit\AbstractTestCase
 			- Symfony\Component\HttpKernel\Kernel
 	inferPrivatePropertyTypeFromConstructor: true
 	level: max

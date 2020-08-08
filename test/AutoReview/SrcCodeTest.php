@@ -33,6 +33,11 @@ final class SrcCodeTest extends Framework\TestCase
             'Ergebnis\\Example\\',
             'Ergebnis\\Example\\Test\\Unit\\',
             [
+                Example\Entity\Avatar::class,
+                Example\Entity\CodeOfConduct::class,
+                Example\Entity\Organization::class,
+                Example\Entity\Project::class,
+                Example\Entity\Repository::class,
                 Example\Kernel::class,
             ]
         );
