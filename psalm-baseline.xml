@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="3.13.1@afd8874a9e4562eac42a02de90e42e430c3a1db1">
+  <file src="bin/console">
+    <MixedArgument occurrences="1">
+      <code>$_SERVER['APP_ENV']</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="3">
+      <code>$env</code>
+      <code>$_ENV['APP_ENV']</code>
+      <code>$_SERVER['APP_ENV']</code>
+    </MixedAssignment>
+    <MixedOperand occurrences="1">
+      <code>$_SERVER['APP_ENV'] = $_ENV['APP_ENV'] = $env</code>
+    </MixedOperand>
+  </file>
+  <file src="config/bootstrap.php">
+    <MixedAssignment occurrences="4">
+      <code>$_ENV[$k]</code>
+      <code>$_ENV['APP_ENV']</code>
+      <code>$_SERVER['APP_ENV']</code>
+      <code>$_SERVER['APP_DEBUG']</code>
+    </MixedAssignment>
+    <RedundantCondition occurrences="1">
+      <code>\is_array($env = include \dirname(__DIR__) . '/.env.local.php')</code>
+    </RedundantCondition>
+  </file>
+  <file src="public/index.php">
+    <MixedArgument occurrences="2">
+      <code>$trustedProxies</code>
+      <code>$_SERVER['APP_ENV']</code>
+    </MixedArgument>
+    <MixedAssignment occurrences="2">
+      <code>$trustedProxies</code>
+      <code>$trustedHosts</code>
+    </MixedAssignment>
+  </file>
+  <file src="src/Kernel.php">
+    <MixedAssignment occurrences="2">
+      <code>$contents</code>
+      <code>$envs</code>
+    </MixedAssignment>
+    <MixedMethodCall occurrences="1">
+      <code>new $class()</code>
+    </MixedMethodCall>
+    <UnresolvableInclude occurrences="1">
+      <code>require $this-&gt;getProjectDir() . '/config/bundles.php'</code>
+    </UnresolvableInclude>
+  </file>
+</files>

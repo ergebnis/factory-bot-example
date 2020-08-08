@@ -1,0 +1,19 @@
+includes:
+	- phpstan-baseline.neon
+
+parameters:
+	checkMissingIterableValueType: false
+	ergebnis:
+		classesAllowedToBeExtended:
+			- Symfony\Component\HttpKernel\Kernel
+	inferPrivatePropertyTypeFromConstructor: true
+	level: max
+	paths:
+		- config/
+		- src/
+		- test/
+		- public/index.php
+		- bin/console
+	symfony:
+		container_xml_path: var/cache/test/Ergebnis_Example_KernelTestDebugContainer.xml
+	tmpDir: .build/phpstan/
