@@ -18,7 +18,7 @@ use Doctrine\ORM;
 use Ramsey\Uuid;
 
 /**
- * @ORM\Mapping\Entity
+ * @ORM\Mapping\Entity(repositoryClass="Ergebnis\Example\Repository\UserRepository")
  * @ORM\Mapping\Table(name="user")
  */
 class User

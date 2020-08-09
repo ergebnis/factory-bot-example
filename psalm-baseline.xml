@@ -46,10 +46,37 @@
       <code>require $this-&gt;getProjectDir() . '/config/bundles.php'</code>
     </UnresolvableInclude>
   </file>
+  <file src="src/Repository/UserRepository.php">
+    <ArgumentTypeCoercion occurrences="1">
+      <code>$registry</code>
+    </ArgumentTypeCoercion>
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>UserRepository</code>
+    </PropertyNotSetInConstructor>
+  </file>
   <file src="test/AutoReview/FixtureTest.php">
     <ArgumentTypeCoercion occurrences="1">
       <code>$providerClassName</code>
     </ArgumentTypeCoercion>
+  </file>
+  <file src="test/Integration/AbstractTestCase.php">
+    <InternalMethod occurrences="1">
+      <code>get</code>
+    </InternalMethod>
+    <LessSpecificReturnStatement occurrences="1">
+      <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
+    </LessSpecificReturnStatement>
+    <MoreSpecificReturnType occurrences="1">
+      <code>ORM\EntityManagerInterface</code>
+    </MoreSpecificReturnType>
+    <NullableReturnStatement occurrences="1">
+      <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
+    </NullableReturnStatement>
+  </file>
+  <file src="test/Integration/Entity/UserTest.php">
+    <RedundantCondition occurrences="1">
+      <code>assertInstanceOf</code>
+    </RedundantCondition>
   </file>
   <file src="test/object-manager.php">
     <MixedArgument occurrences="1">
