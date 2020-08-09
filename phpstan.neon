@@ -7,7 +7,10 @@ parameters:
 		objectManagerLoader: test/object-manager.php
 	ergebnis:
 		classesAllowedToBeExtended:
+			- Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository
+			- Ergebnis\Example\Test\Integration\AbstractTestCase
 			- Ergebnis\Example\Test\Unit\AbstractTestCase
+			- Symfony\Bundle\FrameworkBundle\Test\KernelTestCase
 			- Symfony\Component\HttpKernel\Kernel
 	inferPrivatePropertyTypeFromConstructor: true
 	level: max

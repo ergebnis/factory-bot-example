@@ -39,6 +39,7 @@ final class SrcCodeTest extends Framework\TestCase
                 Example\Entity\Project::class,
                 Example\Entity\Repository::class,
                 Example\Kernel::class,
+                Example\Repository\UserRepository::class,
             ]
         );
     }

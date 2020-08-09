@@ -105,3 +105,13 @@ parameters:
 			count: 1
 			path: test/AutoReview/FixtureTest.php
 
+		-
+			message: "#^Method Ergebnis\\\\Example\\\\Test\\\\Integration\\\\AbstractTestCase\\:\\:setUp\\(\\) is not final, but since the containing class is abstract, it should be\\.$#"
+			count: 1
+			path: test/Integration/AbstractTestCase.php
+
+		-
+			message: "#^Call to static method PHPUnit\\\\Framework\\\\Assert\\:\\:assertInstanceOf\\(\\) with 'Ergebnis\\\\\\\\Example\\\\\\\\Repository\\\\\\\\UserRepository' and Ergebnis\\\\Example\\\\Repository\\\\UserRepository\\<Ergebnis\\\\Example\\\\Entity\\\\User\\> will always evaluate to true\\.$#"
+			count: 1
+			path: test/Integration/Entity/UserTest.php
+
