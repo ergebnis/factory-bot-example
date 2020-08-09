@@ -71,4 +71,14 @@ abstract class AbstractTestCase extends Framework\TestCase
 
         return $fixtureFactory;
     }
+
+    final protected static function assertStringIsUuid(string $value): void
+    {
+        $pattern = '/^[0-9a-fA-F]{8}(\-[0-9a-fA-F]{4}){3}\-[0-9a-fA-F]{12}$/';
+
+        self::assertMatchesRegularExpression($pattern, $value, \sprintf(
+            'Failed asserting that "%s" is a UUID.',
+            $value
+        ));
+    }
 }
