@@ -51,4 +51,9 @@
       <code>$providerClassName</code>
     </ArgumentTypeCoercion>
   </file>
+  <file src="test/object-manager.php">
+    <MixedArgument occurrences="1">
+      <code>$_SERVER['APP_ENV']</code>
+    </MixedArgument>
+  </file>
 </files>
