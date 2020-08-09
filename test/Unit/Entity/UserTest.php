@@ -23,6 +23,42 @@ use Ergebnis\Example\Test\Unit;
  */
 final class UserTest extends Unit\AbstractTestCase
 {
+    public function testDefaults(): void
+    {
+        $faker = self::faker();
+
+        $login = $faker->userName;
+        $avatar = new Entity\Avatar();
+
+        $user = new Entity\User(
+            $login,
+            $avatar
+        );
+
+        self::assertStringIsUuid($user->id());
+        self::assertNull($user->location());
+        self::assertEmpty($user->organizations());
+    }
+
+    public function testConstructorSetsValues(): void
+    {
+        $faker = self::faker();
+
+        $login = $faker->userName;
+        $avatar = new Entity\Avatar();
+        $location = $faker->city;
+
+        $user = new Entity\User(
+            $login,
+            $avatar,
+            $location
+        );
+
+        self::assertSame($login, $user->login());
+        self::assertSame($avatar, $user->avatar());
+        self::assertSame($location, $user->location());
+    }
+
     public function testRenameToRenamesUser(): void
     {
         $login = self::faker()->userName;
