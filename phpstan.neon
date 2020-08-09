@@ -3,6 +3,8 @@ includes:
 
 parameters:
 	checkMissingIterableValueType: false
+	doctrine:
+		objectManagerLoader: test/object-manager.php
 	ergebnis:
 		classesAllowedToBeExtended:
 			- Ergebnis\Example\Test\Unit\AbstractTestCase
