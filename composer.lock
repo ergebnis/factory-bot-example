@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a2648c79004cd5720bc28eb8b418cd49",
+    "content-hash": "45ca2bcbe0c431a4f33bd8bb2c919f7d",
     "packages": [
         {
             "name": "brick/math",
@@ -8099,29 +8099,32 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v1.4.1",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "d13b6aa27aa0d5b8fab0e5874630c2e2c4546d21"
+                "reference": "9fb76499f9d975719a14a14f1fd7fbae3afab4bc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/d13b6aa27aa0d5b8fab0e5874630c2e2c4546d21",
-                "reference": "d13b6aa27aa0d5b8fab0e5874630c2e2c4546d21",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/9fb76499f9d975719a14a14f1fd7fbae3afab4bc",
+                "reference": "9fb76499f9d975719a14a14f1fd7fbae3afab4bc",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": "^7.1",
                 "symfony/framework-bundle": "^3.0 || ^4.0 || ^5.0",
-                "vimeo/psalm": "^3.12"
+                "vimeo/psalm": "^3.13"
             },
             "require-dev": {
                 "doctrine/orm": "^2.7",
                 "phpunit/phpunit": "~7.5",
+                "symfony/cache-contracts": "^1.0 || ^2.0",
                 "symfony/console": "*",
                 "symfony/messenger": "^4.2 || ^5.0",
+                "symfony/security-guard": "^4.0 || ^5.0",
+                "symfony/validator": "*",
                 "weirdan/codeception-psalm-module": "~0.8"
             },
             "suggest": {
@@ -8149,7 +8152,7 @@
                 }
             ],
             "description": "Psalm Plugin for Symfony",
-            "time": "2020-07-28T18:21:03+00:00"
+            "time": "2020-08-18T11:38:35+00:00"
         },
         {
             "name": "sanmai/pipeline",
