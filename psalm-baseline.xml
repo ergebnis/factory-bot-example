@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.13.1@afd8874a9e4562eac42a02de90e42e430c3a1db1">
+<files psalm-version="3.14.2@3538fe1955d47f6ee926c0769d71af6db08aa488">
   <file src="bin/console">
     <MixedArgument occurrences="1">
       <code>$_SERVER['APP_ENV']</code>
@@ -77,6 +77,24 @@
     <RedundantCondition occurrences="1">
       <code>assertInstanceOf</code>
     </RedundantCondition>
+  </file>
+  <file src="test/Unit/Entity/ProjectTest.php">
+    <UnnecessaryVarAnnotation occurrences="1">
+      <code>Entity\Repository</code>
+    </UnnecessaryVarAnnotation>
+  </file>
+  <file src="test/Unit/Entity/RepositoryTest.php">
+    <UnnecessaryVarAnnotation occurrences="4">
+      <code>Entity\Organization</code>
+      <code>Entity\Organization</code>
+      <code>Entity\Repository</code>
+      <code>Entity\CodeOfConduct</code>
+    </UnnecessaryVarAnnotation>
+  </file>
+  <file src="test/Unit/Entity/UserTest.php">
+    <UnnecessaryVarAnnotation occurrences="1">
+      <code>Entity\User</code>
+    </UnnecessaryVarAnnotation>
   </file>
   <file src="test/object-manager.php">
     <MixedArgument occurrences="1">
