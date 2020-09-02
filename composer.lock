@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cddd1907da82482836c3f23b19406f3d",
+    "content-hash": "c31568b2f3396e0c3743000bccb05e0c",
     "packages": [
         {
             "name": "brick/math",
@@ -3300,16 +3300,16 @@
         },
         {
             "name": "symfony/framework-bundle",
-            "version": "v5.1.3",
+            "version": "v5.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/framework-bundle.git",
-                "reference": "f9be9af9092f165b9b809d870289b57330301dc6"
+                "reference": "0607ca3cb7b79461a2e6a7c5d05e5cd6d2c14015"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/f9be9af9092f165b9b809d870289b57330301dc6",
-                "reference": "f9be9af9092f165b9b809d870289b57330301dc6",
+                "url": "https://api.github.com/repos/symfony/framework-bundle/zipball/0607ca3cb7b79461a2e6a7c5d05e5cd6d2c14015",
+                "reference": "0607ca3cb7b79461a2e6a7c5d05e5cd6d2c14015",
                 "shasum": ""
             },
             "require": {
@@ -3443,7 +3443,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-07-23T08:36:24+00:00"
+            "time": "2020-08-30T09:59:07+00:00"
         },
         {
             "name": "symfony/http-foundation",
