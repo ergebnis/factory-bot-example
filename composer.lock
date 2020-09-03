@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8864445e1d3ac62301ef5cedf5f260a2",
+    "content-hash": "cbd09ace6d0fbed1274e63c4b620236e",
     "packages": [
         {
             "name": "brick/math",
@@ -2365,7 +2365,7 @@
         },
         {
             "name": "symfony/config",
-            "version": "v5.1.4",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
