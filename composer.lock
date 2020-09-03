@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29a470d0dec3f23cfbc3c41732b8256b",
+    "content-hash": "b922ea2037702af7d77b1a1076ac91db",
     "packages": [
         {
             "name": "brick/math",
@@ -4530,7 +4530,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v5.1.4",
+            "version": "v5.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

@@ -38,7 +38,7 @@
     "symfony/http-kernel": "^5.1.4",
     "symfony/routing": "^5.1.4",
     "symfony/serializer": "^5.1.4",
-    "symfony/yaml": "^5.1.4"
+    "symfony/yaml": "^5.1.5"
   },
   "replace": {
     "paragonie/random_compat": "2.*",
