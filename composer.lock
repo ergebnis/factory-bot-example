@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7c4f40956766bfa861487575a4a77086",
+    "content-hash": "a3212f35b23027fcdca7986c33448d75",
     "packages": [
         {
             "name": "brick/math",
@@ -3238,16 +3238,16 @@
         },
         {
             "name": "symfony/flex",
-            "version": "v1.9.3",
+            "version": "v1.9.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/flex.git",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34"
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/flex/zipball/1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
-                "reference": "1eab1e85f5eb66dac138d6240cc0ceffd6e3ae34",
+                "url": "https://api.github.com/repos/symfony/flex/zipball/115e67f76ba95d70946a6e0b15d4578bf04927c3",
+                "reference": "115e67f76ba95d70946a6e0b15d4578bf04927c3",
                 "shasum": ""
             },
             "require": {
@@ -3297,7 +3297,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-08-31T14:36:07+00:00"
+            "time": "2020-09-14T14:58:36+00:00"
         },
         {
             "name": "symfony/framework-bundle",
@@ -9279,12 +9279,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/autowire-array-parameter.git",
-                "reference": "517569b2ab0f42128bcb05025fdc2e2891629780"
+                "reference": "b3bc27d6afc570a2e0ed43b1afc1198751f095a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/517569b2ab0f42128bcb05025fdc2e2891629780",
-                "reference": "517569b2ab0f42128bcb05025fdc2e2891629780",
+                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/b3bc27d6afc570a2e0ed43b1afc1198751f095a0",
+                "reference": "b3bc27d6afc570a2e0ed43b1afc1198751f095a0",
                 "shasum": ""
             },
             "require": {
@@ -9326,12 +9326,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "3878778fd00365884b76fdf2151c7b736d4e6782"
+                "reference": "34c3b431c5fdd91fc49423ababe08d79cbfe8075"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/3878778fd00365884b76fdf2151c7b736d4e6782",
-                "reference": "3878778fd00365884b76fdf2151c7b736d4e6782",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/34c3b431c5fdd91fc49423ababe08d79cbfe8075",
+                "reference": "34c3b431c5fdd91fc49423ababe08d79cbfe8075",
                 "shasum": ""
             },
             "require": {
@@ -9370,7 +9370,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-06T20:56:01+00:00"
+            "time": "2020-09-06T23:52:38+00:00"
         },
         {
             "name": "symplify/smart-file-system",
@@ -9378,12 +9378,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/smart-file-system.git",
-                "reference": "a92b0950977806a7a09fa87c8fc63e5eb6350bde"
+                "reference": "da84097cab0da26fcdb4f8240e8fb06bbb8ec7aa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/a92b0950977806a7a09fa87c8fc63e5eb6350bde",
-                "reference": "a92b0950977806a7a09fa87c8fc63e5eb6350bde",
+                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/da84097cab0da26fcdb4f8240e8fb06bbb8ec7aa",
+                "reference": "da84097cab0da26fcdb4f8240e8fb06bbb8ec7aa",
                 "shasum": ""
             },
             "require": {
@@ -9418,7 +9418,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2020-09-06T20:56:01+00:00"
+            "time": "2020-09-06T23:52:38+00:00"
         },
         {
             "name": "thecodingmachine/safe",
