@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a3212f35b23027fcdca7986c33448d75",
+    "content-hash": "75ffb0bc8c7eb6dd4ea6b8644b4c0068",
     "packages": [
         {
             "name": "brick/math",
@@ -6313,12 +6313,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/config-transformer.git",
-                "reference": "87d7c864fe6e0ad80aae45011ed8d961999ed29b"
+                "reference": "1c4dc60459f3c8b4a7c465ce80ca6feffacb9f49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/87d7c864fe6e0ad80aae45011ed8d961999ed29b",
-                "reference": "87d7c864fe6e0ad80aae45011ed8d961999ed29b",
+                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/1c4dc60459f3c8b4a7c465ce80ca6feffacb9f49",
+                "reference": "1c4dc60459f3c8b4a7c465ce80ca6feffacb9f49",
                 "shasum": ""
             },
             "require": {
@@ -6403,12 +6403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/php-config-printer.git",
-                "reference": "66d539c6eb8802a89bc4f6af486d6d4190c52817"
+                "reference": "7b044ac0ee5a86d68298ad284e84cb73010b7db8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/66d539c6eb8802a89bc4f6af486d6d4190c52817",
-                "reference": "66d539c6eb8802a89bc4f6af486d6d4190c52817",
+                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/7b044ac0ee5a86d68298ad284e84cb73010b7db8",
+                "reference": "7b044ac0ee5a86d68298ad284e84cb73010b7db8",
                 "shasum": ""
             },
             "require": {
@@ -8168,16 +8168,16 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "9fb76499f9d975719a14a14f1fd7fbae3afab4bc"
+                "reference": "02408457444c4ab0d1228cc7c68d18eced2a89e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/9fb76499f9d975719a14a14f1fd7fbae3afab4bc",
-                "reference": "9fb76499f9d975719a14a14f1fd7fbae3afab4bc",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/02408457444c4ab0d1228cc7c68d18eced2a89e0",
+                "reference": "02408457444c4ab0d1228cc7c68d18eced2a89e0",
                 "shasum": ""
             },
             "require": {
@@ -8194,7 +8194,8 @@
                 "symfony/messenger": "^4.2 || ^5.0",
                 "symfony/security-guard": "^4.0 || ^5.0",
                 "symfony/validator": "*",
-                "weirdan/codeception-psalm-module": "~0.8"
+                "twig/twig": "^2.10 || ^3.0",
+                "weirdan/codeception-psalm-module": "~0.9"
             },
             "suggest": {
                 "weirdan/doctrine-psalm-plugin": "If Doctrine is used, it is recommended install this plugin"
@@ -8221,7 +8222,7 @@
                 }
             ],
             "description": "Psalm Plugin for Symfony",
-            "time": "2020-08-18T11:38:35+00:00"
+            "time": "2020-09-14T08:17:23+00:00"
         },
         {
             "name": "sanmai/pipeline",
