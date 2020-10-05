@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93133b96ba4ada20f0cb84c9ff55b48e",
+    "content-hash": "1fdce531d68664ae4a9b54c92af5a63e",
     "packages": [
         {
             "name": "brick/math",
@@ -3599,16 +3599,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v5.1.6",
+            "version": "v5.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "17227644c3c66dcf32bdfeceff4364d090cd6756"
+                "reference": "1764b87d2f10d5c9ce6e4850fe27934116d89708"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/17227644c3c66dcf32bdfeceff4364d090cd6756",
-                "reference": "17227644c3c66dcf32bdfeceff4364d090cd6756",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/1764b87d2f10d5c9ce6e4850fe27934116d89708",
+                "reference": "1764b87d2f10d5c9ce6e4850fe27934116d89708",
                 "shasum": ""
             },
             "require": {
@@ -3709,7 +3709,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-09-27T04:33:19+00:00"
+            "time": "2020-10-04T07:57:28+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
