@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56b6d7d0474832d7a6cd449e0bb870b2",
+    "content-hash": "5442aeb9be0562432527f4afd0f52c06",
     "packages": [
         {
             "name": "brick/math",
@@ -6083,16 +6083,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.17.6",
+            "version": "0.17.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "941d40af2de0890dc1dcf679850124d12c9556c3"
+                "reference": "3a35481822b795e021907e5a80d7b622e4d97be0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/941d40af2de0890dc1dcf679850124d12c9556c3",
-                "reference": "941d40af2de0890dc1dcf679850124d12c9556c3",
+                "url": "https://api.github.com/repos/infection/infection/zipball/3a35481822b795e021907e5a80d7b622e4d97be0",
+                "reference": "3a35481822b795e021907e5a80d7b622e4d97be0",
                 "shasum": ""
             },
             "require": {
@@ -6188,7 +6188,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2020-10-02T07:20:09+00:00"
+            "time": "2020-10-13T21:51:12+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
@@ -6389,12 +6389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/config-transformer.git",
-                "reference": "daede348b4c91dbfc13153d758bb407681c3c7a2"
+                "reference": "7eb4bf6c057918b41e6c0f79706fc6dbe137db55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/daede348b4c91dbfc13153d758bb407681c3c7a2",
-                "reference": "daede348b4c91dbfc13153d758bb407681c3c7a2",
+                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/7eb4bf6c057918b41e6c0f79706fc6dbe137db55",
+                "reference": "7eb4bf6c057918b41e6c0f79706fc6dbe137db55",
                 "shasum": ""
             },
             "require": {
@@ -6437,12 +6437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/migrify-kernel.git",
-                "reference": "08ab4d32f75bcd599fdd9be0629db14f56c1c5c4"
+                "reference": "c10a3cb237a26b1abffca6632cbb51095c4cbf17"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/08ab4d32f75bcd599fdd9be0629db14f56c1c5c4",
-                "reference": "08ab4d32f75bcd599fdd9be0629db14f56c1c5c4",
+                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/c10a3cb237a26b1abffca6632cbb51095c4cbf17",
+                "reference": "c10a3cb237a26b1abffca6632cbb51095c4cbf17",
                 "shasum": ""
             },
             "require": {
@@ -6476,12 +6476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/php-config-printer.git",
-                "reference": "aa72623d23578ab0af9e223ee97ca7a7fae384f9"
+                "reference": "b95e9ce8d323b952f7c1d9f68c040008e7e4edca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/aa72623d23578ab0af9e223ee97ca7a7fae384f9",
-                "reference": "aa72623d23578ab0af9e223ee97ca7a7fae384f9",
+                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/b95e9ce8d323b952f7c1d9f68c040008e7e4edca",
+                "reference": "b95e9ce8d323b952f7c1d9f68c040008e7e4edca",
                 "shasum": ""
             },
             "require": {
@@ -9352,12 +9352,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/autowire-array-parameter.git",
-                "reference": "84353e78860306627f6ae75294ba0c6afe21d595"
+                "reference": "32383600f4b155cf3eadf51494dcdfd66bbb2c3a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/84353e78860306627f6ae75294ba0c6afe21d595",
-                "reference": "84353e78860306627f6ae75294ba0c6afe21d595",
+                "url": "https://api.github.com/repos/symplify/autowire-array-parameter/zipball/32383600f4b155cf3eadf51494dcdfd66bbb2c3a",
+                "reference": "32383600f4b155cf3eadf51494dcdfd66bbb2c3a",
                 "shasum": ""
             },
             "require": {
@@ -9403,12 +9403,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/package-builder.git",
-                "reference": "f3c3c8062a05e61574932af5bc873cf2fb8ef653"
+                "reference": "08b6abfea796ab8eebf9712a1dcefb231dc4f1eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/package-builder/zipball/f3c3c8062a05e61574932af5bc873cf2fb8ef653",
-                "reference": "f3c3c8062a05e61574932af5bc873cf2fb8ef653",
+                "url": "https://api.github.com/repos/symplify/package-builder/zipball/08b6abfea796ab8eebf9712a1dcefb231dc4f1eb",
+                "reference": "08b6abfea796ab8eebf9712a1dcefb231dc4f1eb",
                 "shasum": ""
             },
             "require": {
@@ -9461,12 +9461,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/smart-file-system.git",
-                "reference": "1b8081c35e3989bd9729863a3af8ac24d00a90d3"
+                "reference": "2f4728940ca40db0122dcfa811fdd3d0e3559cfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/1b8081c35e3989bd9729863a3af8ac24d00a90d3",
-                "reference": "1b8081c35e3989bd9729863a3af8ac24d00a90d3",
+                "url": "https://api.github.com/repos/symplify/smart-file-system/zipball/2f4728940ca40db0122dcfa811fdd3d0e3559cfe",
+                "reference": "2f4728940ca40db0122dcfa811fdd3d0e3559cfe",
                 "shasum": ""
             },
             "require": {
@@ -9513,12 +9513,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/symplify-kernel.git",
-                "reference": "36c2829b9fb78b7e40b46d7e07f045d06eb6d233"
+                "reference": "a2ac0938111f2582109bd7589a0b739b252a6661"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/symplify-kernel/zipball/36c2829b9fb78b7e40b46d7e07f045d06eb6d233",
-                "reference": "36c2829b9fb78b7e40b46d7e07f045d06eb6d233",
+                "url": "https://api.github.com/repos/symplify/symplify-kernel/zipball/a2ac0938111f2582109bd7589a0b739b252a6661",
+                "reference": "a2ac0938111f2582109bd7589a0b739b252a6661",
                 "shasum": ""
             },
             "require": {
@@ -9552,16 +9552,16 @@
         },
         {
             "name": "thecodingmachine/safe",
-            "version": "v1.2.1",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "f781b93cbbfaed196f599534dcd3a1d69e89acaf"
+                "reference": "a6b795aeb367c90cc6ed88dadb4cdcac436377c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/f781b93cbbfaed196f599534dcd3a1d69e89acaf",
-                "reference": "f781b93cbbfaed196f599534dcd3a1d69e89acaf",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/a6b795aeb367c90cc6ed88dadb4cdcac436377c2",
+                "reference": "a6b795aeb367c90cc6ed88dadb4cdcac436377c2",
                 "shasum": ""
             },
             "require": {
@@ -9582,15 +9582,21 @@
                 "psr-4": {
                     "Safe\\": [
                         "lib/",
+                        "deprecated/",
                         "generated/"
                     ]
                 },
                 "files": [
+                    "deprecated/apc.php",
+                    "deprecated/libevent.php",
+                    "deprecated/mssql.php",
+                    "deprecated/stats.php",
+                    "lib/special_cases.php",
                     "generated/apache.php",
-                    "generated/apc.php",
                     "generated/apcu.php",
                     "generated/array.php",
                     "generated/bzip2.php",
+                    "generated/calendar.php",
                     "generated/classobj.php",
                     "generated/com.php",
                     "generated/cubrid.php",
@@ -9619,14 +9625,12 @@
                     "generated/inotify.php",
                     "generated/json.php",
                     "generated/ldap.php",
-                    "generated/libevent.php",
                     "generated/libxml.php",
                     "generated/lzf.php",
                     "generated/mailparse.php",
                     "generated/mbstring.php",
                     "generated/misc.php",
                     "generated/msql.php",
-                    "generated/mssql.php",
                     "generated/mysql.php",
                     "generated/mysqli.php",
                     "generated/mysqlndMs.php",
@@ -9658,7 +9662,6 @@
                     "generated/sqlsrv.php",
                     "generated/ssdeep.php",
                     "generated/ssh2.php",
-                    "generated/stats.php",
                     "generated/stream.php",
                     "generated/strings.php",
                     "generated/swoole.php",
@@ -9672,8 +9675,7 @@
                     "generated/yaml.php",
                     "generated/yaz.php",
                     "generated/zip.php",
-                    "generated/zlib.php",
-                    "lib/special_cases.php"
+                    "generated/zlib.php"
                 ]
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -9681,7 +9683,7 @@
                 "MIT"
             ],
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
-            "time": "2020-09-25T17:23:59+00:00"
+            "time": "2020-10-08T08:40:29+00:00"
         },
         {
             "name": "theseer/tokenizer",
