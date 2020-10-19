@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a27f49f6f46227784a31d166b37bd88",
+    "content-hash": "0cbae28a7153282f8fe9c2ffa028f0e3",
     "packages": [
         {
             "name": "brick/math",
@@ -6083,25 +6083,25 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.17.7",
+            "version": "0.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "3a35481822b795e021907e5a80d7b622e4d97be0"
+                "reference": "ddea14cf710fe3ce041f26ea0e7365e49263bdff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/3a35481822b795e021907e5a80d7b622e4d97be0",
-                "reference": "3a35481822b795e021907e5a80d7b622e4d97be0",
+                "url": "https://api.github.com/repos/infection/infection/zipball/ddea14cf710fe3ce041f26ea0e7365e49263bdff",
+                "reference": "ddea14cf710fe3ce041f26ea0e7365e49263bdff",
                 "shasum": ""
             },
             "require": {
-                "composer/package-versions-deprecated": "^1.2",
+                "composer/package-versions-deprecated": "^1.2 || ^2.0",
                 "composer/xdebug-handler": "^1.3.3",
                 "ext-dom": "*",
                 "ext-json": "*",
                 "ext-libxml": "*",
-                "infection/abstract-testframework-adapter": "^0.3.0",
+                "infection/abstract-testframework-adapter": "^0.3.1",
                 "infection/extension-installer": "^0.1.0",
                 "infection/include-interceptor": "^0.2.4",
                 "justinrainbow/json-schema": "^5.2",
@@ -6121,18 +6121,18 @@
             },
             "conflict": {
                 "phpunit/php-code-coverage": ">9 <9.1.4",
-                "phpunit/phpunit": ">=9.3",
                 "symfony/console": "=4.1.5"
             },
             "require-dev": {
                 "ext-simplexml": "*",
                 "helmich/phpunit-json-assert": "^3.0",
+                "phpspec/prophecy-phpunit": "^2.0",
                 "phpstan/extension-installer": "^1.0",
                 "phpstan/phpstan": "^0.12.8",
                 "phpstan/phpstan-phpunit": "^0.12.6",
                 "phpstan/phpstan-webmozart-assert": "^0.12.2",
-                "phpunit/phpunit": "^8.2.5 <8.4",
-                "symfony/phpunit-bridge": "^4.3.4 || ^5.0",
+                "phpunit/phpunit": "^9.3.11",
+                "symfony/phpunit-bridge": "^4.4.14 || ^5.1.6",
                 "symfony/yaml": "^5.0",
                 "thecodingmachine/phpstan-safe-rule": "^1.0"
             },
@@ -6188,7 +6188,7 @@
                 "testing",
                 "unit testing"
             ],
-            "time": "2020-10-13T21:51:12+00:00"
+            "time": "2020-10-17T10:55:12+00:00"
         },
         {
             "name": "jangregor/phpstan-prophecy",
@@ -6389,12 +6389,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/config-transformer.git",
-                "reference": "7eb4bf6c057918b41e6c0f79706fc6dbe137db55"
+                "reference": "b6eb40dd3352a91c0ca2c03011048c983daa6812"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/7eb4bf6c057918b41e6c0f79706fc6dbe137db55",
-                "reference": "7eb4bf6c057918b41e6c0f79706fc6dbe137db55",
+                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/b6eb40dd3352a91c0ca2c03011048c983daa6812",
+                "reference": "b6eb40dd3352a91c0ca2c03011048c983daa6812",
                 "shasum": ""
             },
             "require": {
@@ -6437,12 +6437,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/migrify-kernel.git",
-                "reference": "c10a3cb237a26b1abffca6632cbb51095c4cbf17"
+                "reference": "27bb88b615a7c6a5f700425e7b0ab5c476bd63e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/c10a3cb237a26b1abffca6632cbb51095c4cbf17",
-                "reference": "c10a3cb237a26b1abffca6632cbb51095c4cbf17",
+                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/27bb88b615a7c6a5f700425e7b0ab5c476bd63e3",
+                "reference": "27bb88b615a7c6a5f700425e7b0ab5c476bd63e3",
                 "shasum": ""
             },
             "require": {
@@ -6476,12 +6476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/php-config-printer.git",
-                "reference": "b95e9ce8d323b952f7c1d9f68c040008e7e4edca"
+                "reference": "c02a3602260d73ba9d08ebdfb7f9d5dbc4aaa2e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/b95e9ce8d323b952f7c1d9f68c040008e7e4edca",
-                "reference": "b95e9ce8d323b952f7c1d9f68c040008e7e4edca",
+                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/c02a3602260d73ba9d08ebdfb7f9d5dbc4aaa2e6",
+                "reference": "c02a3602260d73ba9d08ebdfb7f9d5dbc4aaa2e6",
                 "shasum": ""
             },
             "require": {
