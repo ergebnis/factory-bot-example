@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.14.2@3538fe1955d47f6ee926c0769d71af6db08aa488">
+<files psalm-version="3.18.2@19aa905f7c3c7350569999a93c40ae91ae4e1626">
   <file src="bin/console">
     <MixedArgument occurrences="1">
       <code>$_SERVER['APP_ENV']</code>
     </MixedArgument>
     <MixedAssignment occurrences="3">
-      <code>$env</code>
       <code>$_ENV['APP_ENV']</code>
       <code>$_SERVER['APP_ENV']</code>
+      <code>$env</code>
     </MixedAssignment>
     <MixedOperand occurrences="1">
       <code>$_SERVER['APP_ENV'] = $_ENV['APP_ENV'] = $env</code>
@@ -17,8 +17,8 @@
     <MixedAssignment occurrences="4">
       <code>$_ENV[$k]</code>
       <code>$_ENV['APP_ENV']</code>
-      <code>$_SERVER['APP_ENV']</code>
       <code>$_SERVER['APP_DEBUG']</code>
+      <code>$_SERVER['APP_ENV']</code>
     </MixedAssignment>
     <RedundantCondition occurrences="1">
       <code>\is_array($env = include \dirname(__DIR__) . '/.env.local.php')</code>
@@ -26,12 +26,12 @@
   </file>
   <file src="public/index.php">
     <MixedArgument occurrences="2">
-      <code>$trustedProxies</code>
       <code>$_SERVER['APP_ENV']</code>
+      <code>$trustedProxies</code>
     </MixedArgument>
     <MixedAssignment occurrences="2">
-      <code>$trustedProxies</code>
       <code>$trustedHosts</code>
+      <code>$trustedProxies</code>
     </MixedAssignment>
   </file>
   <file src="src/Kernel.php">
@@ -50,7 +50,9 @@
     <ArgumentTypeCoercion occurrences="1">
       <code>$registry</code>
     </ArgumentTypeCoercion>
-    <PropertyNotSetInConstructor occurrences="1">
+    <PropertyNotSetInConstructor occurrences="3">
+      <code>UserRepository</code>
+      <code>UserRepository</code>
       <code>UserRepository</code>
     </PropertyNotSetInConstructor>
   </file>
@@ -85,10 +87,10 @@
   </file>
   <file src="test/Unit/Entity/RepositoryTest.php">
     <UnnecessaryVarAnnotation occurrences="4">
+      <code>Entity\CodeOfConduct</code>
       <code>Entity\Organization</code>
       <code>Entity\Organization</code>
       <code>Entity\Repository</code>
-      <code>Entity\CodeOfConduct</code>
     </UnnecessaryVarAnnotation>
   </file>
   <file src="test/Unit/Entity/UserTest.php">
