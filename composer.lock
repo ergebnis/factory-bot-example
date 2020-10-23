@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "420afca65a4735a64cb155f47cd4ffcd",
+    "content-hash": "02f700fec4351b210be47769b7a5c989",
     "packages": [
         {
             "name": "brick/math",
@@ -8245,23 +8245,23 @@
         },
         {
             "name": "psalm/plugin-symfony",
-            "version": "v1.4.4",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/psalm/psalm-plugin-symfony.git",
-                "reference": "02408457444c4ab0d1228cc7c68d18eced2a89e0"
+                "reference": "fc1bcd6ce9ba56c3719110fe6af85928867dc542"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/02408457444c4ab0d1228cc7c68d18eced2a89e0",
-                "reference": "02408457444c4ab0d1228cc7c68d18eced2a89e0",
+                "url": "https://api.github.com/repos/psalm/psalm-plugin-symfony/zipball/fc1bcd6ce9ba56c3719110fe6af85928867dc542",
+                "reference": "fc1bcd6ce9ba56c3719110fe6af85928867dc542",
                 "shasum": ""
             },
             "require": {
                 "ext-simplexml": "*",
                 "php": "^7.1",
                 "symfony/framework-bundle": "^3.0 || ^4.0 || ^5.0",
-                "vimeo/psalm": "^3.13"
+                "vimeo/psalm": "^3.17"
             },
             "require-dev": {
                 "doctrine/orm": "^2.7",
@@ -8299,7 +8299,7 @@
                 }
             ],
             "description": "Psalm Plugin for Symfony",
-            "time": "2020-09-14T08:17:23+00:00"
+            "time": "2020-10-14T05:02:27+00:00"
         },
         {
             "name": "sanmai/pipeline",
