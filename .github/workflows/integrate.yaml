@@ -10,10 +10,87 @@ on: # yamllint disable-line rule:truthy
 
 env:
   APP_ENV: "test"
+  ERGEBNIS_BOT_EMAIL: "bot@ergebn.is"
   ERGEBNIS_BOT_NAME: "ergebnis-bot"
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
+  symfony-flex:
+    name: "Symfony Flex"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v2.3.3"
+        with:
+          ref: "${{ github.head_ref }}"
+          token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@2.7.0"
+        with:
+          coverage: "none"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/actions/composer/composer/determine-cache-directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2.1.2"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/actions/composer/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Synchronize symfony/flex recipes"
+        run: "composer symfony:sync-recipes"
+
+      - name: "Commit symfony.lock"
+        if: >
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.draft == false && (
+            github.event.action == 'opened' ||
+            github.event.action == 'reopened' ||
+            github.event.action == 'synchronize'
+          ) && (
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps)')) ||
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)'))
+          )
+        uses: "stefanzweifel/git-auto-commit-action@v4.7.1"
+        with:
+          branch: "${{ github.head_ref }}"
+          commit_author: "${{ env.ERGEBNIS_BOT_NAME }} <${{ env.ERGEBNIS_BOT_EMAIL }}>"
+          commit_message: "Fix: Update symfony.lock"
+          commit_user_email: "${{ env.ERGEBNIS_BOT_EMAIL }}"
+          commit_user_name: "${{ env.ERGEBNIS_BOT_NAME }}"
+          file_pattern: "symfony.lock"
+
+      - name: "Verify that symfony.lock is up-to-date"
+        if: "github.actor != 'dependabot[bot]'"
+        run: |
+          diff=$(git diff symfony.lock)
+
+          if [[ "${diff}" != "" ]]; then
+            echo "::error file=symfony.lock::symfony.lock is not up-to-date."
+
+            exit 1
+          fi
+
   coding-standards:
     name: "Coding Standards"
 
@@ -32,7 +109,7 @@ jobs:
         uses: "actions/checkout@v2.3.3"
 
       - name: "Lint YAML files"
-        uses: "ibiqlik/action-yamllint@v2"
+        uses: "ibiqlik/action-yamllint@v2.0.0"
         with:
           config_file: ".yamllint.yaml"
           file_or_dir: "."
@@ -76,7 +153,7 @@ jobs:
         uses: "actions/cache@v2.1.2"
         with:
           path: ".build/php-cs-fixer"
-          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ hashFiles('composer.lock') }}"
+          key: "php-${{ matrix.php-version }}-php-cs-fixer-${{ github.sha }}"
           restore-keys: "php-${{ matrix.php-version }}-php-cs-fixer-"
 
       - name: "Run friendsofphp/php-cs-fixer"
@@ -122,7 +199,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Run maglnet/composer-require-checker"
-        run: "tools/composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
+        run: ".phive/composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
 
   static-code-analysis:
     name: "Static Code Analysis"
@@ -193,7 +270,7 @@ jobs:
           restore-keys: "php-${{ matrix.php-version }}-psalm-"
 
       - name: "Run vimeo/psalm"
-        run: "vendor/bin/psalm --config=psalm.xml --diff --diff-methods --shepherd --show-info=false --stats --threads=4"
+        run: "vendor/bin/psalm --config=psalm.xml --diff --shepherd --show-info=false --stats --threads=4"
 
   tests:
     name: "Tests"
@@ -328,7 +405,7 @@ jobs:
         run: "bin/console cache:warmup"
 
       - name: "Collect code coverage with pcov and phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/logs/clover.xml"
+        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
 
       - name: "Send code coverage report to Codecov.io"
         env:
@@ -394,6 +471,7 @@ jobs:
       - "dependency-analysis"
       - "mutation-tests"
       - "static-code-analysis"
+      - "symfony-flex"
       - "tests"
 
     if: >
@@ -407,6 +485,7 @@ jobs:
         (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)')) ||
         (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'github-actions(deps)')) ||
         (github.actor == 'ergebnis-bot' && github.event.pull_request.title == 'Enhancement: Update license year') ||
+        (github.actor == 'ergebnis-bot' && github.event.pull_request.title == 'Fix: Update symfony.lock') ||
         (github.actor == 'localheinz' && contains(github.event.pull_request.labels.*.name, 'merge'))
       )
 
