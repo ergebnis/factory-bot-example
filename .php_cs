@@ -26,17 +26,17 @@ $license = License\Type\MIT::markdown(
 
 $license->save();
 
-$config = PhpCsFixer\Config\Factory::fromRuleSet(new PhpCsFixer\Config\RuleSet\Php73($license->header()));
+$config = PhpCsFixer\Config\Factory::fromRuleSet(new PhpCsFixer\Config\RuleSet\Php74($license->header()));
 
 $config->getFinder()
-    ->ignoreDotFiles(false)
-    ->in(__DIR__)
     ->exclude([
         '.build/',
         '.github/',
         '.notes/',
         'var/',
     ])
+    ->ignoreDotFiles(false)
+    ->in(__DIR__)
     ->name([
         '.php_cs',
         'console',

@@ -25,7 +25,7 @@ coding-standards: vendor ## Normalizes composer.json with ergebnis/composer-norm
 
 .PHONY: dependency-analysis
 dependency-analysis: vendor ## Runs a dependency analysis with maglnet/composer-require-checker
-	tools/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json
+	.phive/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json
 
 .PHONY: doctrine
 doctrine: vendor environment ## Runs doctrine commands to set up a local test database
@@ -53,7 +53,7 @@ static-code-analysis: vendor cache ## Runs a static code analysis with phpstan/p
 	mkdir -p .build/phpstan
 	vendor/bin/phpstan analyse --configuration=phpstan.neon --memory-limit=-1
 	mkdir -p .build/psalm
-	vendor/bin/psalm --config=psalm.xml --diff --diff-methods --show-info=false --stats --threads=4
+	vendor/bin/psalm --config=psalm.xml --diff --show-info=false --stats --threads=4
 
 .PHONY: static-code-analysis-baseline
 static-code-analysis-baseline: vendor cache ## Generates a baseline for static code analysis with phpstan/phpstan and vimeo/psalm
@@ -69,6 +69,10 @@ tests: vendor cache environment doctrine ## Runs auto-review, unit, integration,
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Functional/phpunit.xml
+
+.PHONY: symfony
+symfony: vendor ## Synchronizes symfony recipes
+	composer symfony:sync-recipes
 
 vendor: composer.json composer.lock
 	composer validate --strict
