@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c2b896e40a2455c34c25fad4ba8fda6",
+    "content-hash": "51daa03ec9736f3c4b459b31ef965174",
     "packages": [
         {
             "name": "brick/math",
@@ -4015,16 +4015,16 @@
         },
         {
             "name": "symfony/routing",
-            "version": "v5.1.7",
+            "version": "v5.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/routing.git",
-                "reference": "720348c2ae011f8c56964c0fc3e992840cb60ccf"
+                "reference": "d6ceee2a37b61b41079005207bf37746d1bfe71f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/routing/zipball/720348c2ae011f8c56964c0fc3e992840cb60ccf",
-                "reference": "720348c2ae011f8c56964c0fc3e992840cb60ccf",
+                "url": "https://api.github.com/repos/symfony/routing/zipball/d6ceee2a37b61b41079005207bf37746d1bfe71f",
+                "reference": "d6ceee2a37b61b41079005207bf37746d1bfe71f",
                 "shasum": ""
             },
             "require": {
@@ -4054,11 +4054,6 @@
                 "symfony/yaml": "For using the YAML loader"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "5.1-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Symfony\\Component\\Routing\\": ""
@@ -4103,7 +4098,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-10-02T13:05:43+00:00"
+            "time": "2020-10-24T12:01:57+00:00"
         },
         {
             "name": "symfony/serializer",
@@ -6390,12 +6385,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/config-transformer.git",
-                "reference": "65a333a24ca06f479b3e2c738f1d82899876f56f"
+                "reference": "e54e5b4a5c6d425a584c3354f1ec129eea0090a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/65a333a24ca06f479b3e2c738f1d82899876f56f",
-                "reference": "65a333a24ca06f479b3e2c738f1d82899876f56f",
+                "url": "https://api.github.com/repos/migrify/config-transformer/zipball/e54e5b4a5c6d425a584c3354f1ec129eea0090a5",
+                "reference": "e54e5b4a5c6d425a584c3354f1ec129eea0090a5",
                 "shasum": ""
             },
             "require": {
@@ -6438,12 +6433,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/migrify-kernel.git",
-                "reference": "c81ee0a04960eab73abb8f8ca302c52d1e81179f"
+                "reference": "edc341f2474ec51bf8c869cf945d31d981983681"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/c81ee0a04960eab73abb8f8ca302c52d1e81179f",
-                "reference": "c81ee0a04960eab73abb8f8ca302c52d1e81179f",
+                "url": "https://api.github.com/repos/migrify/migrify-kernel/zipball/edc341f2474ec51bf8c869cf945d31d981983681",
+                "reference": "edc341f2474ec51bf8c869cf945d31d981983681",
                 "shasum": ""
             },
             "require": {
@@ -6477,12 +6472,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/migrify/php-config-printer.git",
-                "reference": "c085e677ab0613fa57c36827ca5a5d2f8f5e4d4b"
+                "reference": "a50d9e8448ff92b47acb6151094a04e58c361fdd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/c085e677ab0613fa57c36827ca5a5d2f8f5e4d4b",
-                "reference": "c085e677ab0613fa57c36827ca5a5d2f8f5e4d4b",
+                "url": "https://api.github.com/repos/migrify/php-config-printer/zipball/a50d9e8448ff92b47acb6151094a04e58c361fdd",
+                "reference": "a50d9e8448ff92b47acb6151094a04e58c361fdd",
                 "shasum": ""
             },
             "require": {
