@@ -219,9 +219,6 @@
     "nikic/php-parser": {
         "version": "v4.3.0"
     },
-    "ocramius/proxy-manager": {
-        "version": "2.8.0"
-    },
     "ondram/ci-detector": {
         "version": "3.4.0"
     },
@@ -570,9 +567,6 @@
     },
     "vimeo/psalm": {
         "version": "3.9.3"
-    },
-    "webimpress/safe-writer": {
-        "version": "2.0.1"
     },
     "webmozart/assert": {
         "version": "1.7.0"
