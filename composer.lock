@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b3b001cdf499e59d106fbea2a0f3f698",
+    "content-hash": "80dd688b880a321e0f1e829f5ab4888d",
     "packages": [
         {
             "name": "brick/math",
@@ -6256,55 +6256,6 @@
             "time": "2020-07-06T04:49:32+00:00"
         },
         {
-            "name": "migrify/config-transformer",
-            "version": "9.0.23",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symplify/config-transformer.git",
-                "reference": "2c4da8108884f24bc52fe2ec787f8c428671fd6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/2c4da8108884f24bc52fe2ec787f8c428671fd6f",
-                "reference": "2c4da8108884f24bc52fe2ec787f8c428671fd6f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-dom": "*",
-                "nette/neon": "^3.2",
-                "nette/utils": "^3.0",
-                "nikic/php-parser": "^4.10.4",
-                "php": ">=7.3",
-                "symfony/console": "^4.4|^5.1",
-                "symfony/dependency-injection": "^5.1",
-                "symfony/expression-language": "^4.4|^5.1",
-                "symfony/http-kernel": "^4.4|^5.1",
-                "symfony/yaml": "^4.4|^5.1",
-                "symplify/php-config-printer": "^9.0.23"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^9.5",
-                "symfony/framework-bundle": "^4.4|^5.1",
-                "symplify/easy-testing": "^9.0.23"
-            },
-            "bin": [
-                "bin/config-transformer"
-            ],
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symplify\\ConfigTransformer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Convert Symfony YAML/XML format to PHP/YAML",
-            "abandoned": "symplify/config-transformer",
-            "time": "2020-12-30T00:58:30+00:00"
-        },
-        {
             "name": "myclabs/deep-copy",
             "version": "1.10.1",
             "source": {
@@ -6465,6 +6416,10 @@
                 "iterator",
                 "nette"
             ],
+            "support": {
+                "issues": "https://github.com/nette/finder/issues",
+                "source": "https://github.com/nette/finder/tree/v2.5.2"
+            },
             "time": "2020-01-03T20:35:40+00:00"
         },
         {
@@ -6527,6 +6482,10 @@
                 "nette",
                 "yaml"
             ],
+            "support": {
+                "issues": "https://github.com/nette/neon/issues",
+                "source": "https://github.com/nette/neon/tree/master"
+            },
             "time": "2020-07-31T12:28:05+00:00"
         },
         {
@@ -6608,6 +6567,10 @@
                 "utility",
                 "validation"
             ],
+            "support": {
+                "issues": "https://github.com/nette/utils/issues",
+                "source": "https://github.com/nette/utils/tree/v3.2.0"
+            },
             "time": "2020-11-25T23:47:50+00:00"
         },
         {
@@ -8971,6 +8934,9 @@
             ],
             "description": "Symfony ExpressionLanguage Component",
             "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/expression-language/tree/v5.2.1"
+            },
             "funding": [
                 {
                     "url": "https://symfony.com/sponsor",
@@ -9151,6 +9117,9 @@
                 "MIT"
             ],
             "description": "Autowire array parameters for your Symfony applications",
+            "support": {
+                "source": "https://github.com/symplify/autowire-array-parameter/tree/9.0.23"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/rectorphp",
@@ -9206,6 +9175,9 @@
                 "MIT"
             ],
             "description": "Package to load, merge and save composer.json file(s)",
+            "support": {
+                "source": "https://github.com/symplify/composer-json-manipulator/tree/9.0.23"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/rectorphp",
@@ -9217,6 +9189,57 @@
                 }
             ],
             "time": "2020-12-30T00:58:31+00:00"
+        },
+        {
+            "name": "symplify/config-transformer",
+            "version": "9.0.23",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symplify/config-transformer.git",
+                "reference": "2c4da8108884f24bc52fe2ec787f8c428671fd6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/2c4da8108884f24bc52fe2ec787f8c428671fd6f",
+                "reference": "2c4da8108884f24bc52fe2ec787f8c428671fd6f",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "nette/neon": "^3.2",
+                "nette/utils": "^3.0",
+                "nikic/php-parser": "^4.10.4",
+                "php": ">=7.3",
+                "symfony/console": "^4.4|^5.1",
+                "symfony/dependency-injection": "^5.1",
+                "symfony/expression-language": "^4.4|^5.1",
+                "symfony/http-kernel": "^4.4|^5.1",
+                "symfony/yaml": "^4.4|^5.1",
+                "symplify/php-config-printer": "^9.0.23"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5",
+                "symfony/framework-bundle": "^4.4|^5.1",
+                "symplify/easy-testing": "^9.0.23"
+            },
+            "bin": [
+                "bin/config-transformer"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symplify\\ConfigTransformer\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Convert Symfony YAML/XML format to PHP/YAML",
+            "support": {
+                "source": "https://github.com/symplify/config-transformer/tree/9.0.23"
+            },
+            "time": "2020-12-30T00:58:30+00:00"
         },
         {
             "name": "symplify/easy-testing",
@@ -9259,6 +9282,9 @@
                 "MIT"
             ],
             "description": "Testing made easy",
+            "support": {
+                "source": "https://github.com/symplify/easy-testing/tree/9.0.23"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/rectorphp",
@@ -9318,6 +9344,9 @@
                 "MIT"
             ],
             "description": "Dependency Injection, Console and Kernel toolkit for Symplify packages.",
+            "support": {
+                "source": "https://github.com/symplify/package-builder/tree/9.0.23"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/rectorphp",
@@ -9371,6 +9400,10 @@
                 "MIT"
             ],
             "description": "Print Symfony services array with configuration to to plain PHP file format thanks to this simple php-parser wrapper",
+            "support": {
+                "issues": "https://github.com/symplify/php-config-printer/issues",
+                "source": "https://github.com/symplify/php-config-printer/tree/9.0.23"
+            },
             "time": "2020-12-30T00:58:46+00:00"
         },
         {
@@ -9413,6 +9446,9 @@
                 "MIT"
             ],
             "description": "Sanitized FileInfo with safe getRealPath() and other handy methods",
+            "support": {
+                "source": "https://github.com/symplify/smart-file-system/tree/9.0.23"
+            },
             "funding": [
                 {
                     "url": "https://www.paypal.me/rectorphp",
@@ -9468,6 +9504,10 @@
                 "MIT"
             ],
             "description": "Internal Kernel for Symplify packages",
+            "support": {
+                "issues": "https://github.com/symplify/symplify-kernel/issues",
+                "source": "https://github.com/symplify/symplify-kernel/tree/9.0.23"
+            },
             "time": "2020-12-30T00:58:44+00:00"
         },
         {
@@ -9979,5 +10019,5 @@
     "platform-overrides": {
         "php": "7.4.3"
     },
-    "plugin-api-version": "1.1.0"
+    "plugin-api-version": "2.0.0"
 }
