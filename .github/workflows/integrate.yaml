@@ -141,7 +141,7 @@ jobs:
       - name: "Run ergebnis/composer-normalize"
         run: "composer normalize --dry-run"
 
-      - name: "Run migrify/config-transformer"
+      - name: "Run symplify/config-transformer"
         run: "vendor/bin/config-transformer switch-format --dry-run --input-format=yaml --output-format=php config"
 
       - name: "Create cache directory for friendsofphp/php-cs-fixer"
