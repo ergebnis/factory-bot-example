@@ -29,7 +29,7 @@ if ($_SERVER['APP_DEBUG']) {
 if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? $_ENV['TRUSTED_PROXIES'] ?? false) {
     HttpFoundation\Request::setTrustedProxies(
         \explode(',', $trustedProxies),
-        HttpFoundation\Request::HEADER_X_FORWARDED_ALL ^ HttpFoundation\Request::HEADER_X_FORWARDED_HOST
+        HttpFoundation\Request::HEADER_X_FORWARDED_FOR | HttpFoundation\Request::HEADER_X_FORWARDED_PORT | HttpFoundation\Request::HEADER_X_FORWARDED_PROTO
     );
 }
 
