@@ -70,7 +70,7 @@
     "phpstan/phpstan-doctrine": "~0.12.26",
     "phpstan/phpstan-phpunit": "~0.12.17",
     "phpstan/phpstan-strict-rules": "~0.12.7",
-    "phpstan/phpstan-symfony": "~0.12.12",
+    "phpstan/phpstan-symfony": "~0.12.13",
     "phpunit/phpunit": "^9.2.6",
     "psalm/plugin-phpunit": "~0.12.2",
     "psalm/plugin-symfony": "^1.5.0",
