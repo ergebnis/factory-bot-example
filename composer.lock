@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "331387c77172994a62a6298dc48407a2",
+    "content-hash": "b395ef64f34b628765f4961c07e25083",
     "packages": [
         {
             "name": "brick/math",
@@ -4042,16 +4042,16 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v5.2.2",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "4218dd0902543dc454b2eac0db37044f187283d7"
+                "reference": "70c5aa59ab0642033391a5591c9771ee417e7cef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/4218dd0902543dc454b2eac0db37044f187283d7",
-                "reference": "4218dd0902543dc454b2eac0db37044f187283d7",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/70c5aa59ab0642033391a5591c9771ee417e7cef",
+                "reference": "70c5aa59ab0642033391a5591c9771ee417e7cef",
                 "shasum": ""
             },
             "require": {
@@ -4137,7 +4137,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-27T11:32:03+00:00"
+            "time": "2021-02-03T04:42:09+00:00"
         },
         {
             "name": "symfony/service-contracts",
