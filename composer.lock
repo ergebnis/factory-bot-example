@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f168f95feaacf2a8366cc3efcede8ef",
+    "content-hash": "ff1c3ff4da99b8bd91e0f723b213e643",
     "packages": [
         {
             "name": "brick/math",
@@ -7342,16 +7342,16 @@
         },
         {
             "name": "phpstan/phpstan-symfony",
-            "version": "0.12.17",
+            "version": "0.12.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan-symfony.git",
-                "reference": "6f270710294b1b5a029464765bcb6d0f564ff3a1"
+                "reference": "cc9d9ac264b8ac04961a03dc5b481b58ceaac248"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/6f270710294b1b5a029464765bcb6d0f564ff3a1",
-                "reference": "6f270710294b1b5a029464765bcb6d0f564ff3a1",
+                "url": "https://api.github.com/repos/phpstan/phpstan-symfony/zipball/cc9d9ac264b8ac04961a03dc5b481b58ceaac248",
+                "reference": "cc9d9ac264b8ac04961a03dc5b481b58ceaac248",
                 "shasum": ""
             },
             "require": {
@@ -7404,7 +7404,7 @@
                 }
             ],
             "description": "Symfony Framework extensions and rules for PHPStan",
-            "time": "2021-02-11T18:45:32+00:00"
+            "time": "2021-02-13T07:38:10+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
