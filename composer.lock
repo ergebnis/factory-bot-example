@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9d027a29d78ba2b2b7442adc9beb8006",
+    "content-hash": "705fe1e380fecde7c383d90fdf0b469e",
     "packages": [
         {
             "name": "brick/math",
@@ -2102,16 +2102,16 @@
         },
         {
             "name": "sensio/framework-extra-bundle",
-            "version": "v6.0.0",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioFrameworkExtraBundle.git",
-                "reference": "503c29d3cb7cf477513ea6e8620dd2e98a930e5f"
+                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/503c29d3cb7cf477513ea6e8620dd2e98a930e5f",
-                "reference": "503c29d3cb7cf477513ea6e8620dd2e98a930e5f",
+                "url": "https://api.github.com/repos/sensiolabs/SensioFrameworkExtraBundle/zipball/b3596907c3d35bee5a9a1096baaeb7d465a04f30",
+                "reference": "b3596907c3d35bee5a9a1096baaeb7d465a04f30",
                 "shasum": ""
             },
             "require": {
@@ -2146,7 +2146,7 @@
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "6.0.x-dev"
+                    "dev-master": "6.1.x-dev"
                 }
             },
             "autoload": {
@@ -2172,7 +2172,7 @@
                 "annotations",
                 "controllers"
             ],
-            "time": "2021-01-20T11:24:04+00:00"
+            "time": "2021-02-16T10:59:31+00:00"
         },
         {
             "name": "symfony/cache",
