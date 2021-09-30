@@ -74,7 +74,7 @@
     "phpunit/phpunit": "^9.2.6",
     "psalm/plugin-phpunit": "~0.12.2",
     "psalm/plugin-symfony": "^1.5.0",
-    "symplify/config-transformer": "^9.2.5",
+    "symplify/config-transformer": "^9.4.69",
     "vimeo/psalm": "^3.18.2",
     "weirdan/doctrine-psalm-plugin": "~0.11.3"
   },
