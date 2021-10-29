@@ -1,6 +1,7 @@
 # factory-bot-example
 
 [![Integrate](https://github.com/ergebnis/factory-bot-example/workflows/Integrate/badge.svg)](https://github.com/ergebnis/factory-bot-example/actions)
+[![Merge](https://github.com/ergebnis/factory-bot-example/workflows/Merge/badge.svg)](https://github.com/ergebnis/factory-bot-example/actions)
 [![Prune](https://github.com/ergebnis/factory-bot-example/workflows/Prune/badge.svg)](https://github.com/ergebnis/factory-bot-example/actions)
 [![Release](https://github.com/ergebnis/factory-bot-example/workflows/Release/badge.svg)](https://github.com/ergebnis/factory-bot-example/actions)
 [![Renew](https://github.com/ergebnis/factory-bot-example/workflows/Renew/badge.svg)](https://github.com/ergebnis/factory-bot-example/actions)
