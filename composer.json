@@ -71,7 +71,7 @@
     "phpstan/phpstan-deprecation-rules": "~0.12.6",
     "phpstan/phpstan-doctrine": "~0.12.33",
     "phpstan/phpstan-phpunit": "~0.12.22",
-    "phpstan/phpstan-strict-rules": "~0.12.10",
+    "phpstan/phpstan-strict-rules": "~0.12.11",
     "phpstan/phpstan-symfony": "~0.12.21",
     "phpunit/phpunit": "^9.5.18",
     "psalm/plugin-phpunit": "~0.12.2",
