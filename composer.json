@@ -96,6 +96,12 @@
     }
   },
   "config": {
+    "allow-plugins": {
+      "ergebnis/composer-normalize": true,
+      "infection/extension-installer": true,
+      "phpstan/extension-installer": true,
+      "symfony/flex": true
+    },
     "platform": {
       "php": "7.4.3"
     },
