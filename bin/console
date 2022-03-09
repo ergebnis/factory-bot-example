@@ -41,7 +41,7 @@ if ($input->hasParameterOption('--no-debug', true)) {
 (new Dotenv\Dotenv())->bootEnv(\dirname(__DIR__) . '/.env');
 
 if ($_SERVER['APP_DEBUG']) {
-    \umask(0000);
+    \umask(0);
 
     if (\class_exists(ErrorHandler\Debug::class)) {
         ErrorHandler\Debug::enable();
