@@ -62,26 +62,6 @@
       <code>$providerClassName</code>
     </ArgumentTypeCoercion>
   </file>
-  <file src="test/Integration/AbstractTestCase.php">
-    <InternalMethod occurrences="1">
-      <code>get</code>
-    </InternalMethod>
-    <LessSpecificReturnStatement occurrences="1">
-      <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
-    </LessSpecificReturnStatement>
-    <MoreSpecificReturnType occurrences="1">
-      <code>ORM\EntityManagerInterface</code>
-    </MoreSpecificReturnType>
-    <NonInvariantDocblockPropertyType occurrences="1">
-      <code>$container</code>
-    </NonInvariantDocblockPropertyType>
-    <NonInvariantPropertyType occurrences="1">
-      <code>$container</code>
-    </NonInvariantPropertyType>
-    <NullableReturnStatement occurrences="1">
-      <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
-    </NullableReturnStatement>
-  </file>
   <file src="test/Unit/AbstractTestCase.php">
     <MixedArgumentTypeCoercion occurrences="1">
       <code>$entityManager-&gt;getMetadataFactory()-&gt;getAllMetadata()</code>

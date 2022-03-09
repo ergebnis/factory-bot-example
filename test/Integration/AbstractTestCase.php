@@ -21,8 +21,6 @@ use Symfony\Bundle;
  */
 abstract class AbstractTestCase extends Bundle\FrameworkBundle\Test\KernelTestCase
 {
-    protected static Bundle\FrameworkBundle\Test\TestContainer $container;
-
     protected function setUp(): void
     {
         parent::setUp();
@@ -34,6 +32,6 @@ abstract class AbstractTestCase extends Bundle\FrameworkBundle\Test\KernelTestCa
 
     final protected static function entityManager(): ORM\EntityManagerInterface
     {
-        return self::$container->get(ORM\EntityManagerInterface::class);
+        return self::getContainer()->get(ORM\EntityManagerInterface::class);
     }
 }
