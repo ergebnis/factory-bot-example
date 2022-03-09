@@ -36,7 +36,7 @@
     "symfony/error-handler": "^5.3.7",
     "symfony/flex": "^1.17.4",
     "symfony/framework-bundle": "^5.2.4",
-    "symfony/http-kernel": "^5.2.4",
+    "symfony/http-kernel": "^5.2.14",
     "symfony/routing": "^5.2.4",
     "symfony/serializer": "^5.3.12",
     "symfony/yaml": "^5.2.4"
