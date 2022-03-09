@@ -27,10 +27,8 @@ final class ProjectTest extends Unit\AbstractTestCase
     {
         $name = self::faker()->userName;
 
-        $fixtureFactory = self::fixtureFactory();
-
         /** @var Entity\Repository $repository */
-        $repository = $fixtureFactory->createOne(Entity\Repository::class);
+        $repository = self::fixtureFactory()->createOne(Entity\Repository::class);
 
         $project = new Entity\Project(
             $name,
