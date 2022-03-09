@@ -42,6 +42,6 @@ $config->getFinder()
         'console',
     ]);
 
-$config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php_cs.cache');
+$config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
 
 return $config;
