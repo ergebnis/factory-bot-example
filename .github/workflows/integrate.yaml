@@ -13,8 +13,8 @@ env:
   PHP_EXTENSIONS: "mbstring"
 
 jobs:
-  symfony-flex:
-    name: "Symfony Flex"
+  code-coverage:
+    name: "Code Coverage"
 
     runs-on: "ubuntu-latest"
 
@@ -31,16 +31,16 @@ jobs:
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v3"
-        with:
-          ref: "${{ github.head_ref }}"
-          token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
 
       - name: "Install PHP with extensions"
         uses: "shivammathur/setup-php@2.17.1"
         with:
-          coverage: "none"
+          coverage: "pcov"
           extensions: "${{ env.PHP_EXTENSIONS }}"
           php-version: "${{ matrix.php-version }}"
+
+      - name: "Set up problem matchers for phpunit/phpunit"
+        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
 
       - name: "Determine composer cache directory"
         uses: "./.github/actions/composer/composer/determine-cache-directory"
@@ -57,39 +57,19 @@ jobs:
         with:
           dependencies: "${{ matrix.dependencies }}"
 
-      - name: "Synchronize symfony/flex recipes"
-        run: "composer symfony:sync-recipes"
+      - name: "Dump environment variables"
+        run: "composer dump-env ${{ env.APP_ENV }}"
 
-      - name: "Commit symfony.lock"
-        if: >
-          github.event_name == 'pull_request' &&
-          github.event.pull_request.draft == false && (
-            github.event.action == 'opened' ||
-            github.event.action == 'reopened' ||
-            github.event.action == 'synchronize'
-          ) && (
-            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps)')) ||
-            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)'))
-          )
-        uses: "stefanzweifel/git-auto-commit-action@v4.13.1"
-        with:
-          branch: "${{ github.head_ref }}"
-          commit_author: "ergebnis-bot <bot@ergebn.is>"
-          commit_message: "Fix: Update symfony.lock"
-          commit_user_email: "bot@ergebn.is"
-          commit_user_name: "ergebnis-bot"
-          file_pattern: "symfony.lock"
+      - name: "Warm up cache"
+        run: "bin/console cache:warmup"
 
-      - name: "Verify that symfony.lock is up-to-date"
-        if: "github.actor != 'dependabot[bot]'"
-        run: |
-          diff=$(git diff symfony.lock)
+      - name: "Collect code coverage with pcov and phpunit/phpunit"
+        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
 
-          if [[ "${diff}" != "" ]]; then
-            echo "::error file=symfony.lock::symfony.lock is not up-to-date."
-
-            exit 1
-          fi
+      - name: "Send code coverage report to Codecov.io"
+        env:
+          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
+        run: "bash <(curl -s https://codecov.io/bash)"
 
   coding-standards:
     name: "Coding Standards"
@@ -205,6 +185,56 @@ jobs:
       - name: "Run maglnet/composer-require-checker"
         run: ".phive/composer-require-checker check --config-file=$(pwd)/composer-require-checker.json"
 
+  mutation-tests:
+    name: "Mutation Tests"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - "locked"
+
+    if: "github.actor != 'dependabot[bot]'"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@2.17.1"
+        with:
+          coverage: "pcov"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/actions/composer/composer/determine-cache-directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2.1.7"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/actions/composer/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Dump environment variables"
+        run: "composer dump-env ${{ env.APP_ENV }}"
+
+      - name: "Warm up cache"
+        run: "bin/console cache:warmup"
+
+      - name: "Run mutation tests with pcov and infection/infection"
+        run: "vendor/bin/infection --configuration=infection.json"
+
   static-code-analysis:
     name: "Static Code Analysis"
 
@@ -277,6 +307,84 @@ jobs:
 
       - name: "Run vimeo/psalm"
         run: "vendor/bin/psalm --config=psalm.xml --diff --shepherd --show-info=false --stats --threads=4"
+
+  symfony-flex:
+    name: "Symfony Flex"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "7.4"
+
+        dependencies:
+          - "locked"
+
+    if: "github.actor != 'dependabot[bot]'"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+        with:
+          ref: "${{ github.head_ref }}"
+          token: "${{ secrets.ERGEBNIS_BOT_TOKEN }}"
+
+      - name: "Install PHP with extensions"
+        uses: "shivammathur/setup-php@2.17.1"
+        with:
+          coverage: "none"
+          extensions: "${{ env.PHP_EXTENSIONS }}"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Determine composer cache directory"
+        uses: "./.github/actions/composer/composer/determine-cache-directory"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v2.1.7"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "./.github/actions/composer/composer/install"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Synchronize symfony/flex recipes"
+        run: "composer symfony:sync-recipes"
+
+      - name: "Commit symfony.lock"
+        if: >
+          github.event_name == 'pull_request' &&
+          github.event.pull_request.draft == false && (
+            github.event.action == 'opened' ||
+            github.event.action == 'reopened' ||
+            github.event.action == 'synchronize'
+          ) && (
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps)')) ||
+            (github.actor == 'dependabot[bot]' && startsWith(github.event.pull_request.title, 'composer(deps-dev)'))
+          )
+        uses: "stefanzweifel/git-auto-commit-action@v4.13.1"
+        with:
+          branch: "${{ github.head_ref }}"
+          commit_author: "ergebnis-bot <bot@ergebn.is>"
+          commit_message: "Fix: Update symfony.lock"
+          commit_user_email: "bot@ergebn.is"
+          commit_user_name: "ergebnis-bot"
+          file_pattern: "symfony.lock"
+
+      - name: "Verify that symfony.lock is up-to-date"
+        if: "github.actor != 'dependabot[bot]'"
+        run: |
+          diff=$(git diff symfony.lock)
+
+          if [[ "${diff}" != "" ]]; then
+            echo "::error file=symfony.lock::symfony.lock is not up-to-date."
+
+            exit 1
+          fi
 
   tests:
     name: "Tests"
@@ -363,111 +471,3 @@ jobs:
 
       - name: "Run functional tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --configuration=test/Functional/phpunit.xml"
-
-  code-coverage:
-    name: "Code Coverage"
-
-    runs-on: "ubuntu-latest"
-
-    strategy:
-      matrix:
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "locked"
-
-    if: "github.actor != 'dependabot[bot]'"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-
-      - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@2.17.1"
-        with:
-          coverage: "pcov"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          php-version: "${{ matrix.php-version }}"
-
-      - name: "Set up problem matchers for phpunit/phpunit"
-        run: "echo \"::add-matcher::${{ runner.tool_cache }}/phpunit.json\""
-
-      - name: "Determine composer cache directory"
-        uses: "./.github/actions/composer/composer/determine-cache-directory"
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ env.COMPOSER_CACHE_DIR }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
-
-      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/composer/install"
-        with:
-          dependencies: "${{ matrix.dependencies }}"
-
-      - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
-
-      - name: "Warm up cache"
-        run: "bin/console cache:warmup"
-
-      - name: "Collect code coverage with pcov and phpunit/phpunit"
-        run: "vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-clover=.build/phpunit/logs/clover.xml"
-
-      - name: "Send code coverage report to Codecov.io"
-        env:
-          CODECOV_TOKEN: "${{ secrets.CODECOV_TOKEN }}"
-        run: "bash <(curl -s https://codecov.io/bash)"
-
-  mutation-tests:
-    name: "Mutation Tests"
-
-    runs-on: "ubuntu-latest"
-
-    strategy:
-      matrix:
-        php-version:
-          - "7.4"
-
-        dependencies:
-          - "locked"
-
-    if: "github.actor != 'dependabot[bot]'"
-
-    steps:
-      - name: "Checkout"
-        uses: "actions/checkout@v3"
-
-      - name: "Install PHP with extensions"
-        uses: "shivammathur/setup-php@2.17.1"
-        with:
-          coverage: "pcov"
-          extensions: "${{ env.PHP_EXTENSIONS }}"
-          php-version: "${{ matrix.php-version }}"
-
-      - name: "Determine composer cache directory"
-        uses: "./.github/actions/composer/composer/determine-cache-directory"
-
-      - name: "Cache dependencies installed with composer"
-        uses: "actions/cache@v2.1.7"
-        with:
-          path: "${{ env.COMPOSER_CACHE_DIR }}"
-          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
-          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
-
-      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
-        uses: "./.github/actions/composer/composer/install"
-        with:
-          dependencies: "${{ matrix.dependencies }}"
-
-      - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
-
-      - name: "Warm up cache"
-        run: "bin/console cache:warmup"
-
-      - name: "Run mutation tests with pcov and infection/infection"
-        run: "vendor/bin/infection --configuration=infection.json"
