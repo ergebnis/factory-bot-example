@@ -29,7 +29,7 @@ if ($_SERVER['APP_DEBUG']) {
 if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? $_ENV['TRUSTED_PROXIES'] ?? false) {
     HttpFoundation\Request::setTrustedProxies(
         \explode(',', $trustedProxies),
-        HttpFoundation\Request::HEADER_X_FORWARDED_FOR | HttpFoundation\Request::HEADER_X_FORWARDED_PORT | HttpFoundation\Request::HEADER_X_FORWARDED_PROTO
+        HttpFoundation\Request::HEADER_X_FORWARDED_FOR | HttpFoundation\Request::HEADER_X_FORWARDED_PORT | HttpFoundation\Request::HEADER_X_FORWARDED_PROTO,
     );
 }
 
@@ -39,7 +39,7 @@ if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? $_ENV['TRUSTED_HOSTS'] ?? false
 
 $kernel = new Example\Kernel(
     $_SERVER['APP_ENV'],
-    (bool) $_SERVER['APP_DEBUG']
+    (bool) $_SERVER['APP_DEBUG'],
 );
 
 $request = HttpFoundation\Request::createFromGlobals();
@@ -50,5 +50,5 @@ $response->send();
 
 $kernel->terminate(
     $request,
-    $response
+    $response,
 );

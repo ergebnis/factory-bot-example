@@ -38,9 +38,9 @@ final class FixtureTest extends Unit\AbstractTestCase
                 return \str_replace(
                     'Ergebnis\\Example\\Entity\\',
                     'Ergebnis\\Example\\Test\\Fixture\\Entity\\',
-                    $entityClassName
+                    $entityClassName,
                 ) . 'DefinitionProvider';
-            }, $entityClassNames)
+            }, $entityClassNames),
         );
 
         self::assertIsArray($expectedProviderClassNames);
@@ -57,7 +57,7 @@ final class FixtureTest extends Unit\AbstractTestCase
 
         $missingProviderClassNames = \array_diff(
             $expectedProviderClassNames,
-            $actualProviderClassNames
+            $actualProviderClassNames,
         );
 
         $message = \sprintf(
@@ -74,13 +74,13 @@ final class FixtureTest extends Unit\AbstractTestCase
             ,
             \implode(
                 \PHP_EOL . ' - ',
-                \array_keys($missingProviderClassNames)
+                \array_keys($missingProviderClassNames),
             ),
             FactoryBot\EntityDefinitionProvider::class,
             \implode(
                 \PHP_EOL . ' - ',
-                $missingProviderClassNames
-            )
+                $missingProviderClassNames,
+            ),
         );
 
         self::assertEmpty($missingProviderClassNames, $message);

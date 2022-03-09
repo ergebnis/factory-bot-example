@@ -32,7 +32,7 @@ final class UserTest extends Unit\AbstractTestCase
 
         $user = new Entity\User(
             $login,
-            $avatar
+            $avatar,
         );
 
         self::assertStringIsUuid($user->id());
@@ -51,7 +51,7 @@ final class UserTest extends Unit\AbstractTestCase
         $user = new Entity\User(
             $login,
             $avatar,
-            $location
+            $location,
         );
 
         self::assertSame($login, $user->login());

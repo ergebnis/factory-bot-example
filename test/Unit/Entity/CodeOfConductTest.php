@@ -36,7 +36,7 @@ final class CodeOfConductTest extends Unit\AbstractTestCase
             $key,
             $name,
             $url,
-            $body
+            $body,
         );
 
         self::assertSame($body, $codeOfConduct->body());

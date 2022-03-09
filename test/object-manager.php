@@ -17,7 +17,7 @@ require __DIR__ . '/../config/bootstrap.php';
 
 $kernel = new Example\Kernel(
     $_SERVER['APP_ENV'],
-    (bool) $_SERVER['APP_DEBUG']
+    (bool) $_SERVER['APP_DEBUG'],
 );
 
 $kernel->boot();

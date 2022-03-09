@@ -26,7 +26,7 @@ final class UserRepository extends Bundle\DoctrineBundle\Repository\ServiceEntit
     {
         parent::__construct(
             $registry,
-            Entity\User::class
+            Entity\User::class,
         );
     }
 }

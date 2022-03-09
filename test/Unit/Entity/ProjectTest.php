@@ -34,7 +34,7 @@ final class ProjectTest extends Unit\AbstractTestCase
 
         $project = new Entity\Project(
             $name,
-            $repository
+            $repository,
         );
 
         self::assertStringIsUuid($project->id());

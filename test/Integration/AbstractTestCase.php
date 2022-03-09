@@ -21,10 +21,7 @@ use Symfony\Bundle;
  */
 abstract class AbstractTestCase extends Bundle\FrameworkBundle\Test\KernelTestCase
 {
-    /**
-     * @var Bundle\FrameworkBundle\Test\TestContainer
-     */
-    protected static $container;
+    protected static Bundle\FrameworkBundle\Test\TestContainer $container;
 
     protected function setUp(): void
     {

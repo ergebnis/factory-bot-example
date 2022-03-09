@@ -1,6 +1,15 @@
 #!/usr/bin/env php
 <?php
 
+/**
+ * Copyright (c) 2020-2022 Andreas Möller
+ *
+ * For the full copyright and license information, please view
+ * the LICENSE.md file that was distributed with this source code.
+ *
+ * @see https://github.com/ergebnis/factory-bot-example
+ */
+
 use Ergebnis\Example;
 use Symfony\Bundle\FrameworkBundle;
 use Symfony\Component\Console;
@@ -41,7 +50,7 @@ if ($_SERVER['APP_DEBUG']) {
 
 $kernel = new Example\Kernel(
     $_SERVER['APP_ENV'],
-    (bool) $_SERVER['APP_DEBUG']
+    (bool) $_SERVER['APP_DEBUG'],
 );
 
 $application = new FrameworkBundle\Console\Application($kernel);

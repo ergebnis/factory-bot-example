@@ -23,7 +23,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
     $services
         ->load(
             'Ergebnis\\Example\\',
-            __DIR__ . '/../src/*'
+            __DIR__ . '/../src/*',
         )
         ->exclude([
             __DIR__ . '/../src/{DependencyInjection,Entity,Migrations,Tests,Kernel.php}',
@@ -32,7 +32,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
     $services
         ->load(
             'Ergebnis\\Example\\Controller\\',
-            __DIR__ . '/../src/Controller'
+            __DIR__ . '/../src/Controller',
         )
         ->tag('controller.service_arguments');
 };

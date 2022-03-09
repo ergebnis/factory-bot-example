@@ -34,7 +34,7 @@ final class RepositoryTest extends Unit\AbstractTestCase
 
         $repository = new Entity\Repository(
             $organization,
-            $name
+            $name,
         );
 
         self::assertStringIsUuid($repository->id());
@@ -63,7 +63,7 @@ final class RepositoryTest extends Unit\AbstractTestCase
             $organization,
             $name,
             $template,
-            $codeOfConduct
+            $codeOfConduct,
         );
 
         self::assertSame($codeOfConduct, $repository->codeOfConduct());
