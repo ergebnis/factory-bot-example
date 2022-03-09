@@ -1,20 +1,24 @@
 {
   "name": "ergebnis/factory-bot-example",
-  "type": "project",
   "description": "Provides a GitHub repository template for a PHP library, using GitHub actions.",
+  "license": "MIT",
+  "type": "project",
   "keywords": [
     "ergebnis",
     "factory-bot",
     "example"
   ],
-  "homepage": "https://github.com/ergebnis/factory-bot-example",
-  "license": "MIT",
   "authors": [
     {
       "name": "Andreas Möller",
       "email": "am@localheinz.com"
     }
   ],
+  "homepage": "https://github.com/ergebnis/factory-bot-example",
+  "support": {
+    "issues": "https://github.com/ergebnis/factory-bot-example/issues",
+    "source": "https://github.com/ergebnis/factory-bot-example"
+  },
   "require": {
     "php": "^7.4.3",
     "ext-ctype": "*",
@@ -41,24 +45,10 @@
     "symfony/serializer": "^5.3.12",
     "symfony/yaml": "^5.2.4"
   },
-  "replace": {
-    "paragonie/random_compat": "2.*",
-    "symfony/polyfill-ctype": "*",
-    "symfony/polyfill-iconv": "*",
-    "symfony/polyfill-php56": "*",
-    "symfony/polyfill-php70": "*",
-    "symfony/polyfill-php71": "*",
-    "symfony/polyfill-php72": "*",
-    "symfony/polyfill-php73": "*",
-    "symfony/polyfill-php74": "*"
-  },
-  "conflict": {
-    "symfony/symfony": "*"
-  },
   "require-dev": {
     "ext-pdo_sqlite": "*",
     "dama/doctrine-test-bundle": "^6.7.5",
-    "ergebnis/composer-normalize": "^2.13.3",
+    "ergebnis/composer-normalize": "^2.24.0",
     "ergebnis/factory-bot": "~0.3.1",
     "ergebnis/license": "^1.2.0",
     "ergebnis/php-cs-fixer-config": "^2.13.0",
@@ -80,6 +70,30 @@
     "vimeo/psalm": "^3.18.2",
     "weirdan/doctrine-psalm-plugin": "~0.11.3"
   },
+  "replace": {
+    "paragonie/random_compat": "2.*",
+    "symfony/polyfill-ctype": "*",
+    "symfony/polyfill-iconv": "*",
+    "symfony/polyfill-php56": "*",
+    "symfony/polyfill-php70": "*",
+    "symfony/polyfill-php71": "*",
+    "symfony/polyfill-php72": "*",
+    "symfony/polyfill-php73": "*",
+    "symfony/polyfill-php74": "*"
+  },
+  "conflict": {
+    "symfony/symfony": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ergebnis\\Example\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ergebnis\\Example\\Test\\": "test/"
+    }
+  },
   "config": {
     "platform": {
       "php": "7.4.3"
@@ -93,16 +107,6 @@
       "require": "^5.1.0"
     }
   },
-  "autoload": {
-    "psr-4": {
-      "Ergebnis\\Example\\": "src/"
-    }
-  },
-  "autoload-dev": {
-    "psr-4": {
-      "Ergebnis\\Example\\Test\\": "test/"
-    }
-  },
   "scripts": {
     "post-install-cmd": [
       "@auto-scripts"
@@ -114,9 +118,5 @@
       "cache:clear": "symfony-cmd",
       "assets:install %PUBLIC_DIR%": "symfony-cmd"
     }
-  },
-  "support": {
-    "issues": "https://github.com/ergebnis/factory-bot-example/issues",
-    "source": "https://github.com/ergebnis/factory-bot-example"
   }
 }
