@@ -43,8 +43,6 @@ final class FixtureTest extends Unit\AbstractTestCase
             }, $entityClassNames),
         );
 
-        self::assertIsArray($expectedProviderClassNames);
-
         $actualProviderClassNames = \array_filter($expectedProviderClassNames, static function (string $providerClassName): bool {
             try {
                 $reflection = new \ReflectionClass($providerClassName);
