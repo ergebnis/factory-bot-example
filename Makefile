@@ -44,19 +44,13 @@ help: ## Displays this list of targets with descriptions
 	@grep -E '^[a-zA-Z0-9_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[32m%-30s\033[0m %s\n", $$1, $$2}'
 
 .PHONY: static-code-analysis
-static-code-analysis: vendor cache ## Runs a static code analysis with phpstan/phpstan and vimeo/psalm
-	mkdir -p .build/phpstan
-	vendor/bin/phpstan clear-result-cache --configuration=phpstan.neon
-	vendor/bin/phpstan analyze --configuration=phpstan.neon --memory-limit=-1
+static-code-analysis: vendor cache ## Runs a static code analysis with vimeo/psalm
 	mkdir -p .build/psalm
 	vendor/bin/psalm --config=psalm.xml --clear-cache
 	vendor/bin/psalm --config=psalm.xml --show-info=false --stats --threads=4
 
 .PHONY: static-code-analysis-baseline
-static-code-analysis-baseline: vendor cache ## Generates a baseline for static code analysis with phpstan/phpstan and vimeo/psalm
-	mkdir -p .build/phpstan
-	vendor/bin/phpstan clear-result-cache --configuration=phpstan.neon
-	vendor/bin/phpstan analyze --configuration=phpstan.neon --generate-baseline=phpstan-baseline.neon --memory-limit=-1
+static-code-analysis-baseline: vendor cache ## Generates a baseline for static code analysis with vimeo/psalm
 	mkdir -p .build/psalm
 	vendor/bin/psalm --config=psalm.xml --clear-cache
 	vendor/bin/psalm --config=psalm.xml --set-baseline=psalm-baseline.xml
