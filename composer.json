@@ -47,7 +47,6 @@
   },
   "require-dev": {
     "ext-pdo_sqlite": "*",
-    "composer/package-versions-deprecated": "1.11.99.5",
     "dama/doctrine-test-bundle": "^6.7.5",
     "ergebnis/composer-normalize": "^2.24.0",
     "ergebnis/factory-bot": "~0.3.1",
