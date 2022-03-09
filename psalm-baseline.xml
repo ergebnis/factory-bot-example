@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="3.18.2@19aa905f7c3c7350569999a93c40ae91ae4e1626">
+<files psalm-version="4.22.0@fc2c6ab4d5fa5d644d8617089f012f3bb84b8703">
   <file src="bin/console">
     <MixedArgument occurrences="1">
       <code>$_SERVER['APP_ENV']</code>
@@ -35,26 +35,27 @@
     </MixedAssignment>
   </file>
   <file src="src/Kernel.php">
-    <MixedAssignment occurrences="2">
+    <MixedArgument occurrences="1">
+      <code>$this-&gt;debug</code>
+    </MixedArgument>
+    <MixedArrayAccess occurrences="2">
+      <code>$envs[$this-&gt;environment]</code>
+      <code>$envs['all']</code>
+    </MixedArrayAccess>
+    <MixedAssignment occurrences="3">
+      <code>$class</code>
       <code>$contents</code>
       <code>$envs</code>
     </MixedAssignment>
     <MixedMethodCall occurrences="1">
       <code>new $class()</code>
     </MixedMethodCall>
+    <MoreSpecificReturnType occurrences="1">
+      <code>iterable</code>
+    </MoreSpecificReturnType>
     <UnresolvableInclude occurrences="1">
       <code>require $this-&gt;getProjectDir() . '/config/bundles.php'</code>
     </UnresolvableInclude>
-  </file>
-  <file src="src/Repository/UserRepository.php">
-    <ArgumentTypeCoercion occurrences="1">
-      <code>$registry</code>
-    </ArgumentTypeCoercion>
-    <PropertyNotSetInConstructor occurrences="3">
-      <code>UserRepository</code>
-      <code>UserRepository</code>
-      <code>UserRepository</code>
-    </PropertyNotSetInConstructor>
   </file>
   <file src="test/AutoReview/FixtureTest.php">
     <ArgumentTypeCoercion occurrences="1">
@@ -71,14 +72,17 @@
     <MoreSpecificReturnType occurrences="1">
       <code>ORM\EntityManagerInterface</code>
     </MoreSpecificReturnType>
+    <NonInvariantDocblockPropertyType occurrences="1">
+      <code>$container</code>
+    </NonInvariantDocblockPropertyType>
     <NullableReturnStatement occurrences="1">
       <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
     </NullableReturnStatement>
   </file>
-  <file src="test/Integration/Entity/UserTest.php">
-    <RedundantCondition occurrences="1">
-      <code>assertInstanceOf</code>
-    </RedundantCondition>
+  <file src="test/Unit/AbstractTestCase.php">
+    <MixedArgumentTypeCoercion occurrences="1">
+      <code>$entityManager-&gt;getMetadataFactory()-&gt;getAllMetadata()</code>
+    </MixedArgumentTypeCoercion>
   </file>
   <file src="test/Unit/Entity/ProjectTest.php">
     <UnnecessaryVarAnnotation occurrences="1">
