@@ -75,6 +75,9 @@
     <NonInvariantDocblockPropertyType occurrences="1">
       <code>$container</code>
     </NonInvariantDocblockPropertyType>
+    <NonInvariantPropertyType occurrences="1">
+      <code>$container</code>
+    </NonInvariantPropertyType>
     <NullableReturnStatement occurrences="1">
       <code>self::$container-&gt;get(ORM\EntityManagerInterface::class)</code>
     </NullableReturnStatement>
