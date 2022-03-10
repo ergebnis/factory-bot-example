@@ -4,8 +4,8 @@ We are using [GitHub Actions](https://github.com/features/actions) as a continuo
 
 For details, take a look at the following workflow configuration files:
 
-- [`workflows/dependabot.yaml`](workflows/dependabot.yaml)
 - [`workflows/integrate.yaml`](workflows/integrate.yaml)
+- [`workflows/merge.yaml`](workflows/merge.yaml)
 - [`workflows/prune.yaml`](workflows/prune.yaml)
 - [`workflows/release.yaml`](workflows/release.yaml)
 - [`workflows/renew.yaml`](workflows/renew.yaml)
@@ -73,18 +73,6 @@ to regenerate the baseline in [`../psalm-baseline.xml`](../psalm-baseline.xml).
 
 :exclamation: Ideally, the baseline should shrink over time.
 
-## Tests
-
-We are using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
-
-Run
-
-```sh
-$ make tests
-```
-
-to run all the tests.
-
 ## Symfony
 
 We are using [`symfony/flex`](https://github.com/symfony/flex) to integrate packages into the application.
@@ -96,6 +84,18 @@ $ make symfony
 ```
 
 to synchronize recipes.
+
+## Tests
+
+We are using [`phpunit/phpunit`](https://github.com/sebastianbergmann/phpunit) to drive the development.
+
+Run
+
+```sh
+$ make tests
+```
+
+to run all the tests.
 
 ## Extra lazy?
 
