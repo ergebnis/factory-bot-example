@@ -42,7 +42,7 @@
     "symfony/framework-bundle": "^5.2.4",
     "symfony/http-kernel": "^6.0.8",
     "symfony/routing": "^6.0.8",
-    "symfony/serializer": "^6.0.7",
+    "symfony/serializer": "^6.0.8",
     "symfony/yaml": "^6.0.3"
   },
   "require-dev": {
