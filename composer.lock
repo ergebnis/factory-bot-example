@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "06583c63d8c0f7e1f4f008218ac4a455",
+    "content-hash": "35981274ff48661ca8064c681e06e048",
     "packages": [
         {
             "name": "brick/math",
@@ -8855,20 +8855,20 @@
         },
         {
             "name": "symplify/config-transformer",
-            "version": "10.2.3",
+            "version": "10.2.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/config-transformer.git",
-                "reference": "04c5a295acb34adce69f9f20bf67989ebee080b9"
+                "reference": "11f1eba0bf132175958da1ccd536782a5ef859f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/04c5a295acb34adce69f9f20bf67989ebee080b9",
-                "reference": "04c5a295acb34adce69f9f20bf67989ebee080b9",
+                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/11f1eba0bf132175958da1ccd536782a5ef859f3",
+                "reference": "11f1eba0bf132175958da1ccd536782a5ef859f3",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.2"
             },
             "bin": [
                 "bin/config-transformer"
@@ -8880,7 +8880,7 @@
             ],
             "description": "Prefixed version of Symfony YAML/XML to PHP/YAML config converter",
             "support": {
-                "source": "https://github.com/symplify/config-transformer/tree/10.2.3"
+                "source": "https://github.com/symplify/config-transformer/tree/10.2.5"
             },
             "funding": [
                 {
@@ -8892,7 +8892,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-05-03T14:06:31+00:00"
+            "time": "2022-05-14T22:54:23+00:00"
         },
         {
             "name": "thecodingmachine/safe",
