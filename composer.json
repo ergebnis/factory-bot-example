@@ -43,7 +43,7 @@
     "symfony/http-kernel": "^6.0.9",
     "symfony/routing": "^6.1.0",
     "symfony/serializer": "^6.1.0",
-    "symfony/yaml": "^6.0.3"
+    "symfony/yaml": "^6.1.0"
   },
   "require-dev": {
     "ext-pdo_sqlite": "*",
