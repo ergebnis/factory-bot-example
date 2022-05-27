@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "852092fac18fb6051db7749008cbaa6d",
+    "content-hash": "40e965d6b9b416a9ba2c58f60488a087",
     "packages": [
         {
             "name": "brick/math",
@@ -3972,20 +3972,20 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v6.0.8",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "76b9a43c4295ced6d5f43208ba858325d8f61f30"
+                "reference": "70aebc6d266cbd1b92285c052b3fdad3ca2ae033"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/76b9a43c4295ced6d5f43208ba858325d8f61f30",
-                "reference": "76b9a43c4295ced6d5f43208ba858325d8f61f30",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/70aebc6d266cbd1b92285c052b3fdad3ca2ae033",
+                "reference": "70aebc6d266cbd1b92285c052b3fdad3ca2ae033",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2",
+                "php": ">=8.1",
                 "symfony/polyfill-ctype": "~1.8"
             },
             "conflict": {
@@ -4053,7 +4053,7 @@
             "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/serializer/tree/v6.0.8"
+                "source": "https://github.com/symfony/serializer/tree/v6.1.0"
             },
             "funding": [
                 {
@@ -4069,7 +4069,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-12T16:11:42+00:00"
+            "time": "2022-05-10T09:20:06+00:00"
         },
         {
             "name": "symfony/service-contracts",
