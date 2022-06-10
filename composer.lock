@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05d840e9560493f3b07bf263f672796e",
+    "content-hash": "9040cef1bf5b1afb92b67c2686679998",
     "packages": [
         {
             "name": "brick/math",
@@ -3973,16 +3973,16 @@
         },
         {
             "name": "symfony/serializer",
-            "version": "v6.1.0",
+            "version": "v6.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/serializer.git",
-                "reference": "70aebc6d266cbd1b92285c052b3fdad3ca2ae033"
+                "reference": "96a4db91d2655a85d631af451ab906ccdc711a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/serializer/zipball/70aebc6d266cbd1b92285c052b3fdad3ca2ae033",
-                "reference": "70aebc6d266cbd1b92285c052b3fdad3ca2ae033",
+                "url": "https://api.github.com/repos/symfony/serializer/zipball/96a4db91d2655a85d631af451ab906ccdc711a15",
+                "reference": "96a4db91d2655a85d631af451ab906ccdc711a15",
                 "shasum": ""
             },
             "require": {
@@ -4054,7 +4054,7 @@
             "description": "Handles serializing and deserializing data structures, including object graphs, into array structures or other formats like XML and JSON.",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/serializer/tree/v6.1.0"
+                "source": "https://github.com/symfony/serializer/tree/v6.1.1"
             },
             "funding": [
                 {
@@ -4070,7 +4070,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-10T09:20:06+00:00"
+            "time": "2022-06-06T19:15:01+00:00"
         },
         {
             "name": "symfony/service-contracts",
