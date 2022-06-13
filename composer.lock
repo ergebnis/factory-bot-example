@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cbf0aa11c38e593a233ef9a04fa665eb",
+    "content-hash": "493181fe194d1fe295de88d9f4562f79",
     "packages": [
         {
             "name": "brick/math",
@@ -6081,16 +6081,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.26.10",
+            "version": "0.26.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "134853ce500c4669db7d6f9fe03ea5c8771a4540"
+                "reference": "11df4ea052367bb2e2168611b69a0f5f8953ef70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/134853ce500c4669db7d6f9fe03ea5c8771a4540",
-                "reference": "134853ce500c4669db7d6f9fe03ea5c8771a4540",
+                "url": "https://api.github.com/repos/infection/infection/zipball/11df4ea052367bb2e2168611b69a0f5f8953ef70",
+                "reference": "11df4ea052367bb2e2168611b69a0f5f8953ef70",
                 "shasum": ""
             },
             "require": {
@@ -6111,12 +6111,11 @@
                 "sebastian/diff": "^3.0.2 || ^4.0",
                 "seld/jsonlint": "^1.7",
                 "symfony/console": "^3.4.29 || ^4.1.19 || ^5.0 || ^6.0",
-                "symfony/filesystem": "^3.4.29 || ^4.1.19 || ^5.0 || ^6.0",
+                "symfony/filesystem": "^5.4 || ^6.0",
                 "symfony/finder": "^3.4.29 || ^4.1.19 || ^5.0 || ^6.0",
                 "symfony/process": "^3.4.29 || ^4.1.19 || ^5.0 || ^6.0",
                 "thecodingmachine/safe": "^2.1.2",
-                "webmozart/assert": "^1.3",
-                "webmozart/path-util": "^2.3"
+                "webmozart/assert": "^1.3"
             },
             "conflict": {
                 "dg/bypass-finals": "*",
@@ -6191,7 +6190,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.26.10"
+                "source": "https://github.com/infection/infection/tree/0.26.11"
             },
             "funding": [
                 {
@@ -6203,7 +6202,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2022-05-11T20:58:00+00:00"
+            "time": "2022-06-09T08:41:21+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -8788,20 +8787,20 @@
         },
         {
             "name": "symfony/process",
-            "version": "v6.0.8",
+            "version": "v6.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "d074154ea8b1443a96391f6e39f9e547b2dd01b9"
+                "reference": "318718453c2be58266f1a9e74063d13cb8dd4165"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/d074154ea8b1443a96391f6e39f9e547b2dd01b9",
-                "reference": "d074154ea8b1443a96391f6e39f9e547b2dd01b9",
+                "url": "https://api.github.com/repos/symfony/process/zipball/318718453c2be58266f1a9e74063d13cb8dd4165",
+                "reference": "318718453c2be58266f1a9e74063d13cb8dd4165",
                 "shasum": ""
             },
             "require": {
-                "php": ">=8.0.2"
+                "php": ">=8.1"
             },
             "type": "library",
             "autoload": {
@@ -8829,7 +8828,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v6.0.8"
+                "source": "https://github.com/symfony/process/tree/v6.1.0"
             },
             "funding": [
                 {
@@ -8845,7 +8844,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-12T16:11:42+00:00"
+            "time": "2022-05-11T12:12:29+00:00"
         },
         {
             "name": "symplify/config-transformer",
@@ -8890,16 +8889,16 @@
         },
         {
             "name": "thecodingmachine/safe",
-            "version": "v2.1.4",
+            "version": "v2.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecodingmachine/safe.git",
-                "reference": "b206c2671d3601d40389013cf550b14fb4db2814"
+                "reference": "2a8d758fd17763faf86e4aa798193e17b9fac38c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/b206c2671d3601d40389013cf550b14fb4db2814",
-                "reference": "b206c2671d3601d40389013cf550b14fb4db2814",
+                "url": "https://api.github.com/repos/thecodingmachine/safe/zipball/2a8d758fd17763faf86e4aa798193e17b9fac38c",
+                "reference": "2a8d758fd17763faf86e4aa798193e17b9fac38c",
                 "shasum": ""
             },
             "require": {
@@ -8914,7 +8913,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.1-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "autoload": {
@@ -9007,13 +9006,13 @@
                     "generated/zip.php",
                     "generated/zlib.php"
                 ],
-                "psr-4": {
-                    "Safe\\": [
-                        "lib/",
-                        "deprecated/",
-                        "generated/"
-                    ]
-                }
+                "classmap": [
+                    "lib/DateTime.php",
+                    "lib/DateTimeImmutable.php",
+                    "lib/Exceptions/",
+                    "deprecated/Exceptions/",
+                    "generated/Exceptions/"
+                ]
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -9022,9 +9021,9 @@
             "description": "PHP core functions that throw exceptions instead of returning FALSE on error",
             "support": {
                 "issues": "https://github.com/thecodingmachine/safe/issues",
-                "source": "https://github.com/thecodingmachine/safe/tree/v2.1.4"
+                "source": "https://github.com/thecodingmachine/safe/tree/v2.2.1"
             },
-            "time": "2022-05-02T13:55:17+00:00"
+            "time": "2022-06-09T15:36:45+00:00"
         },
         {
             "name": "theseer/tokenizer",
