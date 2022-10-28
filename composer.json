@@ -53,7 +53,7 @@
     "ergebnis/license": "^2.0.0",
     "ergebnis/php-cs-fixer-config": "^4.7.0",
     "infection/infection": "~0.26.16",
-    "phpunit/phpunit": "^9.5.25",
+    "phpunit/phpunit": "^9.5.26",
     "psalm/plugin-phpunit": "~0.17.0",
     "psalm/plugin-symfony": "^3.1.9",
     "symplify/config-transformer": "^11.1.16",
