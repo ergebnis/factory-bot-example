@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "808252a421dcfc2b91ed03a0517ae4ee",
+    "content-hash": "bc0dcf3d824c6f40f427280d5ac47f26",
     "packages": [
         {
             "name": "brick/math",
@@ -2277,16 +2277,16 @@
         },
         {
             "name": "symfony/console",
-            "version": "v6.1.6",
+            "version": "v6.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
-                "reference": "7fa3b9cf17363468795e539231a5c91b02b608fc"
+                "reference": "a1282bd0c096e0bdb8800b104177e2ce404d8815"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/console/zipball/7fa3b9cf17363468795e539231a5c91b02b608fc",
-                "reference": "7fa3b9cf17363468795e539231a5c91b02b608fc",
+                "url": "https://api.github.com/repos/symfony/console/zipball/a1282bd0c096e0bdb8800b104177e2ce404d8815",
+                "reference": "a1282bd0c096e0bdb8800b104177e2ce404d8815",
                 "shasum": ""
             },
             "require": {
@@ -2353,7 +2353,7 @@
                 "terminal"
             ],
             "support": {
-                "source": "https://github.com/symfony/console/tree/v6.1.6"
+                "source": "https://github.com/symfony/console/tree/v6.1.7"
             },
             "funding": [
                 {
@@ -2369,7 +2369,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-10-07T08:04:03+00:00"
+            "time": "2022-10-26T21:42:49+00:00"
         },
         {
             "name": "symfony/dependency-injection",
@@ -4155,16 +4155,16 @@
         },
         {
             "name": "symfony/stopwatch",
-            "version": "v6.1.0",
+            "version": "v6.1.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/stopwatch.git",
-                "reference": "77dedae82ce2a26e2e9b481855473fc3b3e4e54d"
+                "reference": "266636bb8f3fbdccc302491df7b3a1b9a8c238a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/77dedae82ce2a26e2e9b481855473fc3b3e4e54d",
-                "reference": "77dedae82ce2a26e2e9b481855473fc3b3e4e54d",
+                "url": "https://api.github.com/repos/symfony/stopwatch/zipball/266636bb8f3fbdccc302491df7b3a1b9a8c238a7",
+                "reference": "266636bb8f3fbdccc302491df7b3a1b9a8c238a7",
                 "shasum": ""
             },
             "require": {
@@ -4197,7 +4197,7 @@
             "description": "Provides a way to profile code",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/stopwatch/tree/v6.1.0"
+                "source": "https://github.com/symfony/stopwatch/tree/v6.1.5"
             },
             "funding": [
                 {
@@ -4213,20 +4213,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-25T11:15:52+00:00"
+            "time": "2022-09-28T16:00:52+00:00"
         },
         {
             "name": "symfony/string",
-            "version": "v6.1.6",
+            "version": "v6.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/string.git",
-                "reference": "7e7e0ff180d4c5a6636eaad57b65092014b61864"
+                "reference": "823f143370880efcbdfa2dbca946b3358c4707e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/string/zipball/7e7e0ff180d4c5a6636eaad57b65092014b61864",
-                "reference": "7e7e0ff180d4c5a6636eaad57b65092014b61864",
+                "url": "https://api.github.com/repos/symfony/string/zipball/823f143370880efcbdfa2dbca946b3358c4707e5",
+                "reference": "823f143370880efcbdfa2dbca946b3358c4707e5",
                 "shasum": ""
             },
             "require": {
@@ -4282,7 +4282,7 @@
                 "utf8"
             ],
             "support": {
-                "source": "https://github.com/symfony/string/tree/v6.1.6"
+                "source": "https://github.com/symfony/string/tree/v6.1.7"
             },
             "funding": [
                 {
@@ -5666,31 +5666,31 @@
         },
         {
             "name": "ergebnis/php-cs-fixer-config",
-            "version": "4.7.0",
+            "version": "4.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/php-cs-fixer-config.git",
-                "reference": "750a672f0c9f10ee10d2ed4d10780d0f8f976719"
+                "reference": "633245c6e9fe1117245ec624d199172a411b2fe9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/750a672f0c9f10ee10d2ed4d10780d0f8f976719",
-                "reference": "750a672f0c9f10ee10d2ed4d10780d0f8f976719",
+                "url": "https://api.github.com/repos/ergebnis/php-cs-fixer-config/zipball/633245c6e9fe1117245ec624d199172a411b2fe9",
+                "reference": "633245c6e9fe1117245ec624d199172a411b2fe9",
                 "shasum": ""
             },
             "require": {
                 "ext-filter": "*",
-                "friendsofphp/php-cs-fixer": "~3.10.0",
+                "friendsofphp/php-cs-fixer": "~3.12.0",
                 "php": "^7.4 || ^8.0"
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.28.3",
-                "ergebnis/license": "^1.2.0",
+                "ergebnis/license": "^2.0.0",
                 "fakerphp/faker": "^1.20.0",
-                "phpunit/phpunit": "^9.5.21",
+                "phpunit/phpunit": "^9.5.25",
                 "psalm/plugin-phpunit": "~0.17.0",
                 "symfony/filesystem": "^4.4.0 || ^5.0.0",
-                "vimeo/psalm": "^4.26"
+                "vimeo/psalm": "^4.29"
             },
             "type": "library",
             "extra": {
@@ -5720,7 +5720,7 @@
                 "issues": "https://github.com/ergebnis/php-cs-fixer-config/issues",
                 "source": "https://github.com/ergebnis/php-cs-fixer-config"
             },
-            "time": "2022-08-19T08:50:23+00:00"
+            "time": "2022-10-13T10:03:30+00:00"
         },
         {
             "name": "fakerphp/faker",
@@ -5892,16 +5892,16 @@
         },
         {
             "name": "friendsofphp/php-cs-fixer",
-            "version": "v3.10.0",
+            "version": "v3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfPHP/PHP-CS-Fixer.git",
-                "reference": "76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe"
+                "reference": "eae11d945e2885d86e1c080eec1bb30a2aa27998"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe",
-                "reference": "76d7da666e66d83a1dc27a9d1c625c80cc4ac1fe",
+                "url": "https://api.github.com/repos/FriendsOfPHP/PHP-CS-Fixer/zipball/eae11d945e2885d86e1c080eec1bb30a2aa27998",
+                "reference": "eae11d945e2885d86e1c080eec1bb30a2aa27998",
                 "shasum": ""
             },
             "require": {
@@ -5934,8 +5934,8 @@
                 "phpspec/prophecy": "^1.15",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5",
-                "phpunitgoodpractices/polyfill": "^1.5",
-                "phpunitgoodpractices/traits": "^1.9.1",
+                "phpunitgoodpractices/polyfill": "^1.6",
+                "phpunitgoodpractices/traits": "^1.9.2",
                 "symfony/phpunit-bridge": "^6.0",
                 "symfony/yaml": "^5.4 || ^6.0"
             },
@@ -5969,7 +5969,7 @@
             "description": "A tool to automatically fix PHP code style",
             "support": {
                 "issues": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues",
-                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.10.0"
+                "source": "https://github.com/FriendsOfPHP/PHP-CS-Fixer/tree/v3.12.0"
             },
             "funding": [
                 {
@@ -5977,7 +5977,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-08-17T22:13:10+00:00"
+            "time": "2022-10-12T14:20:51+00:00"
         },
         {
             "name": "infection/abstract-testframework-adapter",
