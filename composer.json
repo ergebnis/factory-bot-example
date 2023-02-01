@@ -29,7 +29,7 @@
     "doctrine/doctrine-bundle": "^2.7.0",
     "doctrine/doctrine-migrations-bundle": "^3.2.2",
     "doctrine/migrations": "^3.5.0",
-    "doctrine/orm": "^2.11.2",
+    "doctrine/orm": "^2.14.1",
     "doctrine/persistence": "^2.5.4",
     "ramsey/uuid": "^4.5.1",
     "sensio/framework-extra-bundle": "^6.2.9",
