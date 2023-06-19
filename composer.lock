@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "adeec536158dbdf771686dd1997ee381",
+    "content-hash": "089068e92a519630d7cbafe415138ac8",
     "packages": [
         {
             "name": "brick/math",
@@ -8901,16 +8901,16 @@
         },
         {
             "name": "symplify/config-transformer",
-            "version": "11.1.16",
+            "version": "12.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symplify/config-transformer.git",
-                "reference": "ef45977210e5a7b42f7611a61cf2f9af771e2f3e"
+                "reference": "1b21a1ea429a378319d6313b4b024492b2f776c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/ef45977210e5a7b42f7611a61cf2f9af771e2f3e",
-                "reference": "ef45977210e5a7b42f7611a61cf2f9af771e2f3e",
+                "url": "https://api.github.com/repos/symplify/config-transformer/zipball/1b21a1ea429a378319d6313b4b024492b2f776c9",
+                "reference": "1b21a1ea429a378319d6313b4b024492b2f776c9",
                 "shasum": ""
             },
             "require": {
@@ -8920,13 +8920,19 @@
                 "bin/config-transformer"
             ],
             "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
             "description": "Prefixed version of Symfony YAML/XML to PHP/YAML config converter",
             "support": {
-                "source": "https://github.com/symplify/config-transformer/tree/11.1.16"
+                "issues": "https://github.com/symplify/config-transformer/issues",
+                "source": "https://github.com/symplify/config-transformer/tree/12.0.5"
             },
             "funding": [
                 {
@@ -8938,7 +8944,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2022-10-27T10:45:12+00:00"
+            "time": "2023-02-22T19:32:35+00:00"
         },
         {
             "name": "thecodingmachine/safe",
