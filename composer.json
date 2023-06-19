@@ -44,7 +44,7 @@
     "symfony/routing": "^6.1.7",
     "symfony/runtime": "^6.3.0",
     "symfony/serializer": "^6.1.6",
-    "symfony/yaml": "^6.1.6"
+    "symfony/yaml": "^6.3.0"
   },
   "require-dev": {
     "ext-pdo_sqlite": "*",
