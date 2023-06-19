@@ -64,7 +64,7 @@ jobs:
         run: "composer dump-env ${{ env.APP_ENV }}"
 
       - name: "Warm up cache"
-        run: "bin/console cache:warmup"
+        run: "bin/console cache:warmup --ansi"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
         env:
@@ -256,7 +256,7 @@ jobs:
         run: "composer dump-env ${{ env.APP_ENV }}"
 
       - name: "Warm up cache"
-        run: "bin/console cache:warmup"
+        run: "bin/console cache:warmup --ansi"
 
       - name: "Run mutation tests with Xdebug and infection/infection"
         env:
@@ -422,7 +422,7 @@ jobs:
         run: "composer dump-env ${{ env.APP_ENV }}"
 
       - name: "Warm up cache"
-        run: "bin/console cache:warmup"
+        run: "bin/console cache:warmup --ansi"
 
       - name: "Create cache directory for vimeo/psalm"
         run: "mkdir -p .build/psalm/"
@@ -498,16 +498,16 @@ jobs:
         run: "composer dump-env ${{ env.APP_ENV }}"
 
       - name: "Warm up cache"
-        run: "bin/console cache:warmup"
+        run: "bin/console cache:warmup --ansi"
 
       - name: "Show Doctrine migration status"
-        run: "bin/console doctrine:migrations:status"
+        run: "bin/console doctrine:migrations:status --ansi"
 
       - name: "Run Doctrine migrations"
-        run: "bin/console doctrine:migrations:migrate --allow-no-migration --no-interaction"
+        run: "bin/console doctrine:migrations:migrate --allow-no-migration --ansi --no-interaction"
 
       - name: "Validate Doctrine schema"
-        run: "bin/console doctrine:schema:validate --em=${{ env.ENTITY_MANAGER_NAME_DEFAULT }}"
+        run: "bin/console doctrine:schema:validate --ansi --em=${{ env.ENTITY_MANAGER_NAME_DEFAULT }}"
 
       - name: "Run auto-review tests with phpunit/phpunit"
         run: "vendor/bin/phpunit --colors=always --configuration=test/AutoReview/phpunit.xml"
