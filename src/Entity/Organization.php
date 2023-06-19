@@ -19,13 +19,16 @@ use Ramsey\Uuid;
 
 /**
  * @ORM\Mapping\Entity
+ *
  * @ORM\Mapping\Table(name="organization")
  */
 class Organization
 {
     /**
      * @ORM\Mapping\Id
+     *
      * @ORM\Mapping\GeneratedValue(strategy="NONE")
+     *
      * @ORM\Mapping\Column(
      *     type="string",
      *     length=36

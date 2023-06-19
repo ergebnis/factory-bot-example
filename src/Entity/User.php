@@ -19,13 +19,16 @@ use Ramsey\Uuid;
 
 /**
  * @ORM\Mapping\Entity(repositoryClass="App\Repository\UserRepository")
+ *
  * @ORM\Mapping\Table(name="user")
  */
-class User
+final class User
 {
     /**
      * @ORM\Mapping\Id
+     *
      * @ORM\Mapping\GeneratedValue(strategy="NONE")
+     *
      * @ORM\Mapping\Column(
      *     type="string",
      *     length=36
