@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "28c1ec7c33cef650edc6f859feb41535",
+    "content-hash": "b8137441b3e68711bba138811c590d49",
     "packages": [
         {
             "name": "brick/math",
@@ -3808,32 +3808,31 @@
         },
         {
             "name": "symfony/runtime",
-            "version": "v5.4.22",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/runtime.git",
-                "reference": "4a78e519d40a3845437e29dc514959631badfed4"
+                "reference": "d998ab9da99e2ebca719dee00e8469996deeec53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/runtime/zipball/4a78e519d40a3845437e29dc514959631badfed4",
-                "reference": "4a78e519d40a3845437e29dc514959631badfed4",
+                "url": "https://api.github.com/repos/symfony/runtime/zipball/d998ab9da99e2ebca719dee00e8469996deeec53",
+                "reference": "d998ab9da99e2ebca719dee00e8469996deeec53",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0|^2.0",
-                "php": ">=7.2.5",
-                "symfony/polyfill-php80": "^1.15"
+                "php": ">=8.1"
             },
             "conflict": {
-                "symfony/dotenv": "<5.1"
+                "symfony/dotenv": "<5.4"
             },
             "require-dev": {
                 "composer/composer": "^1.0.2|^2.0",
-                "symfony/console": "^4.4.30|^5.3.7|^6.0",
-                "symfony/dotenv": "^5.1|^6.0",
-                "symfony/http-foundation": "^4.4.30|^5.3.7|^6.0",
-                "symfony/http-kernel": "^4.4.30|^5.3.7|^6.0"
+                "symfony/console": "^5.4|^6.0",
+                "symfony/dotenv": "^5.4|^6.0",
+                "symfony/http-foundation": "^5.4|^6.0",
+                "symfony/http-kernel": "^5.4|^6.0"
             },
             "type": "composer-plugin",
             "extra": {
@@ -3868,7 +3867,7 @@
                 "runtime"
             ],
             "support": {
-                "source": "https://github.com/symfony/runtime/tree/v5.4.22"
+                "source": "https://github.com/symfony/runtime/tree/v6.3.0"
             },
             "funding": [
                 {
@@ -3884,7 +3883,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-03-14T15:48:23+00:00"
+            "time": "2023-03-14T15:56:29+00:00"
         },
         {
             "name": "symfony/serializer",
