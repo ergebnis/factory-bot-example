@@ -19,6 +19,7 @@ use App\Test;
 
 /**
  * @internal
+ *
  * @coversNothing
  */
 final class UserTest extends Test\Integration\AbstractTestCase
