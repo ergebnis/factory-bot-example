@@ -8,9 +8,6 @@
     "brick/math": {
         "version": "0.8.15"
     },
-    "composer/package-versions-deprecated": {
-        "version": "1.10.99"
-    },
     "composer/pcre": {
         "version": "3.0.0"
     },
@@ -195,9 +192,6 @@
     "ondram/ci-detector": {
         "version": "4.1.0"
     },
-    "openlss/lib-array2xml": {
-        "version": "1.0.0"
-    },
     "phar-io/manifest": {
         "version": "1.0.3"
     },
@@ -247,12 +241,6 @@
             "phpunit.xml.dist",
             "tests/bootstrap.php"
         ]
-    },
-    "psalm/plugin-phpunit": {
-        "version": "0.9.0"
-    },
-    "psalm/plugin-symfony": {
-        "version": "v1.2.1"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -483,11 +471,5 @@
     },
     "webmozart/assert": {
         "version": "1.7.0"
-    },
-    "webmozart/path-util": {
-        "version": "2.3.0"
-    },
-    "weirdan/doctrine-psalm-plugin": {
-        "version": "0.11.3"
     }
 }
