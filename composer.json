@@ -30,7 +30,7 @@
     "doctrine/doctrine-migrations-bundle": "^3.2.4",
     "doctrine/migrations": "^3.6.0",
     "doctrine/orm": "^2.15.2",
-    "doctrine/persistence": "^2.5.4",
+    "doctrine/persistence": "^3.2.0",
     "ramsey/uuid": "^4.7.4",
     "sensio/framework-extra-bundle": "^6.2.10",
     "symfony/config": "^6.1.3",
