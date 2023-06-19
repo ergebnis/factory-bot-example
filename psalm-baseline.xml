@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="4.22.0@fc2c6ab4d5fa5d644d8617089f012f3bb84b8703">
+<files psalm-version="4.28.0@52e96bea381e6cb07a672aefec791a5817694a26">
   <file src="bin/console">
-    <MixedArgument occurrences="1">
-      <code>$_SERVER['APP_ENV']</code>
-    </MixedArgument>
     <MixedAssignment occurrences="3">
       <code>$_ENV['APP_ENV']</code>
       <code>$_SERVER['APP_ENV']</code>
@@ -14,8 +11,7 @@
     </MixedOperand>
   </file>
   <file src="config/bootstrap.php">
-    <MixedAssignment occurrences="4">
-      <code>$_ENV[$k]</code>
+    <MixedAssignment occurrences="3">
       <code>$_ENV['APP_ENV']</code>
       <code>$_SERVER['APP_DEBUG']</code>
       <code>$_SERVER['APP_ENV']</code>
@@ -23,16 +19,6 @@
     <RedundantCondition occurrences="1">
       <code>\is_array($env = include \dirname(__DIR__) . '/.env.local.php')</code>
     </RedundantCondition>
-  </file>
-  <file src="public/index.php">
-    <MixedArgument occurrences="2">
-      <code>$_SERVER['APP_ENV']</code>
-      <code>$trustedProxies</code>
-    </MixedArgument>
-    <MixedAssignment occurrences="2">
-      <code>$trustedHosts</code>
-      <code>$trustedProxies</code>
-    </MixedAssignment>
   </file>
   <file src="src/Kernel.php">
     <MixedArgument occurrences="1">
