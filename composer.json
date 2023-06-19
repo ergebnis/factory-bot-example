@@ -60,7 +60,7 @@
     "rector/rector": "~0.17.1",
     "symplify/config-transformer": "^11.1.16",
     "vimeo/psalm": "^4.30.0",
-    "weirdan/doctrine-psalm-plugin": "^2.3.0"
+    "weirdan/doctrine-psalm-plugin": "^2.8.1"
   },
   "replace": {
     "paragonie/random_compat": "2.*",
