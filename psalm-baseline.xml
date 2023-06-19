@@ -66,11 +66,6 @@
       <code>$providerClassName</code>
     </ArgumentTypeCoercion>
   </file>
-  <file src="test/Unit/AbstractTestCase.php">
-    <MixedArgumentTypeCoercion occurrences="1">
-      <code>$entityManager-&gt;getMetadataFactory()-&gt;getAllMetadata()</code>
-    </MixedArgumentTypeCoercion>
-  </file>
   <file src="test/Unit/Entity/ProjectTest.php">
     <UnnecessaryVarAnnotation occurrences="1">
       <code>Entity\Repository</code>
