@@ -12,43 +12,12 @@ declare(strict_types=1);
  */
 
 use Ergebnis\Example;
-use Symfony\Component\Dotenv;
-use Symfony\Component\ErrorHandler;
-use Symfony\Component\HttpFoundation;
 
-require \dirname(__DIR__) . '/vendor/autoload.php';
+require_once __DIR__ . '/../vendor/autoload_runtime.php';
 
-(new Dotenv\Dotenv())->bootEnv(\dirname(__DIR__) . '/.env');
-
-if ($_SERVER['APP_DEBUG']) {
-    \umask(0);
-
-    ErrorHandler\Debug::enable();
-}
-
-if ($trustedProxies = $_SERVER['TRUSTED_PROXIES'] ?? $_ENV['TRUSTED_PROXIES'] ?? false) {
-    HttpFoundation\Request::setTrustedProxies(
-        \explode(',', $trustedProxies),
-        HttpFoundation\Request::HEADER_X_FORWARDED_FOR | HttpFoundation\Request::HEADER_X_FORWARDED_PORT | HttpFoundation\Request::HEADER_X_FORWARDED_PROTO,
+return static function (array $context): Example\Kernel {
+    return new Example\Kernel(
+        $context['APP_ENV'],
+        (bool) $context['APP_DEBUG'],
     );
-}
-
-if ($trustedHosts = $_SERVER['TRUSTED_HOSTS'] ?? $_ENV['TRUSTED_HOSTS'] ?? false) {
-    HttpFoundation\Request::setTrustedHosts([$trustedHosts]);
-}
-
-$kernel = new Example\Kernel(
-    $_SERVER['APP_ENV'],
-    (bool) $_SERVER['APP_DEBUG'],
-);
-
-$request = HttpFoundation\Request::createFromGlobals();
-
-$response = $kernel->handle($request);
-
-$response->send();
-
-$kernel->terminate(
-    $request,
-    $response,
-);
+};

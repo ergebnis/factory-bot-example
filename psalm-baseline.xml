@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <files psalm-version="4.28.0@52e96bea381e6cb07a672aefec791a5817694a26">
   <file src="bin/console">
-    <MixedAssignment occurrences="3">
-      <code>$_ENV['APP_ENV']</code>
-      <code>$_SERVER['APP_ENV']</code>
-      <code>$env</code>
-    </MixedAssignment>
-    <MixedOperand occurrences="1">
-      <code>$_SERVER['APP_ENV'] = $_ENV['APP_ENV'] = $env</code>
-    </MixedOperand>
+    <MixedArgument occurrences="1">
+      <code>$context['APP_ENV']</code>
+    </MixedArgument>
   </file>
   <file src="config/bootstrap.php">
     <MixedAssignment occurrences="3">
@@ -19,6 +14,11 @@
     <RedundantCondition occurrences="1">
       <code>\is_array($env = include \dirname(__DIR__) . '/.env.local.php')</code>
     </RedundantCondition>
+  </file>
+  <file src="public/index.php">
+    <MixedArgument occurrences="1">
+      <code>$context['APP_ENV']</code>
+    </MixedArgument>
   </file>
   <file src="src/Entity/Organization.php">
     <MixedInferredReturnType occurrences="2">
