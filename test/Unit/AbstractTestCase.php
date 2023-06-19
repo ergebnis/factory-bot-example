@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\Unit;
+namespace App\Test\Unit;
 
 use Doctrine\ORM;
 use Ergebnis\FactoryBot;

@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Entity;
+namespace App\Entity;
 
 use Doctrine\ORM;
 use Ramsey\Uuid;
@@ -42,7 +42,7 @@ class Repository
 
     /**
      * @ORM\Mapping\ManyToOne(
-     *     targetEntity="Ergebnis\Example\Entity\Organization",
+     *     targetEntity="App\Entity\Organization",
      *     inversedBy="repositories"
      * )
      * @ORM\Mapping\JoinColumn(
@@ -54,7 +54,7 @@ class Repository
     private Organization $organization;
 
     /**
-     * @ORM\Mapping\ManyToOne(targetEntity="Ergebnis\Example\Entity\Repository")
+     * @ORM\Mapping\ManyToOne(targetEntity="App\Entity\Repository")
      * @ORM\Mapping\JoinColumn(
      *     name="template_id",
      *     referencedColumnName="id"
@@ -63,7 +63,7 @@ class Repository
     private ?Repository $template;
 
     /**
-     * @ORM\Mapping\ManyToOne(targetEntity="Ergebnis\Example\Entity\CodeOfConduct")
+     * @ORM\Mapping\ManyToOne(targetEntity="App\Entity\CodeOfConduct")
      * @ORM\Mapping\JoinColumn(
      *     name="code_of_conduct_key",
      *     referencedColumnName="key"

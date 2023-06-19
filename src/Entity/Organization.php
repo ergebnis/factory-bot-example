@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Entity;
+namespace App\Entity;
 
 use Doctrine\Common;
 use Doctrine\ORM;
@@ -60,7 +60,7 @@ class Organization
 
     /**
      * @ORM\Mapping\OneToMany(
-     *     targetEntity="Ergebnis\Example\Entity\Repository",
+     *     targetEntity="App\Entity\Repository",
      *     mappedBy="organization"
      * )
      *
@@ -70,7 +70,7 @@ class Organization
 
     /**
      * @ORM\Mapping\ManyToMany(
-     *     targetEntity="Ergebnis\Example\Entity\User",
+     *     targetEntity="App\Entity\User",
      *     inversedBy="organizations"
      * )
      *

@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example;
+namespace App;
 
 use Symfony\Bundle\FrameworkBundle;
 use Symfony\Component\Config;

@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\Integration\Entity;
+namespace App\Test\Integration\Entity;
 
-use Ergebnis\Example\Entity;
-use Ergebnis\Example\Repository;
-use Ergebnis\Example\Test;
+use App\Entity;
+use App\Repository;
+use App\Test;
 
 /**
  * @internal

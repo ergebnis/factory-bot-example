@@ -38,11 +38,11 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
                     'auto_mapping' => false,
                     'connection' => 'default',
                     'mappings' => [
-                        'Example' => [
-                            'alias' => 'Example',
+                        'App' => [
+                            'alias' => 'App',
                             'dir' => '%kernel.project_dir%/src/Entity',
                             'is_bundle' => false,
-                            'prefix' => 'Ergebnis\Example\Entity',
+                            'prefix' => 'App\Entity',
                             'type' => 'annotation',
                         ],
                     ],

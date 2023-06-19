@@ -11,15 +11,15 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\Unit\Entity;
+namespace App\Test\Unit\Entity;
 
-use Ergebnis\Example\Entity;
-use Ergebnis\Example\Test\Unit;
+use App\Entity;
+use App\Test\Unit;
 
 /**
  * @internal
  *
- * @covers \Ergebnis\Example\Entity\Organization
+ * @covers \App\Entity\Organization
  */
 final class OrganizationTest extends Unit\AbstractTestCase
 {

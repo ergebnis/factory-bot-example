@@ -11,12 +11,12 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-use Ergebnis\Example;
+use App\Kernel;
 
 require_once __DIR__ . '/../vendor/autoload_runtime.php';
 
-return static function (array $context): Example\Kernel {
-    return new Example\Kernel(
+return static function (array $context): Kernel {
+    return new Kernel(
         $context['APP_ENV'],
         (bool) $context['APP_DEBUG'],
     );

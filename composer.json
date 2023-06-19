@@ -79,12 +79,12 @@
   },
   "autoload": {
     "psr-4": {
-      "Ergebnis\\Example\\": "src/"
+      "App\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Ergebnis\\Example\\Test\\": "test/"
+      "App\\Test\\": "test/"
     }
   },
   "config": {

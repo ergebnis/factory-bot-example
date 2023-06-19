@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\Fixture\Entity;
+namespace App\Test\Fixture\Entity;
 
-use Ergebnis\Example\Entity;
+use App\Entity;
 use Ergebnis\FactoryBot;
 use Faker\Generator;
 

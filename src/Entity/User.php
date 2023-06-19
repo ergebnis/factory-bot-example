@@ -11,14 +11,14 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Entity;
+namespace App\Entity;
 
 use Doctrine\Common;
 use Doctrine\ORM;
 use Ramsey\Uuid;
 
 /**
- * @ORM\Mapping\Entity(repositoryClass="Ergebnis\Example\Repository\UserRepository")
+ * @ORM\Mapping\Entity(repositoryClass="App\Repository\UserRepository")
  * @ORM\Mapping\Table(name="user")
  */
 class User
@@ -52,7 +52,7 @@ class User
 
     /**
      * @ORM\Mapping\Embedded(
-     *     class="Ergebnis\Example\Entity\Avatar",
+     *     class="App\Entity\Avatar",
      *     columnPrefix="avatar"
      * )
      */
@@ -60,7 +60,7 @@ class User
 
     /**
      * @ORM\Mapping\ManyToMany(
-     *     targetEntity="Ergebnis\Example\Entity\Organization",
+     *     targetEntity="App\Entity\Organization",
      *     mappedBy="members"
      * )
      *

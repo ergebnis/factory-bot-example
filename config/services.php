@@ -22,7 +22,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
 
     $services
         ->load(
-            'Ergebnis\\Example\\',
+            'App\\',
             __DIR__ . '/../src/*',
         )
         ->exclude([
@@ -31,7 +31,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
 
     $services
         ->load(
-            'Ergebnis\\Example\\Controller\\',
+            'App\\Controller\\',
             __DIR__ . '/../src/Controller',
         )
         ->tag('controller.service_arguments');

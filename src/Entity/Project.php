@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Entity;
+namespace App\Entity;
 
 use Doctrine\ORM;
 use Ramsey\Uuid;
@@ -41,7 +41,7 @@ class Project
     private string $name;
 
     /**
-     * @ORM\Mapping\ManyToOne(targetEntity="Ergebnis\Example\Entity\Repository")
+     * @ORM\Mapping\ManyToOne(targetEntity="App\Entity\Repository")
      * @ORM\Mapping\JoinColumn(
      *     name="repository_id",
      *     referencedColumnName="id",

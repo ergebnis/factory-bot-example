@@ -11,9 +11,9 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\AutoReview;
+namespace App\Test\AutoReview;
 
-use Ergebnis\Example\Test\Unit;
+use App\Test\Unit;
 use Ergebnis\FactoryBot;
 
 /**
@@ -36,8 +36,8 @@ final class FixtureTest extends Unit\AbstractTestCase
             $entityClassNames,
             \array_map(static function (string $entityClassName): string {
                 return \str_replace(
-                    'Ergebnis\\Example\\Entity\\',
-                    'Ergebnis\\Example\\Test\\Fixture\\Entity\\',
+                    'App\\Entity\\',
+                    'App\\Test\\Fixture\\Entity\\',
                     $entityClassName,
                 ) . 'DefinitionProvider';
             }, $entityClassNames),

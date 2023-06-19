@@ -11,7 +11,7 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Test\Integration;
+namespace App\Test\Integration;
 
 use Doctrine\ORM;
 use Symfony\Bundle;

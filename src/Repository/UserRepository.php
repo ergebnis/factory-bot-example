@@ -11,14 +11,14 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-namespace Ergebnis\Example\Repository;
+namespace App\Repository;
 
+use App\Entity;
 use Doctrine\Bundle;
 use Doctrine\Persistence;
-use Ergebnis\Example\Entity;
 
 /**
- * @phpstan-extends \Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository<\Ergebnis\Example\Entity\User>
+ * @phpstan-extends \Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository<\App\Entity\User>
  */
 final class UserRepository extends Bundle\DoctrineBundle\Repository\ServiceEntityRepository
 {

@@ -11,11 +11,11 @@ declare(strict_types=1);
  * @see https://github.com/ergebnis/factory-bot-example
  */
 
-use Ergebnis\Example;
+use App\Kernel;
 
 require __DIR__ . '/../config/bootstrap.php';
 
-$kernel = new Example\Kernel(
+$kernel = new Kernel(
     $_SERVER['APP_ENV'],
     (bool) $_SERVER['APP_DEBUG'],
 );
