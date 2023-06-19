@@ -32,15 +32,16 @@ $config->getFinder()
     ->exclude([
         '.build/',
         '.github/',
-        '.notes/',
+        '.note/',
         'var/',
     ])
     ->ignoreDotFiles(false)
     ->in(__DIR__)
     ->name([
-        '.php_cs',
+        '.php-cs-fixer.php',
         'console',
-    ]);
+    ])
+    ->notName('.env.local.php');
 
 $config->setCacheFile(__DIR__ . '/.build/php-cs-fixer/.php-cs-fixer.cache');
 
