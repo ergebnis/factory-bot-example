@@ -20,7 +20,7 @@
     "source": "https://github.com/ergebnis/factory-bot-example"
   },
   "require": {
-    "php": "^8.1",
+    "php": "~8.1.0",
     "ext-ctype": "*",
     "ext-iconv": "*",
     "ext-pdo_pgsql": "*",
