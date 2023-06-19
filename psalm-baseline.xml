@@ -20,6 +20,24 @@
       <code>\is_array($env = include \dirname(__DIR__) . '/.env.local.php')</code>
     </RedundantCondition>
   </file>
+  <file src="src/Entity/Organization.php">
+    <MixedInferredReturnType occurrences="2">
+      <code>array&lt;int, Repository&gt;</code>
+      <code>array&lt;int, User&gt;</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="2">
+      <code>$this-&gt;members-&gt;toArray()</code>
+      <code>$this-&gt;repositories-&gt;toArray()</code>
+    </MixedReturnStatement>
+  </file>
+  <file src="src/Entity/User.php">
+    <MixedInferredReturnType occurrences="1">
+      <code>array&lt;int, Organization&gt;</code>
+    </MixedInferredReturnType>
+    <MixedReturnStatement occurrences="1">
+      <code>$this-&gt;organizations-&gt;toArray()</code>
+    </MixedReturnStatement>
+  </file>
   <file src="src/Kernel.php">
     <MixedArgument occurrences="1">
       <code>$this-&gt;debug</code>
