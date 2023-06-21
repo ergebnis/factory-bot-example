@@ -15,17 +15,14 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\Repository
- */
+#[Framework\Attributes\CoversClass(Entity\Repository::class)]
 final class RepositoryTest extends Unit\AbstractTestCase
 {
     public function testDefaults(): void
     {
-        $name = self::faker()->userName;
+        $name = self::faker()->userName();
 
         $fixtureFactory = self::fixtureFactory();
 
@@ -44,7 +41,7 @@ final class RepositoryTest extends Unit\AbstractTestCase
 
     public function testConstructorSetsValues(): void
     {
-        $name = self::faker()->userName;
+        $name = self::faker()->userName();
 
         $fixtureFactory = self::fixtureFactory();
 

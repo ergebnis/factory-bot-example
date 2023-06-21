@@ -16,12 +16,9 @@ namespace App\Test\Integration\Entity;
 use App\Entity;
 use App\Repository;
 use App\Test;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @coversNothing
- */
+#[Framework\Attributes\CoversNothing]
 final class UserTest extends Test\Integration\AbstractTestCase
 {
     public function testHasCustomRepository(): void

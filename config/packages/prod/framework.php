@@ -15,17 +15,18 @@ use Symfony\Component\DependencyInjection;
 
 return static function (DependencyInjection\Loader\Configurator\ContainerConfigurator $containerConfigurator): void {
     $containerConfigurator->extension('framework', [
-        'php_errors' => [
-            'log' => true,
+        'cache' => [
+            'pools' => [
+                'doctrine.result_cache_pool' => [
+                    'adapter' => 'cache.app',
+                ],
+                'doctrine.system_cache_pool' => [
+                    'adapter' => 'cache.system',
+                ],
+            ],
         ],
         'router' => [
-            'utf8' => true,
-        ],
-        'secret' => '%env(APP_SECRET)%',
-        'session' => [
-            'cookie_samesite' => 'lax',
-            'cookie_secure' => 'auto',
-            'handler_id' => null,
+            'strict_requirements' => null,
         ],
     ]);
 };

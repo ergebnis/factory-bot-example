@@ -15,17 +15,14 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\Organization
- */
+#[Framework\Attributes\CoversClass(Entity\Organization::class)]
 final class OrganizationTest extends Unit\AbstractTestCase
 {
     public function testDefaults(): void
     {
-        $name = self::faker()->userName;
+        $name = self::faker()->userName();
 
         $organization = new Entity\Organization($name);
 
@@ -39,7 +36,7 @@ final class OrganizationTest extends Unit\AbstractTestCase
 
     public function testConstructorSetsValues(): void
     {
-        $name = self::faker()->userName;
+        $name = self::faker()->userName();
 
         $organization = new Entity\Organization($name);
 
@@ -50,8 +47,8 @@ final class OrganizationTest extends Unit\AbstractTestCase
     {
         $faker = self::faker()->unique();
 
-        $name = $faker->userName;
-        $newName = $faker->userName;
+        $name = $faker->userName();
+        $newName = $faker->userName();
 
         $organization = new Entity\Organization($name);
 
