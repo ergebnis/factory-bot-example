@@ -22,9 +22,6 @@ jobs:
         dependencies:
           - "locked"
 
-    env:
-      APP_ENV: "test"
-
     steps:
       - name: "Checkout"
         uses: "actions/checkout@v3.5.3"
@@ -33,7 +30,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "xdebug"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -59,12 +56,6 @@ jobs:
         uses: "ergebnis/.github/actions/composer/install@1.8.0"
         with:
           dependencies: "${{ matrix.dependencies }}"
-
-      - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
-
-      - name: "Warm up cache"
-        run: "bin/console cache:warmup --ansi"
 
       - name: "Collect code coverage with Xdebug and phpunit/phpunit"
         env:
@@ -105,7 +96,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -133,7 +124,7 @@ jobs:
         run: "composer normalize --ansi --dry-run"
 
       - name: "Run symplify/config-transformer"
-        run: "vendor/bin/config-transformer --ansi --dry-run config"
+        run: "vendor/bin/config-transformer --ansi --dry-run config/"
 
       - name: "Create cache directory for friendsofphp/php-cs-fixer"
         run: "mkdir -p .build/php-cs-fixer/"
@@ -149,8 +140,6 @@ jobs:
 
       - name: "Run friendsofphp/php-cs-fixer"
         run: "vendor/bin/php-cs-fixer fix --ansi --config=.php-cs-fixer.php --diff --dry-run --verbose"
-        env:
-          PHP_CS_FIXER_IGNORE_ENV: 1
 
   dependency-analysis:
     name: "Dependency Analysis"
@@ -173,7 +162,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
           tools: "phive"
 
@@ -230,7 +219,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "xdebug"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -255,7 +244,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
+        run: "composer dump-env ${{ env.APP_ENV }} --ansi"
 
       - name: "Warm up cache"
         run: "bin/console cache:warmup --ansi"
@@ -286,7 +275,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, intl, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -346,7 +335,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -385,6 +374,7 @@ jobs:
 
         dependencies:
           - "locked"
+
     env:
       APP_ENV: "test"
 
@@ -396,7 +386,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, opcache, pcntl, pdo_pgsql, pdo_sqlite, phar, posix, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, opcache, pcntl, pdo, pdo_pgsql, pdo_sqlite, phar, posix, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -421,7 +411,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
+        run: "composer dump-env ${{ env.APP_ENV }} --ansi"
 
       - name: "Warm up cache"
         run: "bin/console cache:warmup --ansi"
@@ -431,6 +421,58 @@ jobs:
 
       - name: "Run vimeo/psalm"
         run: "vendor/bin/psalm --config=psalm.xml --output-format=github --shepherd --show-info=false --stats --threads=4"
+
+  symfony-flex:
+    name: "Symfony Flex"
+
+    runs-on: "ubuntu-latest"
+
+    strategy:
+      matrix:
+        php-version:
+          - "8.2"
+
+        dependencies:
+          - "locked"
+
+    steps:
+      - name: "Checkout"
+        uses: "actions/checkout@v3"
+
+      - name: "Set up PHP"
+        uses: "shivammathur/setup-php@2.25.4"
+        with:
+          coverage: "none"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          php-version: "${{ matrix.php-version }}"
+
+      - name: "Determine composer cache directory"
+        uses: "ergebnis/.github/actions/composer/determine-cache-directory@1.8.0"
+
+      - name: "Cache dependencies installed with composer"
+        uses: "actions/cache@v3.3.1"
+        with:
+          path: "${{ env.COMPOSER_CACHE_DIR }}"
+          key: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-${{ hashFiles('composer.lock') }}"
+          restore-keys: "php-${{ matrix.php-version }}-composer-${{ matrix.dependencies }}-"
+
+      - name: "Install ${{ matrix.dependencies }} dependencies with composer"
+        uses: "ergebnis/.github/actions/composer/install@1.8.0"
+        with:
+          dependencies: "${{ matrix.dependencies }}"
+
+      - name: "Synchronize symfony/flex recipes"
+        run: "composer symfony:sync-recipes --ansi"
+
+      - name: "Verify that symfony.lock is up-to-date"
+        run: |
+          diff=$(git diff symfony.lock)
+
+          if [[ "${diff}" != "" ]]; then
+            echo "::error file=symfony.lock::symfony.lock is not up-to-date."
+
+            exit 1
+          fi
 
   tests:
     name: "Tests"
@@ -469,7 +511,7 @@ jobs:
         uses: "shivammathur/setup-php@2.25.4"
         with:
           coverage: "none"
-          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
+          extensions: "none, ctype, curl, dom, iconv, json, mbstring, pdo, pdo_pgsql, pdo_sqlite, phar, simplexml, tokenizer, xml, xmlwriter"
           php-version: "${{ matrix.php-version }}"
 
       - name: "Set up problem matchers for PHP"
@@ -497,7 +539,7 @@ jobs:
           dependencies: "${{ matrix.dependencies }}"
 
       - name: "Dump environment variables"
-        run: "composer dump-env ${{ env.APP_ENV }}"
+        run: "composer dump-env ${{ env.APP_ENV }} --ansi"
 
       - name: "Warm up cache"
         run: "bin/console cache:warmup --ansi"

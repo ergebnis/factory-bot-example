@@ -86,7 +86,7 @@ to run a security analysis.
 
 ## Static Code Analysis
 
-We are using [`phpstan/phpstan`](https://github.com/phpstan/phpstan) and [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.
+We are using [`vimeo/psalm`](https://github.com/vimeo/psalm) to statically analyze the code.
 
 Run
 
@@ -115,7 +115,7 @@ We are using [`symfony/flex`](https://github.com/symfony/flex) to integrate pack
 Run
 
 ```sh
-$ make symfony
+make symfony
 ```
 
 to synchronize recipes.

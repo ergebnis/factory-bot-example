@@ -11,13 +11,25 @@
     cacheResult="true"
     colors="true"
     columns="max"
+    displayDetailsOnIncompleteTests="true"
+    displayDetailsOnSkippedTests="true"
+    displayDetailsOnTestsThatTriggerDeprecations="true"
+    displayDetailsOnTestsThatTriggerErrors="true"
+    displayDetailsOnTestsThatTriggerNotices="true"
+    displayDetailsOnTestsThatTriggerWarnings="true"
     executionOrder="random"
+    requireCoverageMetadata="true"
     stopOnError="false"
     stopOnFailure="false"
     stopOnIncomplete="false"
     stopOnSkipped="false"
 >
     <coverage includeUncoveredFiles="true"/>
+    <extensions>
+        <bootstrap class="Ergebnis\PHPUnit\SlowTestDetector\Extension">
+            <parameter name="maximum-duration" value="100"/>
+        </bootstrap>
+    </extensions>
     <source>
         <exclude>
             <file>../../src/Kernel.php</file>

@@ -15,19 +15,16 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\User
- */
+#[Framework\Attributes\CoversClass(Entity\User::class)]
 final class UserTest extends Unit\AbstractTestCase
 {
     public function testDefaults(): void
     {
         $faker = self::faker();
 
-        $login = $faker->userName;
+        $login = $faker->userName();
         $avatar = new Entity\Avatar();
 
         $user = new Entity\User(
@@ -44,9 +41,9 @@ final class UserTest extends Unit\AbstractTestCase
     {
         $faker = self::faker();
 
-        $login = $faker->userName;
+        $login = $faker->userName();
         $avatar = new Entity\Avatar();
-        $location = $faker->city;
+        $location = $faker->city();
 
         $user = new Entity\User(
             $login,
@@ -61,7 +58,7 @@ final class UserTest extends Unit\AbstractTestCase
 
     public function testRenameToRenamesUser(): void
     {
-        $login = self::faker()->userName;
+        $login = self::faker()->userName();
 
         /** @var Entity\User $user */
         $user = self::fixtureFactory()->createOne(Entity\User::class);

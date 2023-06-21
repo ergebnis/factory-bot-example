@@ -15,17 +15,14 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\Project
- */
+#[Framework\Attributes\CoversClass(Entity\Project::class)]
 final class ProjectTest extends Unit\AbstractTestCase
 {
     public function testConstructorSetsValues(): void
     {
-        $name = self::faker()->userName;
+        $name = self::faker()->userName();
 
         /** @var Entity\Repository $repository */
         $repository = self::fixtureFactory()->createOne(Entity\Repository::class);

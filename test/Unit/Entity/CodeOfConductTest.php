@@ -15,21 +15,18 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\CodeOfConduct
- */
+#[Framework\Attributes\CoversClass(Entity\CodeOfConduct::class)]
 final class CodeOfConductTest extends Unit\AbstractTestCase
 {
     public function testConstructorSetsValues(): void
     {
         $faker = self::faker();
 
-        $key = $faker->word;
-        $name = $faker->sentence;
-        $url = $faker->url;
+        $key = $faker->word();
+        $name = $faker->sentence();
+        $url = $faker->url();
         $body = $faker->realText();
 
         $codeOfConduct = new Entity\CodeOfConduct(

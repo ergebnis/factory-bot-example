@@ -38,7 +38,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
                     'auto_mapping' => false,
                     'connection' => 'default',
                     'mappings' => [
-                        'App' => [
+                        'app' => [
                             'alias' => 'App',
                             'dir' => '%kernel.project_dir%/src/Entity',
                             'is_bundle' => false,

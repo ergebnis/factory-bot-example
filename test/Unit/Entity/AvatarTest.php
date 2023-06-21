@@ -15,12 +15,9 @@ namespace App\Test\Unit\Entity;
 
 use App\Entity;
 use App\Test\Unit;
+use PHPUnit\Framework;
 
-/**
- * @internal
- *
- * @covers \App\Entity\Avatar
- */
+#[Framework\Attributes\CoversClass(Entity\Avatar::class)]
 final class AvatarTest extends Unit\AbstractTestCase
 {
     public function testDefaults(): void

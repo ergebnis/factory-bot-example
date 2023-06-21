@@ -16,9 +16,6 @@ namespace App\Test\Integration;
 use Doctrine\ORM;
 use Symfony\Bundle;
 
-/**
- * @internal
- */
 abstract class AbstractTestCase extends Bundle\FrameworkBundle\Test\KernelTestCase
 {
     protected function setUp(): void
