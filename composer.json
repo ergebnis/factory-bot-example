@@ -38,7 +38,7 @@
     "symfony/dotenv": "^6.3.0",
     "symfony/error-handler": "^6.1.6",
     "symfony/flex": "^2.3.1",
-    "symfony/framework-bundle": "^6.2.11",
+    "symfony/framework-bundle": "^6.3.1",
     "symfony/http-kernel": "^6.1.12",
     "symfony/routing": "^6.1.7",
     "symfony/runtime": "^6.3.0",
