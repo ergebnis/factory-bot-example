@@ -29,7 +29,7 @@
     "doctrine/doctrine-bundle": "^2.10.1",
     "doctrine/doctrine-migrations-bundle": "^3.2.4",
     "doctrine/migrations": "^3.6.0",
-    "doctrine/orm": "^2.15.3",
+    "doctrine/orm": "^2.16.2",
     "doctrine/persistence": "^3.2.0",
     "ramsey/uuid": "^4.7.4",
     "symfony/config": "^6.1.3",
