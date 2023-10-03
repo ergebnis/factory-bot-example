@@ -43,7 +43,7 @@
     "symfony/http-kernel": "^6.3.3",
     "symfony/routing": "^6.3.3",
     "symfony/runtime": "^6.3.2",
-    "symfony/serializer": "^6.3.4",
+    "symfony/serializer": "^6.3.5",
     "symfony/yaml": "^6.3.3"
   },
   "require-dev": {
