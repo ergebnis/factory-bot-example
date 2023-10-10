@@ -17,7 +17,7 @@ use App\Test\Unit;
 use Ergebnis\FactoryBot;
 use PHPUnit\Framework;
 
-#[Framework\Attributes\CoversNothing]
+#[Framework\Attributes\CoversNothing()]
 final class FixtureTest extends Unit\AbstractTestCase
 {
     public function testEntitiesHaveEntityDefinitionProviders(): void
