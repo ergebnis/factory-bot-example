@@ -49,7 +49,7 @@
   "require-dev": {
     "ext-pdo_sqlite": "*",
     "dama/doctrine-test-bundle": "^7.2.1",
-    "ergebnis/composer-normalize": "^2.37.0",
+    "ergebnis/composer-normalize": "^2.39.0",
     "ergebnis/factory-bot": "^1.4.0",
     "ergebnis/license": "^2.2.0",
     "ergebnis/php-cs-fixer-config": "^6.8.1",
