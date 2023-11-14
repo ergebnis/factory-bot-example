@@ -35,7 +35,7 @@
     "ramsey/uuid": "^4.7.5",
     "symfony/config": "^6.3.8",
     "symfony/console": "^6.3.4",
-    "symfony/dependency-injection": "^6.3.5",
+    "symfony/dependency-injection": "^6.3.8",
     "symfony/dotenv": "^6.3.7",
     "symfony/error-handler": "^6.3.2",
     "symfony/flex": "^2.4.1",
