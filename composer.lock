@@ -5717,16 +5717,16 @@
         },
         {
             "name": "erickskrauch/php-cs-fixer-custom-fixers",
-            "version": "1.2.0",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers.git",
-                "reference": "a0bef8d27904731cbd5e60ffd05fd9ce2d6850b2"
+                "reference": "6b0e22fd12fb3110f74e34aa6988468a220609bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erickskrauch/php-cs-fixer-custom-fixers/zipball/a0bef8d27904731cbd5e60ffd05fd9ce2d6850b2",
-                "reference": "a0bef8d27904731cbd5e60ffd05fd9ce2d6850b2",
+                "url": "https://api.github.com/repos/erickskrauch/php-cs-fixer-custom-fixers/zipball/6b0e22fd12fb3110f74e34aa6988468a220609bf",
+                "reference": "6b0e22fd12fb3110f74e34aa6988468a220609bf",
                 "shasum": ""
             },
             "require": {
@@ -5773,9 +5773,9 @@
             ],
             "support": {
                 "issues": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/issues",
-                "source": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.2.0"
+                "source": "https://github.com/erickskrauch/php-cs-fixer-custom-fixers/tree/1.2.1"
             },
-            "time": "2023-07-20T02:51:18+00:00"
+            "time": "2023-11-16T16:27:33+00:00"
         },
         {
             "name": "fakerphp/faker",
