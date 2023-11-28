@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "615883f075bdbe18b979409a5dfbd82a",
+    "content-hash": "40ee51158a75609816d14a093cfe2c14",
     "packages": [
         {
             "name": "brick/math",
@@ -5113,16 +5113,16 @@
         },
         {
             "name": "ergebnis/factory-bot",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/factory-bot.git",
-                "reference": "bf1f417e90f7dd16ccaa42fbc9ca64fe5cbcf820"
+                "reference": "57bf9aa842f76e4755eb46379e7b4b57b676b043"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/factory-bot/zipball/bf1f417e90f7dd16ccaa42fbc9ca64fe5cbcf820",
-                "reference": "bf1f417e90f7dd16ccaa42fbc9ca64fe5cbcf820",
+                "url": "https://api.github.com/repos/ergebnis/factory-bot/zipball/57bf9aa842f76e4755eb46379e7b4b57b676b043",
+                "reference": "57bf9aa842f76e4755eb46379e7b4b57b676b043",
                 "shasum": ""
             },
             "require": {
@@ -5131,29 +5131,30 @@
                 "doctrine/dbal": "^2.12.0 || ^3.0.0",
                 "doctrine/orm": "^2.8.0",
                 "doctrine/persistence": "^2.1.0 || ^3.0.0",
-                "ergebnis/classy": "^1.4.0",
+                "ergebnis/classy": "^1.6.0",
                 "fakerphp/faker": "^1.20.0",
-                "php": "~8.0.0 || ~8.1.0 || ~8.2.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.29.0",
-                "ergebnis/license": "^2.1.0",
-                "ergebnis/php-cs-fixer-config": "^5.2.0",
-                "ergebnis/phpstan-rules": "^1.0.0",
+                "ergebnis/composer-normalize": "^2.39.0",
+                "ergebnis/license": "^2.3.0",
+                "ergebnis/php-cs-fixer-config": "^6.12.0",
+                "ergebnis/phpstan-rules": "^2.1.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.4.0",
                 "ext-pdo_sqlite": "*",
-                "infection/infection": "~0.26.19",
-                "phpstan/extension-installer": "^1.2.0",
-                "phpstan/phpstan": "^1.9.17",
-                "phpstan/phpstan-deprecation-rules": "^1.1.1",
-                "phpstan/phpstan-doctrine": "^1.3.32",
-                "phpstan/phpstan-phpunit": "^1.3.4",
-                "phpstan/phpstan-strict-rules": "^1.4.5",
-                "phpunit/phpunit": "^9.6.3",
+                "infection/infection": "~0.27.8",
+                "phpstan/extension-installer": "^1.3.1",
+                "phpstan/phpstan": "^1.10.45",
+                "phpstan/phpstan-deprecation-rules": "^1.1.4",
+                "phpstan/phpstan-doctrine": "^1.3.53",
+                "phpstan/phpstan-phpunit": "^1.3.15",
+                "phpstan/phpstan-strict-rules": "^1.5.2",
+                "phpunit/phpunit": "^10.4.2",
                 "psalm/plugin-phpunit": "~0.18.4",
-                "ramsey/uuid": "^4.7.3",
-                "rector/rector": "~0.15.13",
+                "ramsey/uuid": "^4.7.5",
+                "rector/rector": "~0.18.11",
                 "symfony/cache": "^5.3.14",
-                "vimeo/psalm": "^5.6.0"
+                "vimeo/psalm": "^5.16.0"
             },
             "type": "library",
             "autoload": {
@@ -5168,7 +5169,8 @@
             "authors": [
                 {
                     "name": "Andreas Möller",
-                    "email": "am@localheinz.com"
+                    "email": "am@localheinz.com",
+                    "homepage": "https://localheinz.com"
                 }
             ],
             "description": "Provides a fixture factory for doctrine/orm entities.",
@@ -5182,9 +5184,10 @@
             ],
             "support": {
                 "issues": "https://github.com/ergebnis/factory-bot/issues",
+                "security": "https://github.com/ergebnis/factory-bot/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/factory-bot"
             },
-            "time": "2023-02-09T22:30:51+00:00"
+            "time": "2023-11-28T09:25:59+00:00"
         },
         {
             "name": "ergebnis/json",
