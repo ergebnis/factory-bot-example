@@ -44,7 +44,7 @@ final class FixtureTest extends Unit\AbstractTestCase
         $actualProviderClassNames = \array_filter($expectedProviderClassNames, static function (string $providerClassName): bool {
             try {
                 $reflection = new \ReflectionClass($providerClassName);
-            } catch (\ReflectionException $exception) {
+            } catch (\ReflectionException) {
                 return false;
             }
 
