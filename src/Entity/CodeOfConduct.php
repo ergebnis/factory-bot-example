@@ -26,7 +26,7 @@ class CodeOfConduct
      * @ORM\Mapping\Id
      *
      * @ORM\Mapping\Column(
-     *     name="id",
+     *     name="key",
      *     type="string"
      * )
      */
