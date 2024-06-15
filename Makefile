@@ -3,7 +3,7 @@ CONNECTION_NAME_DEFAULT:=default
 ENTITY_MANAGER_NAME_DEFAULT:=default
 
 .PHONY: it
-it: refactoring coding-standards security-analysis static-code-analysis tests ## Runs the refactoring, coding-standards, security-analysis, static-code-analysis, and tests targets
+it: refactoring coding-standards security-analysis static-code-analysis doctrine tests ## Runs the refactoring, coding-standards, security-analysis, static-code-analysis, doctrine, and tests targets
 
 .PHONY: cache
 cache: vendor ## Warms up the cache
