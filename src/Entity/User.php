@@ -13,63 +13,50 @@ declare(strict_types=1);
 
 namespace App\Entity;
 
+use App\Repository;
 use Doctrine\Common;
 use Doctrine\ORM;
 use Ramsey\Uuid;
 
-/**
- * @ORM\Mapping\Entity(repositoryClass="App\Repository\UserRepository")
- *
- * @ORM\Mapping\Table(name="user")
- */
+#[ORM\Mapping\Entity(repositoryClass: Repository\UserRepository::class)]
+#[ORM\Mapping\Table(name: 'user')]
 final class User
 {
-    /**
-     * @ORM\Mapping\Id
-     *
-     * @ORM\Mapping\GeneratedValue(strategy="NONE")
-     *
-     * @ORM\Mapping\Column(
-     *     name="id",
-     *     type="string",
-     *     length=36
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'id',
+        type: 'string',
+        length: 36,
+    )]
+    #[ORM\Mapping\GeneratedValue(strategy: 'NONE')]
+    #[ORM\Mapping\Id()]
     private string $id;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="login",
-     *     type="string"
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'login',
+        type: 'string',
+    )]
     private string $login;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="location",
-     *     type="string",
-     *     nullable=true
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'location',
+        type: 'string',
+        nullable: true,
+    )]
     private ?string $location;
 
-    /**
-     * @ORM\Mapping\Embedded(
-     *     class="App\Entity\Avatar",
-     *     columnPrefix="avatar"
-     * )
-     */
+    #[ORM\Mapping\Embedded(
+        class: Avatar::class,
+        columnPrefix: 'avatar',
+    )]
     private Avatar $avatar;
 
     /**
-     * @ORM\Mapping\ManyToMany(
-     *     targetEntity="App\Entity\Organization",
-     *     mappedBy="members"
-     * )
-     *
      * @var Common\Collections\ArrayCollection<int, Organization>
      */
+    #[ORM\Mapping\ManyToMany(
+        targetEntity: Organization::class,
+        mappedBy: 'members',
+    )]
     private Common\Collections\ArrayCollection $organizations;
 
     public function __construct(

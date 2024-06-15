@@ -17,69 +17,54 @@ use Doctrine\Common;
 use Doctrine\ORM;
 use Ramsey\Uuid;
 
-/**
- * @ORM\Mapping\Entity
- *
- * @ORM\Mapping\Table(name="organization")
- */
+#[ORM\Mapping\Entity()]
+#[ORM\Mapping\Table(name: 'organization')]
 class Organization
 {
-    /**
-     * @ORM\Mapping\Id
-     *
-     * @ORM\Mapping\GeneratedValue(strategy="NONE")
-     *
-     * @ORM\Mapping\Column(
-     *     name="id",
-     *     type="string",
-     *     length=36
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'id',
+        type: 'string',
+        length: 36,
+    )]
+    #[ORM\Mapping\GeneratedValue(strategy: 'NONE')]
+    #[ORM\Mapping\Id()]
     private string $id;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="is_verified",
-     *     type="boolean"
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'is_verified',
+        type: 'boolean',
+    )]
     private bool $isVerified = false;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="name",
-     *     type="string"
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'name',
+        type: 'string',
+    )]
     private string $name;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="url",
-     *     type="string",
-     *     nullable=true
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'url',
+        type: 'string',
+        nullable: true,
+    )]
     private ?string $url = null;
 
     /**
-     * @ORM\Mapping\OneToMany(
-     *     targetEntity="App\Entity\Repository",
-     *     mappedBy="organization"
-     * )
-     *
      * @var Common\Collections\ArrayCollection<int, Repository>
      */
+    #[ORM\Mapping\OneToMany(
+        targetEntity: Repository::class,
+        mappedBy: 'organization',
+    )]
     private Common\Collections\ArrayCollection $repositories;
 
     /**
-     * @ORM\Mapping\ManyToMany(
-     *     targetEntity="App\Entity\User",
-     *     inversedBy="organizations"
-     * )
-     *
      * @var Common\Collections\ArrayCollection<int, User>
      */
+    #[ORM\Mapping\ManyToMany(
+        targetEntity: User::class,
+        inversedBy: 'organizations',
+    )]
     private Common\Collections\ArrayCollection $members;
     private bool $constructorWasCalled = false;
 

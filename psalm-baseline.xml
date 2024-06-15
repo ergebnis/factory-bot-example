@@ -55,14 +55,13 @@
   </file>
   <file src="test/Unit/AbstractTestCase.php">
     <DeprecatedClass>
-      <code><![CDATA[ORM\Tools\Setup::createAnnotationMetadataConfiguration(
+      <code><![CDATA[ORM\Tools\Setup::createAttributeMetadataConfiguration(
             [
                 __DIR__ . '/../../src/Entity',
             ],
             true,
             null,
             null,
-            false,
         )]]></code>
     </DeprecatedClass>
     <DeprecatedMethod>
