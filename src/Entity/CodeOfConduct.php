@@ -25,7 +25,10 @@ class CodeOfConduct
     /**
      * @ORM\Mapping\Id
      *
-     * @ORM\Mapping\Column(type="string")
+     * @ORM\Mapping\Column(
+     *     name="id",
+     *     type="string"
+     * )
      */
     private string $key;
 

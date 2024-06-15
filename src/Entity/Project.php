@@ -29,6 +29,7 @@ class Project
      * @ORM\Mapping\GeneratedValue(strategy="NONE")
      *
      * @ORM\Mapping\Column(
+     *     name="id",
      *     type="string",
      *     length=36
      * )
