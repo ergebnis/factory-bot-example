@@ -10,33 +10,6 @@
       <code><![CDATA[$context['APP_ENV']]]></code>
     </MixedArgument>
   </file>
-  <file src="src/Kernel.php">
-    <MixedArgument>
-      <code><![CDATA[$this->debug]]></code>
-    </MixedArgument>
-    <MixedArrayAccess>
-      <code><![CDATA[$envs[$this->environment]]]></code>
-      <code><![CDATA[$envs['all']]]></code>
-    </MixedArrayAccess>
-    <MixedAssignment>
-      <code>$class</code>
-      <code>$contents</code>
-      <code>$envs</code>
-    </MixedAssignment>
-    <MixedMethodCall>
-      <code>new $class()</code>
-    </MixedMethodCall>
-    <MoreSpecificReturnType>
-      <code>iterable</code>
-    </MoreSpecificReturnType>
-    <PossiblyUnusedMethod>
-      <code>configureContainer</code>
-      <code>configureRoutes</code>
-    </PossiblyUnusedMethod>
-    <UnresolvableInclude>
-      <code><![CDATA[require $this->getProjectDir() . '/config/bundles.php']]></code>
-    </UnresolvableInclude>
-  </file>
   <file src="src/Repository/UserRepository.php">
     <PossiblyUnusedMethod>
       <code>__construct</code>
