@@ -11,8 +11,7 @@ cache: vendor ## Warms up the cache
 	bin/console cache:warmup --env=${APP_ENV}
 
 .PHONY: code-coverage
-code-coverage: vendor ## Collects coverage from running unit tests with phpunit/phpunit
-	mkdir -p .build/phpunit
+code-coverage: vendor ## Collects code coverage from running unit tests with phpunit/phpunit
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml --coverage-text
 
 .PHONY: coding-standards
@@ -20,12 +19,11 @@ coding-standards: vendor ## Lints YAML files with yamllint, normalizes composer.
 	yamllint -c .yamllint.yaml --strict .
 	composer normalize
 	vendor/bin/config-transformer config/
-	mkdir -p .build/php-cs-fixer/
-	PHP_CS_FIXER_IGNORE_ENV=1 vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --verbose
+	vendor/bin/php-cs-fixer fix --config=.php-cs-fixer.php --diff --show-progress=dots --verbose
 
 .PHONY: dependency-analysis
 dependency-analysis: phive vendor ## Runs a dependency analysis with maglnet/composer-require-checker
-	.phive/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json
+	.phive/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json --verbose
 
 .PHONY: doctrine
 doctrine: vendor environment ## Runs doctrine commands to set up a local test database
@@ -45,12 +43,10 @@ help: ## Displays this list of targets with descriptions
 
 .PHONY: mutation-tests
 mutation-tests: vendor ## Runs mutation tests with infection/infection
-	mkdir -p .build/infection/
 	vendor/bin/infection --configuration=infection.json
 
 .PHONY: phive
-phive: .phive## Installs dependencies with phive
-	mkdir -p .build/phive/
+phive: .phive ## Installs dependencies with phive
 	PHIVE_HOME=.build/phive phive install --trust-gpg-keys 0x033E5F8D801A2F8D
 
 .PHONY: refactoring
@@ -63,19 +59,16 @@ security-analysis: vendor ## Runs a security analysis with composer
 
 .PHONY: static-code-analysis
 static-code-analysis: vendor ## Runs a static code analysis with vimeo/psalm
-	mkdir -p .build/psalm/
 	vendor/bin/psalm --config=psalm.xml --clear-cache
 	vendor/bin/psalm --config=psalm.xml --show-info=false --stats --threads=4
 
 .PHONY: static-code-analysis-baseline
-static-code-analysis-baseline: vendor ## Generates a baseline for static code analysis vimeo/psalm
-	mkdir -p .build/psalm/
+static-code-analysis-baseline: vendor ## Generates a baseline for static code analysis with vimeo/psalm
 	vendor/bin/psalm --config=psalm.xml --clear-cache
 	vendor/bin/psalm --config=psalm.xml --set-baseline=psalm-baseline.xml
 
 .PHONY: tests
 tests: vendor ## Runs unit, integration, and functional tests with phpunit/phpunit
-	mkdir -p .build/phpunit/
 	vendor/bin/phpunit --configuration=test/Unit/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Integration/phpunit.xml
 	vendor/bin/phpunit --configuration=test/Functional/phpunit.xml
