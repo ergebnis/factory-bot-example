@@ -50,7 +50,7 @@
     "ext-pdo_sqlite": "*",
     "dama/doctrine-test-bundle": "^8.2.0",
     "ergebnis/composer-normalize": "^2.39.0",
-    "ergebnis/factory-bot": "^1.5.0",
+    "ergebnis/factory-bot": "^1.8.0",
     "ergebnis/license": "^2.4.0",
     "ergebnis/php-cs-fixer-config": "^6.28.1",
     "ergebnis/phpunit-slow-test-detector": "^2.14.0",
