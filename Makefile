@@ -26,7 +26,7 @@ dependency-analysis: phive vendor ## Runs a dependency analysis with maglnet/com
 	.phive/composer-require-checker check --config-file=$(shell pwd)/composer-require-checker.json --verbose
 
 .PHONY: doctrine
-doctrine: vendor environment ## Runs doctrine commands to set up a local test database
+doctrine: environment vendor ## Runs doctrine commands to set up a local test database
 	bin/console doctrine:database:drop --connection=${CONNECTION_NAME_DEFAULT} --env=${APP_ENV} --force --if-exists
 	bin/console doctrine:database:create --connection=${CONNECTION_NAME_DEFAULT} --env=${APP_ENV}
 	bin/console doctrine:migrations:status --env=${APP_ENV}
