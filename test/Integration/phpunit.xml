@@ -6,7 +6,7 @@
     beStrictAboutCoverageMetadata="true"
     beStrictAboutOutputDuringTests="true"
     beStrictAboutTestsThatDoNotTestAnything="true"
-    bootstrap="bootstrap.php"
+    bootstrap="../../config/bootstrap.php"
     cacheDirectory="../../.build/phpunit/integration/"
     cacheResult="true"
     colors="true"
