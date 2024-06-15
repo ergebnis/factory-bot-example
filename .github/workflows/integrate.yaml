@@ -19,7 +19,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -80,7 +80,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -152,7 +152,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -208,7 +208,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -269,7 +269,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -328,7 +328,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -378,7 +378,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -437,7 +437,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
@@ -491,7 +491,7 @@ jobs:
     strategy:
       matrix:
         php-version:
-          - "8.2"
+          - "8.3"
 
         dependencies:
           - "locked"
