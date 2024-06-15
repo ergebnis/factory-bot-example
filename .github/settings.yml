@@ -1,4 +1,4 @@
-# https://github.com/probot/settings
+# https://github.com/repository-settings/app
 
 branches:
   - name: "main"
@@ -69,7 +69,7 @@ repository:
   archived: false
   default_branch: "main"
   delete_branch_on_merge: true
-  description: ":robot: + :notebook_with_decorative_cover: Provides usage examples for ergebnis/factory-bot."
+  description: "🤖 + 📔 Provides usage examples for ergebnis/factory-bot."
   enable_automated_security_fixes: true
   enable_vulnerability_alerts: true
   has_discussions: false
