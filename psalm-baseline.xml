@@ -11,9 +11,6 @@
     </MixedArgument>
   </file>
   <file src="src/Repository/UserRepository.php">
-    <PossiblyUnusedMethod>
-      <code><![CDATA[__construct]]></code>
-    </PossiblyUnusedMethod>
     <UnusedParam>
       <code><![CDATA[$registry]]></code>
     </UnusedParam>
