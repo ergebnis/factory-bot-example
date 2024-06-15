@@ -54,7 +54,7 @@
     "ergebnis/license": "^2.2.0",
     "ergebnis/php-cs-fixer-config": "^6.28.1",
     "ergebnis/phpunit-slow-test-detector": "^2.14.0",
-    "infection/infection": "~0.27.8",
+    "infection/infection": "~0.27.11",
     "phpunit/phpunit": "^10.4.2",
     "psalm/plugin-phpunit": "~0.18.4",
     "psalm/plugin-symfony": "^5.04",

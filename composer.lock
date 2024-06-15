@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "899a6d9f37469864bd9bfe3ee163c91a",
+    "content-hash": "de0bdbdfa8c8c1c53f16c16438b44c64",
     "packages": [
         {
             "name": "brick/math",
@@ -6280,16 +6280,16 @@
         },
         {
             "name": "infection/infection",
-            "version": "0.27.8",
+            "version": "0.27.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/infection/infection.git",
-                "reference": "673ce762abf3355fcdc186ca17eb89edf86993bf"
+                "reference": "6d55979c457eef2a5d0d80446c67ca533f201961"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/infection/infection/zipball/673ce762abf3355fcdc186ca17eb89edf86993bf",
-                "reference": "673ce762abf3355fcdc186ca17eb89edf86993bf",
+                "url": "https://api.github.com/repos/infection/infection/zipball/6d55979c457eef2a5d0d80446c67ca533f201961",
+                "reference": "6d55979c457eef2a5d0d80446c67ca533f201961",
                 "shasum": ""
             },
             "require": {
@@ -6310,7 +6310,7 @@
                 "php": "^8.1",
                 "sanmai/later": "^0.1.1",
                 "sanmai/pipeline": "^5.1 || ^6",
-                "sebastian/diff": "^3.0.2 || ^4.0 || ^5.0",
+                "sebastian/diff": "^3.0.2 || ^4.0 || ^5.0 || ^6.0",
                 "symfony/console": "^5.4 || ^6.0 || ^7.0",
                 "symfony/filesystem": "^5.4 || ^6.0 || ^7.0",
                 "symfony/finder": "^5.4 || ^6.0 || ^7.0",
@@ -6326,7 +6326,7 @@
             "require-dev": {
                 "brianium/paratest": "^6.11",
                 "ext-simplexml": "*",
-                "fidry/makefile": "^0.2.0",
+                "fidry/makefile": "^1.0",
                 "helmich/phpunit-json-assert": "^3.0",
                 "phpspec/prophecy": "^1.15",
                 "phpspec/prophecy-phpunit": "^2.0",
@@ -6338,7 +6338,6 @@
                 "phpunit/phpunit": "^9.6",
                 "rector/rector": "^0.16.0",
                 "sidz/phpstan-rules": "^0.4.0",
-                "symfony/phpunit-bridge": "^5.4 || ^6.0 || ^7.0",
                 "symfony/yaml": "^5.4 || ^6.0 || ^7.0",
                 "thecodingmachine/phpstan-safe-rule": "^1.2.0"
             },
@@ -6396,7 +6395,7 @@
             ],
             "support": {
                 "issues": "https://github.com/infection/infection/issues",
-                "source": "https://github.com/infection/infection/tree/0.27.8"
+                "source": "https://github.com/infection/infection/tree/0.27.11"
             },
             "funding": [
                 {
@@ -6408,7 +6407,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2023-11-08T14:29:03+00:00"
+            "time": "2024-03-20T07:48:57+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -7895,16 +7894,16 @@
         },
         {
             "name": "sanmai/pipeline",
-            "version": "v6.9",
+            "version": "v6.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sanmai/pipeline.git",
-                "reference": "c48f45c22c3ce4140d071f7658fb151df1cc08ea"
+                "reference": "a5fa2a6c6ca93efa37e7c24aab72f47448a6b110"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/c48f45c22c3ce4140d071f7658fb151df1cc08ea",
-                "reference": "c48f45c22c3ce4140d071f7658fb151df1cc08ea",
+                "url": "https://api.github.com/repos/sanmai/pipeline/zipball/a5fa2a6c6ca93efa37e7c24aab72f47448a6b110",
+                "reference": "a5fa2a6c6ca93efa37e7c24aab72f47448a6b110",
                 "shasum": ""
             },
             "require": {
@@ -7948,7 +7947,7 @@
             "description": "General-purpose collections pipeline",
             "support": {
                 "issues": "https://github.com/sanmai/pipeline/issues",
-                "source": "https://github.com/sanmai/pipeline/tree/v6.9"
+                "source": "https://github.com/sanmai/pipeline/tree/v6.11"
             },
             "funding": [
                 {
@@ -7956,7 +7955,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-08T11:56:54+00:00"
+            "time": "2024-06-15T03:11:19+00:00"
         },
         {
             "name": "sebastian/cli-parser",
