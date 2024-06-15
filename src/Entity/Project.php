@@ -16,43 +16,31 @@ namespace App\Entity;
 use Doctrine\ORM;
 use Ramsey\Uuid;
 
-/**
- * @ORM\Mapping\Entity
- *
- * @ORM\Mapping\Table(name="project")
- */
+#[ORM\Mapping\Entity()]
+#[ORM\Mapping\Table(name: 'project')]
 class Project
 {
-    /**
-     * @ORM\Mapping\Id
-     *
-     * @ORM\Mapping\GeneratedValue(strategy="NONE")
-     *
-     * @ORM\Mapping\Column(
-     *     name="id",
-     *     type="string",
-     *     length=36
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'id',
+        type: 'string',
+        length: 36,
+    )]
+    #[ORM\Mapping\GeneratedValue(strategy: 'NONE')]
+    #[ORM\Mapping\Id()]
     private string $id;
 
-    /**
-     * @ORM\Mapping\Column(
-     *     name="name",
-     *     type="string"
-     * )
-     */
+    #[ORM\Mapping\Column(
+        name: 'name',
+        type: 'string',
+    )]
     private string $name;
 
-    /**
-     * @ORM\Mapping\ManyToOne(targetEntity="App\Entity\Repository")
-     *
-     * @ORM\Mapping\JoinColumn(
-     *     name="repository_id",
-     *     referencedColumnName="id",
-     *     nullable=false
-     * )
-     */
+    #[ORM\Mapping\JoinColumn(
+        name: 'repository_id',
+        referencedColumnName: 'id',
+        nullable: false,
+    )]
+    #[ORM\Mapping\ManyToOne(targetEntity: Repository::class)]
     private Repository $repository;
 
     public function __construct(
