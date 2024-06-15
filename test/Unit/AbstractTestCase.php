@@ -29,8 +29,6 @@ abstract class AbstractTestCase extends Framework\TestCase
                 __DIR__ . '/../../src/Entity',
             ],
             true,
-            null,
-            null,
         );
 
         $connection = DBAL\DriverManager::getConnection(
