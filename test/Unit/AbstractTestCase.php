@@ -23,7 +23,7 @@ abstract class AbstractTestCase extends Framework\TestCase
 {
     final protected static function entityManager(): ORM\EntityManagerInterface
     {
-        $configuration = ORM\Tools\Setup::createAttributeMetadataConfiguration(
+        $configuration = ORM\ORMSetup::createAttributeMetadataConfiguration(
             [
                 __DIR__ . '/../../src/Entity',
             ],
