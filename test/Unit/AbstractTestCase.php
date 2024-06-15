@@ -13,6 +13,7 @@ declare(strict_types=1);
 
 namespace App\Test\Unit;
 
+use Doctrine\DBAL;
 use Doctrine\ORM;
 use Ergebnis\FactoryBot;
 use Faker\Factory;
@@ -32,11 +33,16 @@ abstract class AbstractTestCase extends Framework\TestCase
             null,
         );
 
-        $entityManager = ORM\EntityManager::create(
+        $connection = DBAL\DriverManager::getConnection(
             [
                 'driver' => 'pdo_sqlite',
                 'path' => ':memory:',
             ],
+            $configuration,
+        );
+
+        $entityManager = new ORM\EntityManager(
+            $connection,
             $configuration,
         );
 

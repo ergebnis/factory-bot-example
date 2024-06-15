@@ -50,17 +50,6 @@
       <code><![CDATA[UserDefinitionProvider]]></code>
     </UnusedClass>
   </file>
-  <file src="test/Unit/AbstractTestCase.php">
-    <DeprecatedMethod>
-      <code><![CDATA[ORM\EntityManager::create(
-            [
-                'driver' => 'pdo_sqlite',
-                'path' => ':memory:',
-            ],
-            $configuration,
-        )]]></code>
-    </DeprecatedMethod>
-  </file>
   <file src="test/Unit/Entity/ProjectTest.php">
     <UnnecessaryVarAnnotation>
       <code><![CDATA[Entity\Repository]]></code>
