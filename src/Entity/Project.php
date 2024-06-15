@@ -55,8 +55,10 @@ class Project
      */
     private Repository $repository;
 
-    public function __construct(string $name, Repository $repository)
-    {
+    public function __construct(
+        string $name,
+        Repository $repository,
+    ) {
         $this->id = Uuid\Uuid::uuid4()->toString();
         $this->name = $name;
         $this->repository = $repository;
