@@ -24,7 +24,7 @@ return static function (DependencyInjection\Loader\Configurator\ContainerConfigu
                         'collate' => 'utf8mb4_unicode_ci',
                     ],
                     'driver' => 'pdo_pgsql',
-                    'server_version' => '12',
+                    'server_version' => '16',
                     'url' => '%env(resolve:DATABASE_URL)%',
                     'use_savepoints' => true,
                 ],
