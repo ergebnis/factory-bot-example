@@ -42,7 +42,7 @@
     "symfony/http-kernel": "^6.4.8",
     "symfony/routing": "^6.4.8",
     "symfony/runtime": "^7.1.1",
-    "symfony/serializer": "^6.3.8",
+    "symfony/serializer": "^7.1.1",
     "symfony/yaml": "^7.1.1"
   },
   "require-dev": {
