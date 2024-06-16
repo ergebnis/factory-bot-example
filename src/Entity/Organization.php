@@ -39,12 +39,14 @@ class Organization
     #[ORM\Mapping\Column(
         name: 'name',
         type: 'string',
+        length: 255,
     )]
     private string $name;
 
     #[ORM\Mapping\Column(
         name: 'url',
         type: 'string',
+        length: 255,
         nullable: true,
     )]
     private ?string $url = null;

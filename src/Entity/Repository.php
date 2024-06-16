@@ -23,6 +23,7 @@ class Repository
     #[ORM\Mapping\Column(
         name: 'id',
         type: 'string',
+        length: 255,
     )]
     #[ORM\Mapping\GeneratedValue(strategy: 'NONE')]
     #[ORM\Mapping\Id()]
@@ -31,6 +32,7 @@ class Repository
     #[ORM\Mapping\Column(
         name: 'name',
         type: 'string',
+        length: 255,
     )]
     private string $name;
 

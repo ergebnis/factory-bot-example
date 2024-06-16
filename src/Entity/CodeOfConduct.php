@@ -22,6 +22,7 @@ class CodeOfConduct
     #[ORM\Mapping\Column(
         name: 'key',
         type: 'string',
+        length: 255,
     )]
     #[ORM\Mapping\Id()]
     private string $key;
@@ -29,12 +30,14 @@ class CodeOfConduct
     #[ORM\Mapping\Column(
         name: 'name',
         type: 'string',
+        length: 255,
     )]
     private string $name;
 
     #[ORM\Mapping\Column(
         name: 'url',
         type: 'string',
+        length: 255,
     )]
     private string $url;
 

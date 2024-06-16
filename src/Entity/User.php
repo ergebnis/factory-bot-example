@@ -34,12 +34,14 @@ final class User
     #[ORM\Mapping\Column(
         name: 'login',
         type: 'string',
+        length: 255,
     )]
     private string $login;
 
     #[ORM\Mapping\Column(
         name: 'location',
         type: 'string',
+        length: 255,
         nullable: true,
     )]
     private ?string $location;

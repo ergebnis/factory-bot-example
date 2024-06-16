@@ -16,7 +16,7 @@ namespace App\Migration;
 use Doctrine\DBAL;
 use Doctrine\Migrations;
 
-final class Version20200809104355 extends Migrations\AbstractMigration
+final class Version20240616103743 extends Migrations\AbstractMigration
 {
     public function up(DBAL\Schema\Schema $schema): void
     {
@@ -43,12 +43,12 @@ final class Version20200809104355 extends Migrations\AbstractMigration
     public function down(DBAL\Schema\Schema $schema): void
     {
         $this->addSql('CREATE SCHEMA public');
-        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD5335B797');
         $this->addSql('ALTER TABLE organization_user DROP CONSTRAINT FK_B49AE8D432C8A3DE');
-        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD32C8A3DE');
-        $this->addSql('ALTER TABLE project DROP CONSTRAINT FK_2FB3D0EE50C9D4F7');
-        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD5DA0FB8');
         $this->addSql('ALTER TABLE organization_user DROP CONSTRAINT FK_B49AE8D4A76ED395');
+        $this->addSql('ALTER TABLE project DROP CONSTRAINT FK_2FB3D0EE50C9D4F7');
+        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD32C8A3DE');
+        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD5DA0FB8');
+        $this->addSql('ALTER TABLE repository DROP CONSTRAINT FK_5CFE57CD5335B797');
         $this->addSql('DROP TABLE code_of_conduct');
         $this->addSql('DROP TABLE organization');
         $this->addSql('DROP TABLE organization_user');

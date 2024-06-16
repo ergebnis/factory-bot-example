@@ -21,6 +21,7 @@ final class Avatar
     #[ORM\Mapping\Column(
         name: 'url',
         type: 'string',
+        length: 255,
     )]
     private string $url = '';
 
