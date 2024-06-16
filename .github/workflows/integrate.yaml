@@ -502,7 +502,7 @@ jobs:
           POSTGRES_USER: "postgres"
           POSTGRES_PASSWORD: "postgres"
           POSTGRES_DB: "default"
-        image: "postgres:12"
+        image: "postgres:16"
         ports:
           - "5432:5432"
         options: >-
