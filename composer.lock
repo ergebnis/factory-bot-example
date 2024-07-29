@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e87cc96b1ed951d462b68e11e24db6de",
+    "content-hash": "caecdeac1dd4d9c938b83f6aa7b85f0b",
     "packages": [
         {
             "name": "brick/math",
@@ -2911,16 +2911,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v7.1.1",
+            "version": "v7.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "74d171d5b6a1d9e4bfee09a41937c17a7536acfa"
+                "reference": "f602d5c17d1fa02f8019ace2687d9d136b7f4a1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/74d171d5b6a1d9e4bfee09a41937c17a7536acfa",
-                "reference": "74d171d5b6a1d9e4bfee09a41937c17a7536acfa",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f602d5c17d1fa02f8019ace2687d9d136b7f4a1a",
+                "reference": "f602d5c17d1fa02f8019ace2687d9d136b7f4a1a",
                 "shasum": ""
             },
             "require": {
@@ -2968,7 +2968,7 @@
             "description": "Defines an object-oriented layer for the HTTP specification",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-foundation/tree/v7.1.1"
+                "source": "https://github.com/symfony/http-foundation/tree/v7.1.3"
             },
             "funding": [
                 {
@@ -2984,20 +2984,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-31T14:57:53+00:00"
+            "time": "2024-07-26T12:41:01+00:00"
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v7.1.2",
+            "version": "v7.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "ae3fa717db4d41a55d14c2bd92399e37cf5bc0f6"
+                "reference": "db9702f3a04cc471ec8c70e881825db26ac5f186"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/ae3fa717db4d41a55d14c2bd92399e37cf5bc0f6",
-                "reference": "ae3fa717db4d41a55d14c2bd92399e37cf5bc0f6",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/db9702f3a04cc471ec8c70e881825db26ac5f186",
+                "reference": "db9702f3a04cc471ec8c70e881825db26ac5f186",
                 "shasum": ""
             },
             "require": {
@@ -3082,7 +3082,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v7.1.2"
+                "source": "https://github.com/symfony/http-kernel/tree/v7.1.3"
             },
             "funding": [
                 {
@@ -3098,7 +3098,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-06-28T13:13:31+00:00"
+            "time": "2024-07-26T14:58:15+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
