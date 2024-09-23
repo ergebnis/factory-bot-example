@@ -37,7 +37,7 @@
     "symfony/dependency-injection": "^7.1.3",
     "symfony/dotenv": "^7.1.3",
     "symfony/error-handler": "^7.1.3",
-    "symfony/filesystem": "^7.1.2",
+    "symfony/filesystem": "^7.1.5",
     "symfony/flex": "^2.4.6",
     "symfony/framework-bundle": "^7.1.3",
     "symfony/http-kernel": "^7.1.3",
