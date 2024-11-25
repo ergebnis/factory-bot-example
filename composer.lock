@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d5fd8d7088a530f7a1ceceac7439f0ed",
+    "content-hash": "73464a836d0cc6a8d6999e9f487cbc3b",
     "packages": [
         {
             "name": "brick/math",
@@ -5595,16 +5595,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.16.1",
+            "version": "2.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "30d46c03d98433e1afb8fa899399ca3db144898b"
+                "reference": "671ea2ba0669917f7e98b54e4188e1c1ebf6e29d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/30d46c03d98433e1afb8fa899399ca3db144898b",
-                "reference": "30d46c03d98433e1afb8fa899399ca3db144898b",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/671ea2ba0669917f7e98b54e4188e1c1ebf6e29d",
+                "reference": "671ea2ba0669917f7e98b54e4188e1c1ebf6e29d",
                 "shasum": ""
             },
             "require": {
@@ -5613,16 +5613,22 @@
             },
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.44.0",
-                "ergebnis/license": "^2.5.0",
-                "ergebnis/php-cs-fixer-config": "^6.37.0",
+                "ergebnis/license": "^2.6.0",
+                "ergebnis/php-cs-fixer-config": "^6.38.0",
                 "fakerphp/faker": "~1.20.0",
-                "psalm/plugin-phpunit": "~0.19.0",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.11",
+                "phpstan/phpstan-deprecation-rules": "^1.2.1",
+                "phpstan/phpstan-phpunit": "^1.4.1",
+                "phpstan/phpstan-strict-rules": "^1.6.1",
                 "psr/container": "~1.0.0",
-                "rector/rector": "^1.2.8",
-                "vimeo/psalm": "^5.26.1"
+                "rector/rector": "^1.2.10"
             },
             "type": "library",
             "extra": {
+                "branch-alias": {
+                    "dev-main": "2.16-dev"
+                },
                 "composer-normalize": {
                     "indent-size": 2,
                     "indent-style": "space"
@@ -5658,7 +5664,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2024-10-25T11:56:32+00:00"
+            "time": "2024-11-25T08:54:52+00:00"
         },
         {
             "name": "erickskrauch/php-cs-fixer-custom-fixers",
@@ -7547,16 +7553,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "10.5.37",
+            "version": "10.5.38",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c7cffa0efa2b70c22366523e6d804c9419eb2400"
+                "reference": "a86773b9e887a67bc53efa9da9ad6e3f2498c132"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c7cffa0efa2b70c22366523e6d804c9419eb2400",
-                "reference": "c7cffa0efa2b70c22366523e6d804c9419eb2400",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/a86773b9e887a67bc53efa9da9ad6e3f2498c132",
+                "reference": "a86773b9e887a67bc53efa9da9ad6e3f2498c132",
                 "shasum": ""
             },
             "require": {
@@ -7628,7 +7634,7 @@
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
                 "security": "https://github.com/sebastianbergmann/phpunit/security/policy",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.37"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/10.5.38"
             },
             "funding": [
                 {
@@ -7644,7 +7650,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-19T13:03:41+00:00"
+            "time": "2024-10-28T13:06:21+00:00"
         },
         {
             "name": "psalm/plugin-phpunit",
