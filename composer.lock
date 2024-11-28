@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0f7e2e09cde3fc322986f17ee84abd25",
+    "content-hash": "628aee97d2b49eebfd3f8aa7359074d5",
     "packages": [
         {
             "name": "brick/math",
@@ -2996,16 +2996,16 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "v7.1.8",
+            "version": "v7.1.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-kernel.git",
-                "reference": "33fef24e3dc79d6d30bf4936531f2f4bd2ca189e"
+                "reference": "649d0e23c571344ef1153d4ffb2564f534b85a45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/33fef24e3dc79d6d30bf4936531f2f4bd2ca189e",
-                "reference": "33fef24e3dc79d6d30bf4936531f2f4bd2ca189e",
+                "url": "https://api.github.com/repos/symfony/http-kernel/zipball/649d0e23c571344ef1153d4ffb2564f534b85a45",
+                "reference": "649d0e23c571344ef1153d4ffb2564f534b85a45",
                 "shasum": ""
             },
             "require": {
@@ -3090,7 +3090,7 @@
             "description": "Provides a structured process for converting a Request into a Response",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/http-kernel/tree/v7.1.8"
+                "source": "https://github.com/symfony/http-kernel/tree/v7.1.9"
             },
             "funding": [
                 {
@@ -3106,7 +3106,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-13T14:25:32+00:00"
+            "time": "2024-11-27T12:55:11+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
