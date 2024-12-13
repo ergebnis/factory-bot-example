@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3bf6d82c14b454133c8786be2de74a52",
+    "content-hash": "f226c42c8154033381239fe314fca40c",
     "packages": [
         {
             "name": "brick/math",
@@ -8315,16 +8315,16 @@
         },
         {
             "name": "rector/rector",
-            "version": "2.0.0",
+            "version": "2.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rectorphp/rector.git",
-                "reference": "121229164344175d94e53c319628257fe17787c4"
+                "reference": "3f27091368bd935dbbaa8387099792fb20f65f68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rectorphp/rector/zipball/121229164344175d94e53c319628257fe17787c4",
-                "reference": "121229164344175d94e53c319628257fe17787c4",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/3f27091368bd935dbbaa8387099792fb20f65f68",
+                "reference": "3f27091368bd935dbbaa8387099792fb20f65f68",
                 "shasum": ""
             },
             "require": {
@@ -8362,7 +8362,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rectorphp/rector/issues",
-                "source": "https://github.com/rectorphp/rector/tree/2.0.0"
+                "source": "https://github.com/rectorphp/rector/tree/2.0.3"
             },
             "funding": [
                 {
@@ -8370,7 +8370,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-12-12T09:41:12+00:00"
+            "time": "2024-12-12T15:22:19+00:00"
         },
         {
             "name": "sanmai/later",
