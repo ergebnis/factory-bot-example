@@ -4868,40 +4868,38 @@
         },
         {
             "name": "ergebnis/classy",
-            "version": "1.6.0",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/classy.git",
-                "reference": "e8da19634d7d7d7e293e916b1419395224658d5a"
+                "reference": "32880f00b442d0fcdb50df94ea8d45e48f9cb430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/classy/zipball/e8da19634d7d7d7e293e916b1419395224658d5a",
-                "reference": "e8da19634d7d7d7e293e916b1419395224658d5a",
+                "url": "https://api.github.com/repos/ergebnis/classy/zipball/32880f00b442d0fcdb50df94ea8d45e48f9cb430",
+                "reference": "32880f00b442d0fcdb50df94ea8d45e48f9cb430",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0"
+                "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.39.0",
-                "ergebnis/license": "^2.3.0",
-                "ergebnis/php-cs-fixer-config": "~6.12.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.4.0",
-                "fakerphp/faker": "^1.23.0",
-                "infection/infection": "~0.27.8",
-                "phpunit/phpunit": "^10.4.2",
-                "psalm/plugin-phpunit": "~0.18.4",
-                "rector/rector": "~0.18.11",
-                "vimeo/psalm": "^5.16.0"
+                "ergebnis/composer-normalize": "^2.45.0",
+                "ergebnis/license": "^2.6.0",
+                "ergebnis/php-cs-fixer-config": "^6.40.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.17.0",
+                "fakerphp/faker": "^1.24.1",
+                "infection/infection": "~0.26.6",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^2.1.1",
+                "phpstan/phpstan-deprecation-rules": "^2.0.1",
+                "phpstan/phpstan-phpunit": "^2.0.3",
+                "phpstan/phpstan-strict-rules": "^2.0.1",
+                "phpunit/phpunit": "^9.6.19",
+                "rector/rector": "^2.0.6"
             },
             "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-main": "1.0-dev"
-                }
-            },
             "autoload": {
                 "psr-4": {
                     "Ergebnis\\Classy\\": "src/"
@@ -4932,7 +4930,7 @@
                 "issues": "https://github.com/ergebnis/classy/issues",
                 "source": "https://github.com/ergebnis/classy"
             },
-            "time": "2023-11-27T16:46:22+00:00"
+            "time": "2025-01-07T10:31:33+00:00"
         },
         {
             "name": "ergebnis/composer-normalize",
