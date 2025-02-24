@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f81a127dcbfa0b16fb5e497a73cb77d1",
+    "content-hash": "87d428fd251291cabff1aa5d29d4038f",
     "packages": [
         {
             "name": "brick/math",
@@ -5591,16 +5591,16 @@
         },
         {
             "name": "ergebnis/phpunit-slow-test-detector",
-            "version": "2.18.0",
+            "version": "2.19.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/phpunit-slow-test-detector.git",
-                "reference": "df09a854e95d7f6d3f504199148b7643cf792e52"
+                "reference": "2f66ad7fcc468a5db03592a0c73a930e0c0eccce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/df09a854e95d7f6d3f504199148b7643cf792e52",
-                "reference": "df09a854e95d7f6d3f504199148b7643cf792e52",
+                "url": "https://api.github.com/repos/ergebnis/phpunit-slow-test-detector/zipball/2f66ad7fcc468a5db03592a0c73a930e0c0eccce",
+                "reference": "2f66ad7fcc468a5db03592a0c73a930e0c0eccce",
                 "shasum": ""
             },
             "require": {
@@ -5610,7 +5610,7 @@
             "require-dev": {
                 "ergebnis/composer-normalize": "^2.45.0",
                 "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.42.2",
+                "ergebnis/php-cs-fixer-config": "^6.43.1",
                 "fakerphp/faker": "~1.20.0",
                 "phpstan/extension-installer": "^1.4.3",
                 "phpstan/phpstan": "^1.12.11",
@@ -5660,7 +5660,7 @@
                 "security": "https://github.com/ergebnis/phpunit-slow-test-detector/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/phpunit-slow-test-detector"
             },
-            "time": "2025-02-07T11:39:46+00:00"
+            "time": "2025-02-23T15:25:48+00:00"
         },
         {
             "name": "erickskrauch/php-cs-fixer-custom-fixers",
