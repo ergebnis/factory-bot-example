@@ -25,7 +25,7 @@
     "ext-ctype": "*",
     "ext-iconv": "*",
     "ext-pdo_pgsql": "*",
-    "doctrine/collections": "^2.2.2",
+    "doctrine/collections": "^2.3.0",
     "doctrine/doctrine-bundle": "^2.13.2",
     "doctrine/doctrine-migrations-bundle": "^3.4.1",
     "doctrine/migrations": "^3.8.2",
