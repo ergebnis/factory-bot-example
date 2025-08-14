@@ -28,7 +28,7 @@
     "doctrine/collections": "^2.3.0",
     "doctrine/doctrine-bundle": "^2.15.1",
     "doctrine/doctrine-migrations-bundle": "^3.4.2",
-    "doctrine/migrations": "^3.9.2",
+    "doctrine/migrations": "^3.9.3",
     "doctrine/orm": "^3.5.2",
     "doctrine/persistence": "^3.4.0",
     "ramsey/uuid": "^4.9.0",
