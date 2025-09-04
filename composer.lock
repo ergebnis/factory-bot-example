@@ -4922,16 +4922,16 @@
         },
         {
             "name": "ergebnis/classy",
-            "version": "1.8.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/classy.git",
-                "reference": "e5a695e44b083d4a4b4f2a40427301cd2916699d"
+                "reference": "05c3ac7d8d9d337c4cf1d5602a339f57cb2a27ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/classy/zipball/e5a695e44b083d4a4b4f2a40427301cd2916699d",
-                "reference": "e5a695e44b083d4a4b4f2a40427301cd2916699d",
+                "url": "https://api.github.com/repos/ergebnis/classy/zipball/05c3ac7d8d9d337c4cf1d5602a339f57cb2a27ef",
+                "reference": "05c3ac7d8d9d337c4cf1d5602a339f57cb2a27ef",
                 "shasum": ""
             },
             "require": {
@@ -4939,11 +4939,11 @@
                 "php": "~7.4.0 || ~8.0.0 || ~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.47.0",
-                "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.51.0",
-                "ergebnis/phpstan-rules": "^2.10.5",
-                "ergebnis/phpunit-slow-test-detector": "^2.19.1",
+                "ergebnis/composer-normalize": "^2.48.1",
+                "ergebnis/license": "^2.7.0",
+                "ergebnis/php-cs-fixer-config": "^6.54.0",
+                "ergebnis/phpstan-rules": "^2.11.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.20.0",
                 "fakerphp/faker": "^1.24.1",
                 "infection/infection": "~0.26.6",
                 "phpstan/extension-installer": "^1.4.3",
@@ -4952,7 +4952,7 @@
                 "phpstan/phpstan-phpunit": "^2.0.7",
                 "phpstan/phpstan-strict-rules": "^2.0.6",
                 "phpunit/phpunit": "^9.6.19",
-                "rector/rector": "^2.1.2"
+                "rector/rector": "^2.1.4"
             },
             "type": "library",
             "autoload": {
@@ -4985,7 +4985,7 @@
                 "issues": "https://github.com/ergebnis/classy/issues",
                 "source": "https://github.com/ergebnis/classy"
             },
-            "time": "2025-08-19T06:14:25+00:00"
+            "time": "2025-09-04T10:17:22+00:00"
         },
         {
             "name": "ergebnis/composer-normalize",
