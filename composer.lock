@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6513b8aa10092029c4f2c50e3d39e0fe",
+    "content-hash": "a2ecea3f086b72da39c854aad3db2fb6",
     "packages": [
         {
             "name": "brick/math",
@@ -5073,16 +5073,16 @@
         },
         {
             "name": "ergebnis/factory-bot",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ergebnis/factory-bot.git",
-                "reference": "1e7fb744fffce6446b51933c92bf2a8d1c136cd9"
+                "reference": "a13c85ad4e085895a7deb0ca2181e2e49f4c089a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ergebnis/factory-bot/zipball/1e7fb744fffce6446b51933c92bf2a8d1c136cd9",
-                "reference": "1e7fb744fffce6446b51933c92bf2a8d1c136cd9",
+                "url": "https://api.github.com/repos/ergebnis/factory-bot/zipball/a13c85ad4e085895a7deb0ca2181e2e49f4c089a",
+                "reference": "a13c85ad4e085895a7deb0ca2181e2e49f4c089a",
                 "shasum": ""
             },
             "require": {
@@ -5093,24 +5093,24 @@
                 "doctrine/persistence": "^2.1.0 || ^3.0.0",
                 "ergebnis/classy": "^1.6.0",
                 "fakerphp/faker": "^1.20.0",
-                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0"
+                "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0 || ~8.5.0"
             },
             "require-dev": {
-                "ergebnis/composer-normalize": "^2.45.0",
-                "ergebnis/license": "^2.6.0",
-                "ergebnis/php-cs-fixer-config": "^6.44.0",
-                "ergebnis/phpstan-rules": "^2.5.0",
-                "ergebnis/phpunit-slow-test-detector": "^2.19.0",
+                "ergebnis/composer-normalize": "^2.48.1",
+                "ergebnis/license": "^2.7.0",
+                "ergebnis/php-cs-fixer-config": "^6.54.0",
+                "ergebnis/phpstan-rules": "^2.11.0",
+                "ergebnis/phpunit-slow-test-detector": "^2.20.0",
                 "ext-pdo_sqlite": "*",
                 "phpstan/extension-installer": "^1.4.3",
-                "phpstan/phpstan": "^1.12.8",
-                "phpstan/phpstan-deprecation-rules": "^1.2.1",
-                "phpstan/phpstan-doctrine": "^1.5.5",
-                "phpstan/phpstan-phpunit": "^1.4.0",
-                "phpstan/phpstan-strict-rules": "^1.6.1",
+                "phpstan/phpstan": "^2.1.22",
+                "phpstan/phpstan-deprecation-rules": "^2.0.3",
+                "phpstan/phpstan-doctrine": "^2.0.4",
+                "phpstan/phpstan-phpunit": "^2.0.7",
+                "phpstan/phpstan-strict-rules": "^2.0.6",
                 "phpunit/phpunit": "^10.5.26",
-                "ramsey/uuid": "^4.7.6",
-                "rector/rector": "^1.2.10",
+                "ramsey/uuid": "^4.9.1",
+                "rector/rector": "^2.1.4",
                 "symfony/cache": "^6.4.8"
             },
             "type": "library",
@@ -5144,7 +5144,7 @@
                 "security": "https://github.com/ergebnis/factory-bot/blob/main/.github/SECURITY.md",
                 "source": "https://github.com/ergebnis/factory-bot"
             },
-            "time": "2025-02-24T07:34:53+00:00"
+            "time": "2025-09-06T08:49:25+00:00"
         },
         {
             "name": "ergebnis/json",
