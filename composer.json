@@ -42,7 +42,7 @@
     "symfony/framework-bundle": "^7.3.4",
     "symfony/http-kernel": "^7.3.2",
     "symfony/routing": "^7.1.9",
-    "symfony/runtime": "^7.3.1",
+    "symfony/runtime": "^7.3.4",
     "symfony/serializer": "^7.3.4",
     "symfony/yaml": "^7.3.3"
   },
