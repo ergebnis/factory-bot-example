@@ -40,7 +40,7 @@
     "symfony/filesystem": "^7.3.2",
     "symfony/flex": "^2.9.0",
     "symfony/framework-bundle": "^7.3.5",
-    "symfony/http-kernel": "^7.3.5",
+    "symfony/http-kernel": "^7.3.6",
     "symfony/routing": "^7.3.6",
     "symfony/runtime": "^7.3.4",
     "symfony/serializer": "^7.3.5",
