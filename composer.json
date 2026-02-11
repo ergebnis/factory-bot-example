@@ -53,7 +53,7 @@
     "ergebnis/factory-bot": "^1.10.0",
     "ergebnis/license": "^2.7.0",
     "ergebnis/php-cs-fixer-config": "^6.57.1",
-    "ergebnis/phpunit-slow-test-detector": "^2.20.0",
+    "ergebnis/phpunit-slow-test-detector": "^2.22.1",
     "infection/infection": "~0.27.11",
     "phpunit/phpunit": "^10.5.62",
     "psalm/plugin-phpunit": "~0.19.0",
